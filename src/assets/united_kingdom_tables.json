@@ -1,0 +1,1713 @@
+{
+  "data": {
+    "sheet_id": 6085,
+    "uploaded_date": "2021-06-11T06:49:00.726+00:00",
+    "tabs": [
+      {
+        "tab_id": 6086,
+        "tab_name": "Adspend, local, current",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6087,
+            "json_data": "{\"Year\":1980.0,\"Television\":529.0,\"Total\":1966.0,\"Newspapers\":906.0,\"Magazines\":387.0,\"Outdoor\":91.0,\"Radio\":38.0,\"Internet\":0.0,\"Cinema\":15.0}"
+          },
+          {
+            "data_set_id": 6088,
+            "json_data": "{\"Year\":1981.0,\"Television\":610.0,\"Total\":2160.0,\"Newspapers\":978.0,\"Magazines\":416.0,\"Outdoor\":98.0,\"Radio\":43.0,\"Internet\":0.0,\"Cinema\":15.0}"
+          },
+          {
+            "data_set_id": 6089,
+            "json_data": "{\"Year\":1982.0,\"Television\":697.0,\"Total\":2394.0,\"Newspapers\":1064.0,\"Magazines\":461.0,\"Outdoor\":105.0,\"Radio\":52.0,\"Internet\":0.0,\"Cinema\":15.0}"
+          },
+          {
+            "data_set_id": 6090,
+            "json_data": "{\"Year\":1983.0,\"Television\":831.0,\"Total\":2730.0,\"Newspapers\":1191.0,\"Magazines\":518.0,\"Outdoor\":116.0,\"Radio\":60.0,\"Internet\":0.0,\"Cinema\":14.0}"
+          },
+          {
+            "data_set_id": 6091,
+            "json_data": "{\"Year\":1984.0,\"Television\":922.0,\"Total\":3078.0,\"Newspapers\":1359.0,\"Magazines\":591.0,\"Outdoor\":128.0,\"Radio\":64.0,\"Internet\":0.0,\"Cinema\":14.0}"
+          },
+          {
+            "data_set_id": 6092,
+            "json_data": "{\"Year\":1985.0,\"Television\":1008.0,\"Total\":3363.0,\"Newspapers\":1488.0,\"Magazines\":651.0,\"Outdoor\":139.0,\"Radio\":61.0,\"Internet\":0.0,\"Cinema\":15.0}"
+          },
+          {
+            "data_set_id": 6093,
+            "json_data": "{\"Year\":1986.0,\"Television\":1224.0,\"Total\":3859.0,\"Newspapers\":1653.0,\"Magazines\":735.0,\"Outdoor\":164.0,\"Radio\":67.0,\"Internet\":0.0,\"Cinema\":16.0}"
+          },
+          {
+            "data_set_id": 6094,
+            "json_data": "{\"Year\":1987.0,\"Television\":1380.0,\"Total\":4430.0,\"Newspapers\":1903.0,\"Magazines\":860.0,\"Outdoor\":184.0,\"Radio\":85.0,\"Internet\":0.0,\"Cinema\":19.0}"
+          },
+          {
+            "data_set_id": 6095,
+            "json_data": "{\"Year\":1988.0,\"Television\":1572.0,\"Total\":5164.0,\"Newspapers\":2247.0,\"Magazines\":1009.0,\"Outdoor\":207.0,\"Radio\":106.0,\"Internet\":0.0,\"Cinema\":23.0}"
+          },
+          {
+            "data_set_id": 6096,
+            "json_data": "{\"Year\":1989.0,\"Television\":1692.0,\"Total\":5735.0,\"Newspapers\":2490.0,\"Magazines\":1172.0,\"Outdoor\":230.0,\"Radio\":121.0,\"Internet\":0.0,\"Cinema\":30.0}"
+          },
+          {
+            "data_set_id": 6097,
+            "json_data": "{\"Year\":1990.0,\"Television\":1703.0,\"Total\":5696.0,\"Newspapers\":2467.0,\"Magazines\":1137.0,\"Outdoor\":240.0,\"Radio\":116.0,\"Internet\":0.0,\"Cinema\":33.0}"
+          },
+          {
+            "data_set_id": 6098,
+            "json_data": "{\"Year\":1991.0,\"Television\":1671.0,\"Total\":5418.0,\"Newspapers\":2337.0,\"Magazines\":1037.0,\"Outdoor\":227.0,\"Radio\":110.0,\"Internet\":0.0,\"Cinema\":36.0}"
+          },
+          {
+            "data_set_id": 6099,
+            "json_data": "{\"Year\":1992.0,\"Television\":1792.0,\"Total\":5602.0,\"Newspapers\":2376.0,\"Magazines\":1035.0,\"Outdoor\":241.0,\"Radio\":120.0,\"Internet\":0.0,\"Cinema\":38.0}"
+          },
+          {
+            "data_set_id": 6100,
+            "json_data": "{\"Year\":1993.0,\"Television\":1885.0,\"Total\":5812.0,\"Newspapers\":2495.0,\"Magazines\":993.0,\"Outdoor\":255.0,\"Radio\":151.0,\"Internet\":0.0,\"Cinema\":33.0}"
+          },
+          {
+            "data_set_id": 6101,
+            "json_data": "{\"Year\":1994.0,\"Television\":2087.0,\"Total\":6430.0,\"Newspapers\":2726.0,\"Magazines\":1097.0,\"Outdoor\":298.0,\"Radio\":187.0,\"Internet\":0.0,\"Cinema\":35.0}"
+          },
+          {
+            "data_set_id": 6102,
+            "json_data": "{\"Year\":1995.0,\"Television\":2267.0,\"Total\":6976.0,\"Newspapers\":2887.0,\"Magazines\":1221.0,\"Outdoor\":321.0,\"Radio\":230.0,\"Internet\":0.0,\"Cinema\":50.0}"
+          },
+          {
+            "data_set_id": 6103,
+            "json_data": "{\"Year\":1996.0,\"Television\":2442.0,\"Total\":7512.0,\"Newspapers\":3035.0,\"Magazines\":1367.0,\"Outdoor\":362.0,\"Radio\":262.0,\"Internet\":0.0,\"Cinema\":44.0}"
+          },
+          {
+            "data_set_id": 6104,
+            "json_data": "{\"Year\":1997.0,\"Television\":2678.0,\"Total\":8279.0,\"Newspapers\":3305.0,\"Magazines\":1508.0,\"Outdoor\":425.0,\"Radio\":302.0,\"Internet\":7.0,\"Cinema\":54.0}"
+          },
+          {
+            "data_set_id": 6105,
+            "json_data": "{\"Year\":1998.0,\"Television\":2912.0,\"Total\":9087.0,\"Newspapers\":3581.0,\"Magazines\":1639.0,\"Outdoor\":521.0,\"Radio\":355.0,\"Internet\":17.0,\"Cinema\":62.0}"
+          },
+          {
+            "data_set_id": 6106,
+            "json_data": "{\"Year\":1999.0,\"Television\":3121.0,\"Total\":9638.0,\"Newspapers\":3803.0,\"Magazines\":1643.0,\"Outdoor\":552.0,\"Radio\":395.0,\"Internet\":46.0,\"Cinema\":78.0}"
+          },
+          {
+            "data_set_id": 6107,
+            "json_data": "{\"Year\":2000.0,\"Television\":3327.0,\"Total\":10549.0,\"Newspapers\":4263.0,\"Magazines\":1725.0,\"Outdoor\":593.0,\"Radio\":453.0,\"Internet\":111.0,\"Cinema\":79.0}"
+          },
+          {
+            "data_set_id": 6108,
+            "json_data": "{\"Year\":2001.0,\"Television\":3010.0,\"Total\":10095.0,\"Newspapers\":4165.0,\"Magazines\":1692.0,\"Outdoor\":575.0,\"Radio\":414.0,\"Internet\":120.0,\"Cinema\":119.0}"
+          },
+          {
+            "data_set_id": 6109,
+            "json_data": "{\"Year\":2002.0,\"Television\":3144.0,\"Total\":10119.0,\"Newspapers\":4087.0,\"Magazines\":1600.0,\"Outdoor\":596.0,\"Radio\":419.0,\"Internet\":142.0,\"Cinema\":131.0}"
+          },
+          {
+            "data_set_id": 6110,
+            "json_data": "{\"Year\":2003.0,\"Television\":3173.0,\"Total\":10409.0,\"Newspapers\":4135.0,\"Magazines\":1565.0,\"Outdoor\":668.0,\"Radio\":447.0,\"Internet\":295.0,\"Cinema\":127.0}"
+          },
+          {
+            "data_set_id": 6111,
+            "json_data": "{\"Year\":2004.0,\"Television\":3392.0,\"Total\":11378.0,\"Newspapers\":4341.0,\"Magazines\":1624.0,\"Outdoor\":721.0,\"Radio\":463.0,\"Internet\":700.0,\"Cinema\":136.0}"
+          },
+          {
+            "data_set_id": 6112,
+            "json_data": "{\"Year\":2005.0,\"Television\":3455.0,\"Total\":11811.0,\"Newspapers\":4170.0,\"Magazines\":1607.0,\"Outdoor\":762.0,\"Radio\":521.0,\"Internet\":1161.0,\"Cinema\":134.0}"
+          },
+          {
+            "data_set_id": 6113,
+            "json_data": "{\"Year\":2006.0,\"Television\":3282.0,\"Total\":11943.0,\"Newspapers\":3992.0,\"Magazines\":1554.0,\"Outdoor\":792.0,\"Radio\":494.0,\"Internet\":1699.0,\"Cinema\":131.0}"
+          },
+          {
+            "data_set_id": 6114,
+            "json_data": "{\"Year\":2007.0,\"Television\":3380.0,\"Total\":12711.0,\"Newspapers\":3978.0,\"Magazines\":1494.0,\"Outdoor\":829.0,\"Radio\":509.0,\"Internet\":2377.0,\"Cinema\":144.0}"
+          },
+          {
+            "data_set_id": 6115,
+            "json_data": "{\"Year\":2008.0,\"Television\":3211.0,\"Total\":12835.0,\"Newspapers\":3510.0,\"Magazines\":1346.0,\"Outdoor\":798.0,\"Radio\":476.0,\"Internet\":3349.0,\"Cinema\":145.0}"
+          },
+          {
+            "data_set_id": 6116,
+            "json_data": "{\"Year\":2009.0,\"Television\":2858.0,\"Total\":11259.0,\"Newspapers\":2757.0,\"Magazines\":970.0,\"Outdoor\":665.0,\"Radio\":430.0,\"Internet\":3426.0,\"Cinema\":153.0}"
+          },
+          {
+            "data_set_id": 6117,
+            "json_data": "{\"Year\":2010.0,\"Television\":3258.0,\"Total\":12136.0,\"Newspapers\":2746.0,\"Magazines\":913.0,\"Outdoor\":748.0,\"Radio\":445.0,\"Internet\":3869.0,\"Cinema\":157.0}"
+          },
+          {
+            "data_set_id": 6118,
+            "json_data": "{\"Year\":2011.0,\"Television\":3290.0,\"Total\":12532.0,\"Newspapers\":2513.0,\"Magazines\":836.0,\"Outdoor\":753.0,\"Radio\":453.0,\"Internet\":4542.0,\"Cinema\":145.0}"
+          },
+          {
+            "data_set_id": 6119,
+            "json_data": "{\"Year\":2012.0,\"Television\":3258.0,\"Total\":13252.0,\"Newspapers\":2255.0,\"Magazines\":736.0,\"Outdoor\":824.0,\"Radio\":470.0,\"Internet\":5551.0,\"Cinema\":158.0}"
+          },
+          {
+            "data_set_id": 6120,
+            "json_data": "{\"Year\":2013.0,\"Television\":3420.0,\"Total\":13957.0,\"Newspapers\":2071.0,\"Magazines\":668.0,\"Outdoor\":828.0,\"Radio\":456.0,\"Internet\":6357.0,\"Cinema\":156.0}"
+          },
+          {
+            "data_set_id": 6121,
+            "json_data": "{\"Year\":2014.0,\"Television\":3632.0,\"Total\":15128.0,\"Newspapers\":1900.0,\"Magazines\":618.0,\"Outdoor\":866.0,\"Radio\":489.0,\"Internet\":7451.0,\"Cinema\":172.0}"
+          },
+          {
+            "data_set_id": 6122,
+            "json_data": "{\"Year\":2015.0,\"Television\":3941.0,\"Total\":16330.0,\"Newspapers\":1681.0,\"Magazines\":560.0,\"Outdoor\":899.0,\"Radio\":521.0,\"Internet\":8526.0,\"Cinema\":202.0}"
+          },
+          {
+            "data_set_id": 6123,
+            "json_data": "{\"Year\":2016.0,\"Television\":3992.0,\"Total\":17700.0,\"Newspapers\":1444.0,\"Magazines\":505.0,\"Outdoor\":958.0,\"Radio\":549.0,\"Internet\":10034.0,\"Cinema\":217.0}"
+          },
+          {
+            "data_set_id": 6124,
+            "json_data": "{\"Year\":2017.0,\"Television\":3913.0,\"Total\":18928.0,\"Newspapers\":1217.0,\"Magazines\":429.0,\"Outdoor\":973.0,\"Radio\":577.0,\"Internet\":11598.0,\"Cinema\":221.0}"
+          },
+          {
+            "data_set_id": 6125,
+            "json_data": "{\"Year\":2018.0,\"Television\":3952.0,\"Total\":20585.0,\"Newspapers\":1082.0,\"Magazines\":380.0,\"Outdoor\":993.0,\"Radio\":606.0,\"Internet\":13356.0,\"Cinema\":216.0}"
+          },
+          {
+            "data_set_id": 6126,
+            "json_data": "{\"Year\":2019.0,\"Television\":3873.0,\"Total\":22723.0,\"Newspapers\":973.0,\"Magazines\":332.0,\"Outdoor\":1012.0,\"Radio\":597.0,\"Internet\":15670.0,\"Cinema\":266.0}"
+          },
+          {
+            "data_set_id": 6127,
+            "json_data": "{\"Year\":2020.0,\"Television\":3447.0,\"Total\":19107.0,\"Newspapers\":665.0,\"Magazines\":232.0,\"Outdoor\":708.0,\"Radio\":477.0,\"Internet\":13490.0,\"Cinema\":88.0}"
+          },
+          {
+            "data_set_id": 6128,
+            "json_data": "{\"Year\":2021.0,\"Television\":3791.0,\"Total\":21195.0,\"Newspapers\":740.0,\"Magazines\":255.0,\"Outdoor\":815.0,\"Radio\":549.0,\"Internet\":14852.0,\"Cinema\":193.0}"
+          },
+          {
+            "data_set_id": 6129,
+            "json_data": "{\"Year\":2022.0,\"Television\":3867.0,\"Total\":21672.0,\"Newspapers\":704.0,\"Magazines\":242.0,\"Outdoor\":839.0,\"Radio\":576.0,\"Internet\":15193.0,\"Cinema\":251.0}"
+          },
+          {
+            "data_set_id": 6130,
+            "json_data": "{\"Year\":2023.0,\"Television\":3906.0,\"Total\":22453.0,\"Newspapers\":671.0,\"Magazines\":230.0,\"Outdoor\":873.0,\"Radio\":605.0,\"Internet\":15905.0,\"Cinema\":263.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6131,
+        "tab_name": "Adspend growth, current",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6132,
+            "json_data": "{\"Year\":1981.0,\"Television\":15.0,\"Total\":10.0,\"Newspapers\":8.0,\"Magazines\":7.0,\"Outdoor\":8.0,\"Radio\":13.0,\"Internet\":0.0,\"Cinema\":2.0}"
+          },
+          {
+            "data_set_id": 6133,
+            "json_data": "{\"Year\":1982.0,\"Television\":14.0,\"Total\":11.0,\"Newspapers\":9.0,\"Magazines\":11.0,\"Outdoor\":7.0,\"Radio\":20.0,\"Internet\":0.0,\"Cinema\":0.0}"
+          },
+          {
+            "data_set_id": 6134,
+            "json_data": "{\"Year\":1983.0,\"Television\":19.0,\"Total\":14.0,\"Newspapers\":12.0,\"Magazines\":12.0,\"Outdoor\":10.0,\"Radio\":17.0,\"Internet\":0.0,\"Cinema\":-11.0}"
+          },
+          {
+            "data_set_id": 6135,
+            "json_data": "{\"Year\":1984.0,\"Television\":11.0,\"Total\":13.0,\"Newspapers\":14.0,\"Magazines\":14.0,\"Outdoor\":10.0,\"Radio\":7.0,\"Internet\":0.0,\"Cinema\":0.0}"
+          },
+          {
+            "data_set_id": 6136,
+            "json_data": "{\"Year\":1985.0,\"Television\":9.0,\"Total\":9.0,\"Newspapers\":9.0,\"Magazines\":10.0,\"Outdoor\":9.0,\"Radio\":-5.0,\"Internet\":0.0,\"Cinema\":13.0}"
+          },
+          {
+            "data_set_id": 6137,
+            "json_data": "{\"Year\":1986.0,\"Television\":21.0,\"Total\":15.0,\"Newspapers\":11.0,\"Magazines\":13.0,\"Outdoor\":18.0,\"Radio\":9.0,\"Internet\":0.0,\"Cinema\":5.0}"
+          },
+          {
+            "data_set_id": 6138,
+            "json_data": "{\"Year\":1987.0,\"Television\":13.0,\"Total\":15.0,\"Newspapers\":15.0,\"Magazines\":17.0,\"Outdoor\":12.0,\"Radio\":26.0,\"Internet\":0.0,\"Cinema\":16.0}"
+          },
+          {
+            "data_set_id": 6139,
+            "json_data": "{\"Year\":1988.0,\"Television\":14.0,\"Total\":17.0,\"Newspapers\":18.0,\"Magazines\":17.0,\"Outdoor\":13.0,\"Radio\":26.0,\"Internet\":0.0,\"Cinema\":23.0}"
+          },
+          {
+            "data_set_id": 6140,
+            "json_data": "{\"Year\":1989.0,\"Television\":8.0,\"Total\":11.0,\"Newspapers\":11.0,\"Magazines\":16.0,\"Outdoor\":11.0,\"Radio\":14.0,\"Internet\":0.0,\"Cinema\":30.0}"
+          },
+          {
+            "data_set_id": 6141,
+            "json_data": "{\"Year\":1990.0,\"Television\":1.0,\"Total\":-1.0,\"Newspapers\":-1.0,\"Magazines\":-3.0,\"Outdoor\":4.0,\"Radio\":-4.0,\"Internet\":0.0,\"Cinema\":11.0}"
+          },
+          {
+            "data_set_id": 6142,
+            "json_data": "{\"Year\":1991.0,\"Television\":-2.0,\"Total\":-5.0,\"Newspapers\":-5.0,\"Magazines\":-9.0,\"Outdoor\":-5.0,\"Radio\":-5.0,\"Internet\":0.0,\"Cinema\":8.0}"
+          },
+          {
+            "data_set_id": 6143,
+            "json_data": "{\"Year\":1992.0,\"Television\":7.0,\"Total\":3.0,\"Newspapers\":2.0,\"Magazines\":0.0,\"Outdoor\":6.0,\"Radio\":9.0,\"Internet\":0.0,\"Cinema\":7.0}"
+          },
+          {
+            "data_set_id": 6144,
+            "json_data": "{\"Year\":1993.0,\"Television\":5.0,\"Total\":4.0,\"Newspapers\":5.0,\"Magazines\":-4.0,\"Outdoor\":6.0,\"Radio\":26.0,\"Internet\":0.0,\"Cinema\":-13.0}"
+          },
+          {
+            "data_set_id": 6145,
+            "json_data": "{\"Year\":1994.0,\"Television\":11.0,\"Total\":11.0,\"Newspapers\":9.0,\"Magazines\":10.0,\"Outdoor\":17.0,\"Radio\":24.0,\"Internet\":0.0,\"Cinema\":6.0}"
+          },
+          {
+            "data_set_id": 6146,
+            "json_data": "{\"Year\":1995.0,\"Television\":9.0,\"Total\":8.0,\"Newspapers\":6.0,\"Magazines\":11.0,\"Outdoor\":8.0,\"Radio\":23.0,\"Internet\":0.0,\"Cinema\":41.0}"
+          },
+          {
+            "data_set_id": 6147,
+            "json_data": "{\"Year\":1996.0,\"Television\":8.0,\"Total\":8.0,\"Newspapers\":5.0,\"Magazines\":12.0,\"Outdoor\":13.0,\"Radio\":14.0,\"Internet\":0.0,\"Cinema\":-11.0}"
+          },
+          {
+            "data_set_id": 6148,
+            "json_data": "{\"Year\":1997.0,\"Television\":10.0,\"Total\":10.0,\"Newspapers\":9.0,\"Magazines\":10.0,\"Outdoor\":17.0,\"Radio\":15.0,\"Internet\":0.0,\"Cinema\":22.0}"
+          },
+          {
+            "data_set_id": 6149,
+            "json_data": "{\"Year\":1998.0,\"Television\":9.0,\"Total\":10.0,\"Newspapers\":8.0,\"Magazines\":9.0,\"Outdoor\":23.0,\"Radio\":18.0,\"Internet\":143.0,\"Cinema\":15.0}"
+          },
+          {
+            "data_set_id": 6150,
+            "json_data": "{\"Year\":1999.0,\"Television\":7.0,\"Total\":6.0,\"Newspapers\":6.0,\"Magazines\":0.0,\"Outdoor\":6.0,\"Radio\":11.0,\"Internet\":171.0,\"Cinema\":26.0}"
+          },
+          {
+            "data_set_id": 6151,
+            "json_data": "{\"Year\":2000.0,\"Television\":7.0,\"Total\":9.0,\"Newspapers\":12.0,\"Magazines\":5.0,\"Outdoor\":7.0,\"Radio\":15.0,\"Internet\":140.0,\"Cinema\":1.0}"
+          },
+          {
+            "data_set_id": 6152,
+            "json_data": "{\"Year\":2001.0,\"Television\":-10.0,\"Total\":-4.0,\"Newspapers\":-2.0,\"Magazines\":-2.0,\"Outdoor\":-3.0,\"Radio\":-9.0,\"Internet\":8.0,\"Cinema\":51.0}"
+          },
+          {
+            "data_set_id": 6153,
+            "json_data": "{\"Year\":2002.0,\"Television\":4.0,\"Total\":0.0,\"Newspapers\":-2.0,\"Magazines\":-5.0,\"Outdoor\":4.0,\"Radio\":1.0,\"Internet\":19.0,\"Cinema\":10.0}"
+          },
+          {
+            "data_set_id": 6154,
+            "json_data": "{\"Year\":2003.0,\"Television\":1.0,\"Total\":3.0,\"Newspapers\":1.0,\"Magazines\":-2.0,\"Outdoor\":12.0,\"Radio\":7.0,\"Internet\":107.0,\"Cinema\":-4.0}"
+          },
+          {
+            "data_set_id": 6155,
+            "json_data": "{\"Year\":2004.0,\"Television\":7.0,\"Total\":9.0,\"Newspapers\":5.0,\"Magazines\":4.0,\"Outdoor\":8.0,\"Radio\":4.0,\"Internet\":138.0,\"Cinema\":8.0}"
+          },
+          {
+            "data_set_id": 6156,
+            "json_data": "{\"Year\":2005.0,\"Television\":2.0,\"Total\":4.0,\"Newspapers\":-4.0,\"Magazines\":-1.0,\"Outdoor\":6.0,\"Radio\":13.0,\"Internet\":66.0,\"Cinema\":-2.0}"
+          },
+          {
+            "data_set_id": 6157,
+            "json_data": "{\"Year\":2006.0,\"Television\":-5.0,\"Total\":1.0,\"Newspapers\":-4.0,\"Magazines\":-3.0,\"Outdoor\":4.0,\"Radio\":-5.0,\"Internet\":46.0,\"Cinema\":-2.0}"
+          },
+          {
+            "data_set_id": 6158,
+            "json_data": "{\"Year\":2007.0,\"Television\":3.0,\"Total\":6.0,\"Newspapers\":0.0,\"Magazines\":-4.0,\"Outdoor\":5.0,\"Radio\":3.0,\"Internet\":40.0,\"Cinema\":10.0}"
+          },
+          {
+            "data_set_id": 6159,
+            "json_data": "{\"Year\":2008.0,\"Television\":-5.0,\"Total\":1.0,\"Newspapers\":-12.0,\"Magazines\":-10.0,\"Outdoor\":-4.0,\"Radio\":-6.0,\"Internet\":41.0,\"Cinema\":1.0}"
+          },
+          {
+            "data_set_id": 6160,
+            "json_data": "{\"Year\":2009.0,\"Television\":-11.0,\"Total\":-12.0,\"Newspapers\":-21.0,\"Magazines\":-28.0,\"Outdoor\":-17.0,\"Radio\":-10.0,\"Internet\":2.0,\"Cinema\":6.0}"
+          },
+          {
+            "data_set_id": 6161,
+            "json_data": "{\"Year\":2010.0,\"Television\":14.0,\"Total\":8.0,\"Newspapers\":0.0,\"Magazines\":-6.0,\"Outdoor\":12.0,\"Radio\":3.0,\"Internet\":13.0,\"Cinema\":3.0}"
+          },
+          {
+            "data_set_id": 6162,
+            "json_data": "{\"Year\":2011.0,\"Television\":1.0,\"Total\":3.0,\"Newspapers\":-9.0,\"Magazines\":-8.0,\"Outdoor\":1.0,\"Radio\":2.0,\"Internet\":17.0,\"Cinema\":-8.0}"
+          },
+          {
+            "data_set_id": 6163,
+            "json_data": "{\"Year\":2012.0,\"Television\":-1.0,\"Total\":6.0,\"Newspapers\":-10.0,\"Magazines\":-12.0,\"Outdoor\":9.0,\"Radio\":4.0,\"Internet\":22.0,\"Cinema\":9.0}"
+          },
+          {
+            "data_set_id": 6164,
+            "json_data": "{\"Year\":2013.0,\"Television\":5.0,\"Total\":5.0,\"Newspapers\":-8.0,\"Magazines\":-9.0,\"Outdoor\":0.0,\"Radio\":-3.0,\"Internet\":15.0,\"Cinema\":-1.0}"
+          },
+          {
+            "data_set_id": 6165,
+            "json_data": "{\"Year\":2014.0,\"Television\":6.0,\"Total\":8.0,\"Newspapers\":-8.0,\"Magazines\":-8.0,\"Outdoor\":5.0,\"Radio\":7.0,\"Internet\":17.0,\"Cinema\":10.0}"
+          },
+          {
+            "data_set_id": 6166,
+            "json_data": "{\"Year\":2015.0,\"Television\":8.0,\"Total\":8.0,\"Newspapers\":-12.0,\"Magazines\":-9.0,\"Outdoor\":4.0,\"Radio\":7.0,\"Internet\":14.0,\"Cinema\":17.0}"
+          },
+          {
+            "data_set_id": 6167,
+            "json_data": "{\"Year\":2016.0,\"Television\":1.0,\"Total\":8.0,\"Newspapers\":-14.0,\"Magazines\":-10.0,\"Outdoor\":7.0,\"Radio\":5.0,\"Internet\":18.0,\"Cinema\":7.0}"
+          },
+          {
+            "data_set_id": 6168,
+            "json_data": "{\"Year\":2017.0,\"Television\":-2.0,\"Total\":7.0,\"Newspapers\":-16.0,\"Magazines\":-15.0,\"Outdoor\":2.0,\"Radio\":5.0,\"Internet\":16.0,\"Cinema\":2.0}"
+          },
+          {
+            "data_set_id": 6169,
+            "json_data": "{\"Year\":2018.0,\"Television\":1.0,\"Total\":9.0,\"Newspapers\":-11.0,\"Magazines\":-11.0,\"Outdoor\":2.0,\"Radio\":5.0,\"Internet\":15.0,\"Cinema\":-2.0}"
+          },
+          {
+            "data_set_id": 6170,
+            "json_data": "{\"Year\":2019.0,\"Television\":-2.0,\"Total\":10.0,\"Newspapers\":-10.0,\"Magazines\":-13.0,\"Outdoor\":2.0,\"Radio\":-1.0,\"Internet\":17.0,\"Cinema\":23.0}"
+          },
+          {
+            "data_set_id": 6171,
+            "json_data": "{\"Year\":2020.0,\"Television\":-11.0,\"Total\":-16.0,\"Newspapers\":-32.0,\"Magazines\":-30.0,\"Outdoor\":-30.0,\"Radio\":-20.0,\"Internet\":-14.0,\"Cinema\":-67.0}"
+          },
+          {
+            "data_set_id": 6172,
+            "json_data": "{\"Year\":2021.0,\"Television\":10.0,\"Total\":11.0,\"Newspapers\":11.0,\"Magazines\":10.0,\"Outdoor\":15.0,\"Radio\":15.0,\"Internet\":10.0,\"Cinema\":119.0}"
+          },
+          {
+            "data_set_id": 6173,
+            "json_data": "{\"Year\":2022.0,\"Television\":2.0,\"Total\":2.0,\"Newspapers\":-5.0,\"Magazines\":-5.0,\"Outdoor\":3.0,\"Radio\":5.0,\"Internet\":2.0,\"Cinema\":30.0}"
+          },
+          {
+            "data_set_id": 6174,
+            "json_data": "{\"Year\":2023.0,\"Television\":1.0,\"Total\":4.0,\"Newspapers\":-5.0,\"Magazines\":-5.0,\"Outdoor\":4.0,\"Radio\":5.0,\"Internet\":5.0,\"Cinema\":5.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6175,
+        "tab_name": "Adspend, local, constant",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6176,
+            "json_data": "{\"Year\":1980.0,\"Television\":1824.0,\"Total\":6779.0,\"Newspapers\":3124.0,\"Magazines\":1334.0,\"Outdoor\":314.0,\"Radio\":131.0,\"Internet\":0.0,\"Cinema\":52.0}"
+          },
+          {
+            "data_set_id": 6177,
+            "json_data": "{\"Year\":1981.0,\"Television\":1875.0,\"Total\":6640.0,\"Newspapers\":3006.0,\"Magazines\":1279.0,\"Outdoor\":301.0,\"Radio\":132.0,\"Internet\":0.0,\"Cinema\":47.0}"
+          },
+          {
+            "data_set_id": 6178,
+            "json_data": "{\"Year\":1982.0,\"Television\":1974.0,\"Total\":6781.0,\"Newspapers\":3014.0,\"Magazines\":1306.0,\"Outdoor\":297.0,\"Radio\":146.0,\"Internet\":0.0,\"Cinema\":43.0}"
+          },
+          {
+            "data_set_id": 6179,
+            "json_data": "{\"Year\":1983.0,\"Television\":2238.0,\"Total\":7350.0,\"Newspapers\":3207.0,\"Magazines\":1395.0,\"Outdoor\":312.0,\"Radio\":162.0,\"Internet\":0.0,\"Cinema\":37.0}"
+          },
+          {
+            "data_set_id": 6180,
+            "json_data": "{\"Year\":1984.0,\"Television\":2377.0,\"Total\":7935.0,\"Newspapers\":3503.0,\"Magazines\":1524.0,\"Outdoor\":330.0,\"Radio\":166.0,\"Internet\":0.0,\"Cinema\":35.0}"
+          },
+          {
+            "data_set_id": 6181,
+            "json_data": "{\"Year\":1985.0,\"Television\":2471.0,\"Total\":8243.0,\"Newspapers\":3648.0,\"Magazines\":1596.0,\"Outdoor\":341.0,\"Radio\":150.0,\"Internet\":0.0,\"Cinema\":38.0}"
+          },
+          {
+            "data_set_id": 6182,
+            "json_data": "{\"Year\":1986.0,\"Television\":2896.0,\"Total\":9129.0,\"Newspapers\":3910.0,\"Magazines\":1739.0,\"Outdoor\":388.0,\"Radio\":159.0,\"Internet\":0.0,\"Cinema\":38.0}"
+          },
+          {
+            "data_set_id": 6183,
+            "json_data": "{\"Year\":1987.0,\"Television\":3137.0,\"Total\":10071.0,\"Newspapers\":4326.0,\"Magazines\":1955.0,\"Outdoor\":418.0,\"Radio\":192.0,\"Internet\":0.0,\"Cinema\":43.0}"
+          },
+          {
+            "data_set_id": 6184,
+            "json_data": "{\"Year\":1988.0,\"Television\":3416.0,\"Total\":11222.0,\"Newspapers\":4883.0,\"Magazines\":2193.0,\"Outdoor\":450.0,\"Radio\":231.0,\"Internet\":0.0,\"Cinema\":50.0}"
+          },
+          {
+            "data_set_id": 6185,
+            "json_data": "{\"Year\":1989.0,\"Television\":3494.0,\"Total\":11844.0,\"Newspapers\":5142.0,\"Magazines\":2420.0,\"Outdoor\":475.0,\"Radio\":250.0,\"Internet\":0.0,\"Cinema\":61.0}"
+          },
+          {
+            "data_set_id": 6186,
+            "json_data": "{\"Year\":1990.0,\"Television\":3287.0,\"Total\":10995.0,\"Newspapers\":4762.0,\"Magazines\":2195.0,\"Outdoor\":463.0,\"Radio\":224.0,\"Internet\":0.0,\"Cinema\":64.0}"
+          },
+          {
+            "data_set_id": 6187,
+            "json_data": "{\"Year\":1991.0,\"Television\":3000.0,\"Total\":9726.0,\"Newspapers\":4195.0,\"Magazines\":1862.0,\"Outdoor\":408.0,\"Radio\":197.0,\"Internet\":0.0,\"Cinema\":64.0}"
+          },
+          {
+            "data_set_id": 6188,
+            "json_data": "{\"Year\":1992.0,\"Television\":3086.0,\"Total\":9649.0,\"Newspapers\":4092.0,\"Magazines\":1783.0,\"Outdoor\":415.0,\"Radio\":207.0,\"Internet\":0.0,\"Cinema\":66.0}"
+          },
+          {
+            "data_set_id": 6189,
+            "json_data": "{\"Year\":1993.0,\"Television\":3166.0,\"Total\":9763.0,\"Newspapers\":4191.0,\"Magazines\":1668.0,\"Outdoor\":428.0,\"Radio\":254.0,\"Internet\":0.0,\"Cinema\":56.0}"
+          },
+          {
+            "data_set_id": 6190,
+            "json_data": "{\"Year\":1994.0,\"Television\":3437.0,\"Total\":10590.0,\"Newspapers\":4490.0,\"Magazines\":1807.0,\"Outdoor\":491.0,\"Radio\":308.0,\"Internet\":0.0,\"Cinema\":58.0}"
+          },
+          {
+            "data_set_id": 6191,
+            "json_data": "{\"Year\":1995.0,\"Television\":3638.0,\"Total\":11194.0,\"Newspapers\":4633.0,\"Magazines\":1959.0,\"Outdoor\":515.0,\"Radio\":369.0,\"Internet\":0.0,\"Cinema\":80.0}"
+          },
+          {
+            "data_set_id": 6192,
+            "json_data": "{\"Year\":1996.0,\"Television\":3826.0,\"Total\":11770.0,\"Newspapers\":4755.0,\"Magazines\":2142.0,\"Outdoor\":567.0,\"Radio\":411.0,\"Internet\":0.0,\"Cinema\":69.0}"
+          },
+          {
+            "data_set_id": 6193,
+            "json_data": "{\"Year\":1997.0,\"Television\":4120.0,\"Total\":12738.0,\"Newspapers\":5085.0,\"Magazines\":2320.0,\"Outdoor\":654.0,\"Radio\":465.0,\"Internet\":11.0,\"Cinema\":83.0}"
+          },
+          {
+            "data_set_id": 6194,
+            "json_data": "{\"Year\":1998.0,\"Television\":4412.0,\"Total\":13767.0,\"Newspapers\":5425.0,\"Magazines\":2483.0,\"Outdoor\":789.0,\"Radio\":538.0,\"Internet\":26.0,\"Cinema\":94.0}"
+          },
+          {
+            "data_set_id": 6195,
+            "json_data": "{\"Year\":1999.0,\"Television\":4666.0,\"Total\":14411.0,\"Newspapers\":5686.0,\"Magazines\":2457.0,\"Outdoor\":825.0,\"Radio\":591.0,\"Internet\":69.0,\"Cinema\":117.0}"
+          },
+          {
+            "data_set_id": 6196,
+            "json_data": "{\"Year\":2000.0,\"Television\":4935.0,\"Total\":15649.0,\"Newspapers\":6323.0,\"Magazines\":2559.0,\"Outdoor\":879.0,\"Radio\":672.0,\"Internet\":164.0,\"Cinema\":117.0}"
+          },
+          {
+            "data_set_id": 6197,
+            "json_data": "{\"Year\":2001.0,\"Television\":4411.0,\"Total\":14792.0,\"Newspapers\":6103.0,\"Magazines\":2479.0,\"Outdoor\":843.0,\"Radio\":607.0,\"Internet\":175.0,\"Cinema\":175.0}"
+          },
+          {
+            "data_set_id": 6198,
+            "json_data": "{\"Year\":2002.0,\"Television\":4550.0,\"Total\":14643.0,\"Newspapers\":5914.0,\"Magazines\":2316.0,\"Outdoor\":862.0,\"Radio\":606.0,\"Internet\":206.0,\"Cinema\":190.0}"
+          },
+          {
+            "data_set_id": 6199,
+            "json_data": "{\"Year\":2003.0,\"Television\":4530.0,\"Total\":14861.0,\"Newspapers\":5904.0,\"Magazines\":2234.0,\"Outdoor\":954.0,\"Radio\":638.0,\"Internet\":421.0,\"Cinema\":181.0}"
+          },
+          {
+            "data_set_id": 6200,
+            "json_data": "{\"Year\":2004.0,\"Television\":4778.0,\"Total\":16028.0,\"Newspapers\":6115.0,\"Magazines\":2288.0,\"Outdoor\":1015.0,\"Radio\":652.0,\"Internet\":987.0,\"Cinema\":192.0}"
+          },
+          {
+            "data_set_id": 6201,
+            "json_data": "{\"Year\":2005.0,\"Television\":4769.0,\"Total\":16303.0,\"Newspapers\":5756.0,\"Magazines\":2219.0,\"Outdoor\":1052.0,\"Radio\":719.0,\"Internet\":1603.0,\"Cinema\":185.0}"
+          },
+          {
+            "data_set_id": 6202,
+            "json_data": "{\"Year\":2006.0,\"Television\":4427.0,\"Total\":16110.0,\"Newspapers\":5384.0,\"Magazines\":2096.0,\"Outdoor\":1068.0,\"Radio\":667.0,\"Internet\":2291.0,\"Cinema\":177.0}"
+          },
+          {
+            "data_set_id": 6203,
+            "json_data": "{\"Year\":2007.0,\"Television\":4456.0,\"Total\":16756.0,\"Newspapers\":5244.0,\"Magazines\":1970.0,\"Outdoor\":1093.0,\"Radio\":670.0,\"Internet\":3133.0,\"Cinema\":190.0}"
+          },
+          {
+            "data_set_id": 6204,
+            "json_data": "{\"Year\":2008.0,\"Television\":4086.0,\"Total\":16332.0,\"Newspapers\":4466.0,\"Magazines\":1713.0,\"Outdoor\":1015.0,\"Radio\":606.0,\"Internet\":4261.0,\"Cinema\":185.0}"
+          },
+          {
+            "data_set_id": 6205,
+            "json_data": "{\"Year\":2009.0,\"Television\":3559.0,\"Total\":14023.0,\"Newspapers\":3434.0,\"Magazines\":1208.0,\"Outdoor\":828.0,\"Radio\":535.0,\"Internet\":4267.0,\"Cinema\":191.0}"
+          },
+          {
+            "data_set_id": 6206,
+            "json_data": "{\"Year\":2010.0,\"Television\":3928.0,\"Total\":14632.0,\"Newspapers\":3311.0,\"Magazines\":1101.0,\"Outdoor\":902.0,\"Radio\":536.0,\"Internet\":4665.0,\"Cinema\":189.0}"
+          },
+          {
+            "data_set_id": 6207,
+            "json_data": "{\"Year\":2011.0,\"Television\":3798.0,\"Total\":14464.0,\"Newspapers\":2900.0,\"Magazines\":964.0,\"Outdoor\":869.0,\"Radio\":523.0,\"Internet\":5243.0,\"Cinema\":167.0}"
+          },
+          {
+            "data_set_id": 6208,
+            "json_data": "{\"Year\":2012.0,\"Television\":3656.0,\"Total\":14874.0,\"Newspapers\":2531.0,\"Magazines\":826.0,\"Outdoor\":925.0,\"Radio\":528.0,\"Internet\":6231.0,\"Cinema\":177.0}"
+          },
+          {
+            "data_set_id": 6209,
+            "json_data": "{\"Year\":2013.0,\"Television\":3743.0,\"Total\":15274.0,\"Newspapers\":2267.0,\"Magazines\":731.0,\"Outdoor\":906.0,\"Radio\":499.0,\"Internet\":6957.0,\"Cinema\":171.0}"
+          },
+          {
+            "data_set_id": 6210,
+            "json_data": "{\"Year\":2014.0,\"Television\":3918.0,\"Total\":16317.0,\"Newspapers\":2049.0,\"Magazines\":666.0,\"Outdoor\":934.0,\"Radio\":527.0,\"Internet\":8037.0,\"Cinema\":186.0}"
+          },
+          {
+            "data_set_id": 6211,
+            "json_data": "{\"Year\":2015.0,\"Television\":4249.0,\"Total\":17607.0,\"Newspapers\":1812.0,\"Magazines\":604.0,\"Outdoor\":969.0,\"Radio\":562.0,\"Internet\":9193.0,\"Cinema\":218.0}"
+          },
+          {
+            "data_set_id": 6212,
+            "json_data": "{\"Year\":2016.0,\"Television\":4276.0,\"Total\":18959.0,\"Newspapers\":1547.0,\"Magazines\":541.0,\"Outdoor\":1026.0,\"Radio\":588.0,\"Internet\":10748.0,\"Cinema\":232.0}"
+          },
+          {
+            "data_set_id": 6213,
+            "json_data": "{\"Year\":2017.0,\"Television\":4081.0,\"Total\":19744.0,\"Newspapers\":1269.0,\"Magazines\":448.0,\"Outdoor\":1015.0,\"Radio\":602.0,\"Internet\":12098.0,\"Cinema\":231.0}"
+          },
+          {
+            "data_set_id": 6214,
+            "json_data": "{\"Year\":2018.0,\"Television\":4023.0,\"Total\":20954.0,\"Newspapers\":1102.0,\"Magazines\":387.0,\"Outdoor\":1011.0,\"Radio\":617.0,\"Internet\":13595.0,\"Cinema\":220.0}"
+          },
+          {
+            "data_set_id": 6215,
+            "json_data": "{\"Year\":2019.0,\"Television\":3873.0,\"Total\":22723.0,\"Newspapers\":973.0,\"Magazines\":332.0,\"Outdoor\":1012.0,\"Radio\":597.0,\"Internet\":15670.0,\"Cinema\":266.0}"
+          },
+          {
+            "data_set_id": 6216,
+            "json_data": "{\"Year\":2020.0,\"Television\":3420.0,\"Total\":18961.0,\"Newspapers\":660.0,\"Magazines\":230.0,\"Outdoor\":703.0,\"Radio\":473.0,\"Internet\":13387.0,\"Cinema\":87.0}"
+          },
+          {
+            "data_set_id": 6217,
+            "json_data": "{\"Year\":2021.0,\"Television\":3717.0,\"Total\":20781.0,\"Newspapers\":725.0,\"Magazines\":250.0,\"Outdoor\":799.0,\"Radio\":538.0,\"Internet\":14562.0,\"Cinema\":189.0}"
+          },
+          {
+            "data_set_id": 6218,
+            "json_data": "{\"Year\":2022.0,\"Television\":3729.0,\"Total\":20895.0,\"Newspapers\":679.0,\"Magazines\":234.0,\"Outdoor\":809.0,\"Radio\":555.0,\"Internet\":14648.0,\"Cinema\":242.0}"
+          },
+          {
+            "data_set_id": 6219,
+            "json_data": "{\"Year\":2023.0,\"Television\":3695.0,\"Total\":21239.0,\"Newspapers\":634.0,\"Magazines\":218.0,\"Outdoor\":826.0,\"Radio\":572.0,\"Internet\":15045.0,\"Cinema\":249.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6220,
+        "tab_name": "Adspend growth, constant",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6221,
+            "json_data": "{\"Year\":1981.0,\"Television\":3.0,\"Total\":-2.0,\"Newspapers\":-4.0,\"Magazines\":-4.0,\"Outdoor\":-4.0,\"Radio\":1.0,\"Internet\":0.0,\"Cinema\":-9.0}"
+          },
+          {
+            "data_set_id": 6222,
+            "json_data": "{\"Year\":1982.0,\"Television\":5.0,\"Total\":2.0,\"Newspapers\":0.0,\"Magazines\":2.0,\"Outdoor\":-1.0,\"Radio\":10.0,\"Internet\":0.0,\"Cinema\":-8.0}"
+          },
+          {
+            "data_set_id": 6223,
+            "json_data": "{\"Year\":1983.0,\"Television\":13.0,\"Total\":8.0,\"Newspapers\":6.0,\"Magazines\":7.0,\"Outdoor\":5.0,\"Radio\":11.0,\"Internet\":0.0,\"Cinema\":-16.0}"
+          },
+          {
+            "data_set_id": 6224,
+            "json_data": "{\"Year\":1984.0,\"Television\":6.0,\"Total\":8.0,\"Newspapers\":9.0,\"Magazines\":9.0,\"Outdoor\":6.0,\"Radio\":2.0,\"Internet\":0.0,\"Cinema\":-4.0}"
+          },
+          {
+            "data_set_id": 6225,
+            "json_data": "{\"Year\":1985.0,\"Television\":4.0,\"Total\":4.0,\"Newspapers\":4.0,\"Magazines\":5.0,\"Outdoor\":3.0,\"Radio\":-9.0,\"Internet\":0.0,\"Cinema\":7.0}"
+          },
+          {
+            "data_set_id": 6226,
+            "json_data": "{\"Year\":1986.0,\"Television\":17.0,\"Total\":11.0,\"Newspapers\":7.0,\"Magazines\":9.0,\"Outdoor\":14.0,\"Radio\":6.0,\"Internet\":0.0,\"Cinema\":2.0}"
+          },
+          {
+            "data_set_id": 6227,
+            "json_data": "{\"Year\":1987.0,\"Television\":8.0,\"Total\":10.0,\"Newspapers\":11.0,\"Magazines\":12.0,\"Outdoor\":8.0,\"Radio\":21.0,\"Internet\":0.0,\"Cinema\":12.0}"
+          },
+          {
+            "data_set_id": 6228,
+            "json_data": "{\"Year\":1988.0,\"Television\":9.0,\"Total\":11.0,\"Newspapers\":13.0,\"Magazines\":12.0,\"Outdoor\":8.0,\"Radio\":20.0,\"Internet\":0.0,\"Cinema\":17.0}"
+          },
+          {
+            "data_set_id": 6229,
+            "json_data": "{\"Year\":1989.0,\"Television\":2.0,\"Total\":6.0,\"Newspapers\":5.0,\"Magazines\":10.0,\"Outdoor\":6.0,\"Radio\":8.0,\"Internet\":0.0,\"Cinema\":23.0}"
+          },
+          {
+            "data_set_id": 6230,
+            "json_data": "{\"Year\":1990.0,\"Television\":-6.0,\"Total\":-7.0,\"Newspapers\":-7.0,\"Magazines\":-9.0,\"Outdoor\":-2.0,\"Radio\":-10.0,\"Internet\":0.0,\"Cinema\":4.0}"
+          },
+          {
+            "data_set_id": 6231,
+            "json_data": "{\"Year\":1991.0,\"Television\":-9.0,\"Total\":-12.0,\"Newspapers\":-12.0,\"Magazines\":-15.0,\"Outdoor\":-12.0,\"Radio\":-12.0,\"Internet\":0.0,\"Cinema\":0.0}"
+          },
+          {
+            "data_set_id": 6232,
+            "json_data": "{\"Year\":1992.0,\"Television\":3.0,\"Total\":-1.0,\"Newspapers\":-2.0,\"Magazines\":-4.0,\"Outdoor\":2.0,\"Radio\":5.0,\"Internet\":0.0,\"Cinema\":3.0}"
+          },
+          {
+            "data_set_id": 6233,
+            "json_data": "{\"Year\":1993.0,\"Television\":3.0,\"Total\":1.0,\"Newspapers\":2.0,\"Magazines\":-6.0,\"Outdoor\":3.0,\"Radio\":23.0,\"Internet\":0.0,\"Cinema\":-16.0}"
+          },
+          {
+            "data_set_id": 6234,
+            "json_data": "{\"Year\":1994.0,\"Television\":9.0,\"Total\":8.0,\"Newspapers\":7.0,\"Magazines\":8.0,\"Outdoor\":15.0,\"Radio\":21.0,\"Internet\":0.0,\"Cinema\":4.0}"
+          },
+          {
+            "data_set_id": 6235,
+            "json_data": "{\"Year\":1995.0,\"Television\":6.0,\"Total\":6.0,\"Newspapers\":3.0,\"Magazines\":8.0,\"Outdoor\":5.0,\"Radio\":20.0,\"Internet\":0.0,\"Cinema\":37.0}"
+          },
+          {
+            "data_set_id": 6236,
+            "json_data": "{\"Year\":1996.0,\"Television\":5.0,\"Total\":5.0,\"Newspapers\":3.0,\"Magazines\":9.0,\"Outdoor\":10.0,\"Radio\":11.0,\"Internet\":0.0,\"Cinema\":-13.0}"
+          },
+          {
+            "data_set_id": 6237,
+            "json_data": "{\"Year\":1997.0,\"Television\":8.0,\"Total\":8.0,\"Newspapers\":7.0,\"Magazines\":8.0,\"Outdoor\":15.0,\"Radio\":13.0,\"Internet\":0.0,\"Cinema\":20.0}"
+          },
+          {
+            "data_set_id": 6238,
+            "json_data": "{\"Year\":1998.0,\"Television\":7.0,\"Total\":8.0,\"Newspapers\":7.0,\"Magazines\":7.0,\"Outdoor\":21.0,\"Radio\":16.0,\"Internet\":139.0,\"Cinema\":14.0}"
+          },
+          {
+            "data_set_id": 6239,
+            "json_data": "{\"Year\":1999.0,\"Television\":6.0,\"Total\":5.0,\"Newspapers\":5.0,\"Magazines\":-1.0,\"Outdoor\":5.0,\"Radio\":10.0,\"Internet\":167.0,\"Cinema\":24.0}"
+          },
+          {
+            "data_set_id": 6240,
+            "json_data": "{\"Year\":2000.0,\"Television\":6.0,\"Total\":9.0,\"Newspapers\":11.0,\"Magazines\":4.0,\"Outdoor\":6.0,\"Radio\":14.0,\"Internet\":139.0,\"Cinema\":0.0}"
+          },
+          {
+            "data_set_id": 6241,
+            "json_data": "{\"Year\":2001.0,\"Television\":-11.0,\"Total\":-5.0,\"Newspapers\":-3.0,\"Magazines\":-3.0,\"Outdoor\":-4.0,\"Radio\":-10.0,\"Internet\":7.0,\"Cinema\":50.0}"
+          },
+          {
+            "data_set_id": 6242,
+            "json_data": "{\"Year\":2002.0,\"Television\":3.0,\"Total\":-1.0,\"Newspapers\":-3.0,\"Magazines\":-7.0,\"Outdoor\":2.0,\"Radio\":0.0,\"Internet\":17.0,\"Cinema\":9.0}"
+          },
+          {
+            "data_set_id": 6243,
+            "json_data": "{\"Year\":2003.0,\"Television\":0.0,\"Total\":1.0,\"Newspapers\":0.0,\"Magazines\":-4.0,\"Outdoor\":11.0,\"Radio\":5.0,\"Internet\":105.0,\"Cinema\":-5.0}"
+          },
+          {
+            "data_set_id": 6244,
+            "json_data": "{\"Year\":2004.0,\"Television\":5.0,\"Total\":8.0,\"Newspapers\":4.0,\"Magazines\":2.0,\"Outdoor\":6.0,\"Radio\":2.0,\"Internet\":135.0,\"Cinema\":6.0}"
+          },
+          {
+            "data_set_id": 6245,
+            "json_data": "{\"Year\":2005.0,\"Television\":0.0,\"Total\":2.0,\"Newspapers\":-6.0,\"Magazines\":-3.0,\"Outdoor\":4.0,\"Radio\":10.0,\"Internet\":62.0,\"Cinema\":-4.0}"
+          },
+          {
+            "data_set_id": 6246,
+            "json_data": "{\"Year\":2006.0,\"Television\":-7.0,\"Total\":-1.0,\"Newspapers\":-6.0,\"Magazines\":-6.0,\"Outdoor\":2.0,\"Radio\":-7.0,\"Internet\":43.0,\"Cinema\":-4.0}"
+          },
+          {
+            "data_set_id": 6247,
+            "json_data": "{\"Year\":2007.0,\"Television\":1.0,\"Total\":4.0,\"Newspapers\":-3.0,\"Magazines\":-6.0,\"Outdoor\":2.0,\"Radio\":1.0,\"Internet\":37.0,\"Cinema\":7.0}"
+          },
+          {
+            "data_set_id": 6248,
+            "json_data": "{\"Year\":2008.0,\"Television\":-8.0,\"Total\":-3.0,\"Newspapers\":-15.0,\"Magazines\":-13.0,\"Outdoor\":-7.0,\"Radio\":-10.0,\"Internet\":36.0,\"Cinema\":-3.0}"
+          },
+          {
+            "data_set_id": 6249,
+            "json_data": "{\"Year\":2009.0,\"Television\":-13.0,\"Total\":-14.0,\"Newspapers\":-23.0,\"Magazines\":-29.0,\"Outdoor\":-18.0,\"Radio\":-12.0,\"Internet\":0.0,\"Cinema\":3.0}"
+          },
+          {
+            "data_set_id": 6250,
+            "json_data": "{\"Year\":2010.0,\"Television\":10.0,\"Total\":4.0,\"Newspapers\":-4.0,\"Magazines\":-9.0,\"Outdoor\":9.0,\"Radio\":0.0,\"Internet\":9.0,\"Cinema\":-1.0}"
+          },
+          {
+            "data_set_id": 6251,
+            "json_data": "{\"Year\":2011.0,\"Television\":-3.0,\"Total\":-1.0,\"Newspapers\":-12.0,\"Magazines\":-12.0,\"Outdoor\":-4.0,\"Radio\":-2.0,\"Internet\":12.0,\"Cinema\":-12.0}"
+          },
+          {
+            "data_set_id": 6252,
+            "json_data": "{\"Year\":2012.0,\"Television\":-4.0,\"Total\":3.0,\"Newspapers\":-13.0,\"Magazines\":-14.0,\"Outdoor\":6.0,\"Radio\":1.0,\"Internet\":19.0,\"Cinema\":6.0}"
+          },
+          {
+            "data_set_id": 6253,
+            "json_data": "{\"Year\":2013.0,\"Television\":2.0,\"Total\":3.0,\"Newspapers\":-10.0,\"Magazines\":-12.0,\"Outdoor\":-2.0,\"Radio\":-5.0,\"Internet\":12.0,\"Cinema\":-4.0}"
+          },
+          {
+            "data_set_id": 6254,
+            "json_data": "{\"Year\":2014.0,\"Television\":5.0,\"Total\":7.0,\"Newspapers\":-10.0,\"Magazines\":-9.0,\"Outdoor\":3.0,\"Radio\":6.0,\"Internet\":16.0,\"Cinema\":9.0}"
+          },
+          {
+            "data_set_id": 6255,
+            "json_data": "{\"Year\":2015.0,\"Television\":8.0,\"Total\":8.0,\"Newspapers\":-12.0,\"Magazines\":-9.0,\"Outdoor\":4.0,\"Radio\":7.0,\"Internet\":14.0,\"Cinema\":17.0}"
+          },
+          {
+            "data_set_id": 6256,
+            "json_data": "{\"Year\":2016.0,\"Television\":1.0,\"Total\":8.0,\"Newspapers\":-15.0,\"Magazines\":-10.0,\"Outdoor\":6.0,\"Radio\":5.0,\"Internet\":17.0,\"Cinema\":7.0}"
+          },
+          {
+            "data_set_id": 6257,
+            "json_data": "{\"Year\":2017.0,\"Television\":-5.0,\"Total\":4.0,\"Newspapers\":-18.0,\"Magazines\":-17.0,\"Outdoor\":-1.0,\"Radio\":2.0,\"Internet\":13.0,\"Cinema\":-1.0}"
+          },
+          {
+            "data_set_id": 6258,
+            "json_data": "{\"Year\":2018.0,\"Television\":-1.0,\"Total\":6.0,\"Newspapers\":-13.0,\"Magazines\":-14.0,\"Outdoor\":0.0,\"Radio\":2.0,\"Internet\":12.0,\"Cinema\":-5.0}"
+          },
+          {
+            "data_set_id": 6259,
+            "json_data": "{\"Year\":2019.0,\"Television\":-4.0,\"Total\":8.0,\"Newspapers\":-12.0,\"Magazines\":-14.0,\"Outdoor\":0.0,\"Radio\":-3.0,\"Internet\":15.0,\"Cinema\":21.0}"
+          },
+          {
+            "data_set_id": 6260,
+            "json_data": "{\"Year\":2020.0,\"Television\":-12.0,\"Total\":-17.0,\"Newspapers\":-32.0,\"Magazines\":-31.0,\"Outdoor\":-31.0,\"Radio\":-21.0,\"Internet\":-15.0,\"Cinema\":-67.0}"
+          },
+          {
+            "data_set_id": 6261,
+            "json_data": "{\"Year\":2021.0,\"Television\":9.0,\"Total\":10.0,\"Newspapers\":10.0,\"Magazines\":9.0,\"Outdoor\":14.0,\"Radio\":14.0,\"Internet\":9.0,\"Cinema\":117.0}"
+          },
+          {
+            "data_set_id": 6262,
+            "json_data": "{\"Year\":2022.0,\"Television\":0.0,\"Total\":1.0,\"Newspapers\":-6.0,\"Magazines\":-7.0,\"Outdoor\":1.0,\"Radio\":3.0,\"Internet\":1.0,\"Cinema\":28.0}"
+          },
+          {
+            "data_set_id": 6263,
+            "json_data": "{\"Year\":2023.0,\"Television\":-1.0,\"Total\":2.0,\"Newspapers\":-7.0,\"Magazines\":-7.0,\"Outdoor\":2.0,\"Radio\":3.0,\"Internet\":3.0,\"Cinema\":3.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6264,
+        "tab_name": "Adspend, US$, current",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6265,
+            "json_data": "{\"Year\":1980.0,\"Television\":676.0,\"Total\":2511.0,\"Newspapers\":1157.0,\"Magazines\":494.0,\"Outdoor\":116.0,\"Radio\":49.0,\"Internet\":0.0,\"Cinema\":19.0}"
+          },
+          {
+            "data_set_id": 6266,
+            "json_data": "{\"Year\":1981.0,\"Television\":779.0,\"Total\":2759.0,\"Newspapers\":1249.0,\"Magazines\":531.0,\"Outdoor\":125.0,\"Radio\":55.0,\"Internet\":0.0,\"Cinema\":20.0}"
+          },
+          {
+            "data_set_id": 6267,
+            "json_data": "{\"Year\":1982.0,\"Television\":890.0,\"Total\":3057.0,\"Newspapers\":1359.0,\"Magazines\":589.0,\"Outdoor\":134.0,\"Radio\":66.0,\"Internet\":0.0,\"Cinema\":20.0}"
+          },
+          {
+            "data_set_id": 6268,
+            "json_data": "{\"Year\":1983.0,\"Television\":1061.0,\"Total\":3486.0,\"Newspapers\":1521.0,\"Magazines\":662.0,\"Outdoor\":148.0,\"Radio\":77.0,\"Internet\":0.0,\"Cinema\":17.0}"
+          },
+          {
+            "data_set_id": 6269,
+            "json_data": "{\"Year\":1984.0,\"Television\":1178.0,\"Total\":3931.0,\"Newspapers\":1736.0,\"Magazines\":755.0,\"Outdoor\":163.0,\"Radio\":82.0,\"Internet\":0.0,\"Cinema\":17.0}"
+          },
+          {
+            "data_set_id": 6270,
+            "json_data": "{\"Year\":1985.0,\"Television\":1287.0,\"Total\":4295.0,\"Newspapers\":1900.0,\"Magazines\":831.0,\"Outdoor\":178.0,\"Radio\":78.0,\"Internet\":0.0,\"Cinema\":20.0}"
+          },
+          {
+            "data_set_id": 6271,
+            "json_data": "{\"Year\":1986.0,\"Television\":1563.0,\"Total\":4929.0,\"Newspapers\":2111.0,\"Magazines\":939.0,\"Outdoor\":209.0,\"Radio\":86.0,\"Internet\":0.0,\"Cinema\":21.0}"
+          },
+          {
+            "data_set_id": 6272,
+            "json_data": "{\"Year\":1987.0,\"Television\":1762.0,\"Total\":5658.0,\"Newspapers\":2430.0,\"Magazines\":1098.0,\"Outdoor\":235.0,\"Radio\":108.0,\"Internet\":0.0,\"Cinema\":24.0}"
+          },
+          {
+            "data_set_id": 6273,
+            "json_data": "{\"Year\":1988.0,\"Television\":2008.0,\"Total\":6596.0,\"Newspapers\":2870.0,\"Magazines\":1289.0,\"Outdoor\":264.0,\"Radio\":136.0,\"Internet\":0.0,\"Cinema\":29.0}"
+          },
+          {
+            "data_set_id": 6274,
+            "json_data": "{\"Year\":1989.0,\"Television\":2161.0,\"Total\":7324.0,\"Newspapers\":3180.0,\"Magazines\":1497.0,\"Outdoor\":294.0,\"Radio\":155.0,\"Internet\":0.0,\"Cinema\":38.0}"
+          },
+          {
+            "data_set_id": 6275,
+            "json_data": "{\"Year\":1990.0,\"Television\":2175.0,\"Total\":7275.0,\"Newspapers\":3151.0,\"Magazines\":1452.0,\"Outdoor\":307.0,\"Radio\":148.0,\"Internet\":0.0,\"Cinema\":42.0}"
+          },
+          {
+            "data_set_id": 6276,
+            "json_data": "{\"Year\":1991.0,\"Television\":2134.0,\"Total\":6919.0,\"Newspapers\":2985.0,\"Magazines\":1324.0,\"Outdoor\":290.0,\"Radio\":140.0,\"Internet\":0.0,\"Cinema\":46.0}"
+          },
+          {
+            "data_set_id": 6277,
+            "json_data": "{\"Year\":1992.0,\"Television\":2289.0,\"Total\":7155.0,\"Newspapers\":3035.0,\"Magazines\":1322.0,\"Outdoor\":308.0,\"Radio\":153.0,\"Internet\":0.0,\"Cinema\":49.0}"
+          },
+          {
+            "data_set_id": 6278,
+            "json_data": "{\"Year\":1993.0,\"Television\":2407.0,\"Total\":7423.0,\"Newspapers\":3187.0,\"Magazines\":1268.0,\"Outdoor\":326.0,\"Radio\":193.0,\"Internet\":0.0,\"Cinema\":42.0}"
+          },
+          {
+            "data_set_id": 6279,
+            "json_data": "{\"Year\":1994.0,\"Television\":2665.0,\"Total\":8213.0,\"Newspapers\":3482.0,\"Magazines\":1401.0,\"Outdoor\":381.0,\"Radio\":239.0,\"Internet\":0.0,\"Cinema\":45.0}"
+          },
+          {
+            "data_set_id": 6280,
+            "json_data": "{\"Year\":1995.0,\"Television\":2895.0,\"Total\":8909.0,\"Newspapers\":3687.0,\"Magazines\":1559.0,\"Outdoor\":410.0,\"Radio\":294.0,\"Internet\":0.0,\"Cinema\":63.0}"
+          },
+          {
+            "data_set_id": 6281,
+            "json_data": "{\"Year\":1996.0,\"Television\":3119.0,\"Total\":9595.0,\"Newspapers\":3876.0,\"Magazines\":1746.0,\"Outdoor\":462.0,\"Radio\":335.0,\"Internet\":0.0,\"Cinema\":56.0}"
+          },
+          {
+            "data_set_id": 6282,
+            "json_data": "{\"Year\":1997.0,\"Television\":3420.0,\"Total\":10573.0,\"Newspapers\":4221.0,\"Magazines\":1926.0,\"Outdoor\":543.0,\"Radio\":386.0,\"Internet\":9.0,\"Cinema\":69.0}"
+          },
+          {
+            "data_set_id": 6283,
+            "json_data": "{\"Year\":1998.0,\"Television\":3719.0,\"Total\":11606.0,\"Newspapers\":4574.0,\"Magazines\":2093.0,\"Outdoor\":665.0,\"Radio\":453.0,\"Internet\":22.0,\"Cinema\":79.0}"
+          },
+          {
+            "data_set_id": 6284,
+            "json_data": "{\"Year\":1999.0,\"Television\":3986.0,\"Total\":12309.0,\"Newspapers\":4857.0,\"Magazines\":2098.0,\"Outdoor\":705.0,\"Radio\":505.0,\"Internet\":59.0,\"Cinema\":100.0}"
+          },
+          {
+            "data_set_id": 6285,
+            "json_data": "{\"Year\":2000.0,\"Television\":4249.0,\"Total\":13473.0,\"Newspapers\":5444.0,\"Magazines\":2203.0,\"Outdoor\":757.0,\"Radio\":579.0,\"Internet\":141.0,\"Cinema\":101.0}"
+          },
+          {
+            "data_set_id": 6286,
+            "json_data": "{\"Year\":2001.0,\"Television\":3844.0,\"Total\":12893.0,\"Newspapers\":5319.0,\"Magazines\":2161.0,\"Outdoor\":735.0,\"Radio\":529.0,\"Internet\":153.0,\"Cinema\":152.0}"
+          },
+          {
+            "data_set_id": 6287,
+            "json_data": "{\"Year\":2002.0,\"Television\":4015.0,\"Total\":12924.0,\"Newspapers\":5219.0,\"Magazines\":2044.0,\"Outdoor\":761.0,\"Radio\":535.0,\"Internet\":181.0,\"Cinema\":168.0}"
+          },
+          {
+            "data_set_id": 6288,
+            "json_data": "{\"Year\":2003.0,\"Television\":4052.0,\"Total\":13295.0,\"Newspapers\":5281.0,\"Magazines\":1999.0,\"Outdoor\":853.0,\"Radio\":571.0,\"Internet\":376.0,\"Cinema\":162.0}"
+          },
+          {
+            "data_set_id": 6289,
+            "json_data": "{\"Year\":2004.0,\"Television\":4332.0,\"Total\":14531.0,\"Newspapers\":5544.0,\"Magazines\":2074.0,\"Outdoor\":921.0,\"Radio\":591.0,\"Internet\":895.0,\"Cinema\":174.0}"
+          },
+          {
+            "data_set_id": 6290,
+            "json_data": "{\"Year\":2005.0,\"Television\":4413.0,\"Total\":15085.0,\"Newspapers\":5326.0,\"Magazines\":2053.0,\"Outdoor\":973.0,\"Radio\":666.0,\"Internet\":1483.0,\"Cinema\":171.0}"
+          },
+          {
+            "data_set_id": 6291,
+            "json_data": "{\"Year\":2006.0,\"Television\":4192.0,\"Total\":15254.0,\"Newspapers\":5098.0,\"Magazines\":1984.0,\"Outdoor\":1012.0,\"Radio\":631.0,\"Internet\":2169.0,\"Cinema\":167.0}"
+          },
+          {
+            "data_set_id": 6292,
+            "json_data": "{\"Year\":2007.0,\"Television\":4317.0,\"Total\":16234.0,\"Newspapers\":5081.0,\"Magazines\":1908.0,\"Outdoor\":1059.0,\"Radio\":650.0,\"Internet\":3036.0,\"Cinema\":184.0}"
+          },
+          {
+            "data_set_id": 6293,
+            "json_data": "{\"Year\":2008.0,\"Television\":4101.0,\"Total\":16393.0,\"Newspapers\":4482.0,\"Magazines\":1720.0,\"Outdoor\":1019.0,\"Radio\":608.0,\"Internet\":4277.0,\"Cinema\":185.0}"
+          },
+          {
+            "data_set_id": 6294,
+            "json_data": "{\"Year\":2009.0,\"Television\":3650.0,\"Total\":14379.0,\"Newspapers\":3522.0,\"Magazines\":1239.0,\"Outdoor\":849.0,\"Radio\":549.0,\"Internet\":4376.0,\"Cinema\":195.0}"
+          },
+          {
+            "data_set_id": 6295,
+            "json_data": "{\"Year\":2010.0,\"Television\":4161.0,\"Total\":15499.0,\"Newspapers\":3508.0,\"Magazines\":1166.0,\"Outdoor\":955.0,\"Radio\":568.0,\"Internet\":4941.0,\"Cinema\":201.0}"
+          },
+          {
+            "data_set_id": 6296,
+            "json_data": "{\"Year\":2011.0,\"Television\":4202.0,\"Total\":16005.0,\"Newspapers\":3209.0,\"Magazines\":1067.0,\"Outdoor\":962.0,\"Radio\":579.0,\"Internet\":5801.0,\"Cinema\":185.0}"
+          },
+          {
+            "data_set_id": 6297,
+            "json_data": "{\"Year\":2012.0,\"Television\":4160.0,\"Total\":16925.0,\"Newspapers\":2880.0,\"Magazines\":940.0,\"Outdoor\":1052.0,\"Radio\":600.0,\"Internet\":7090.0,\"Cinema\":202.0}"
+          },
+          {
+            "data_set_id": 6298,
+            "json_data": "{\"Year\":2013.0,\"Television\":4368.0,\"Total\":17825.0,\"Newspapers\":2646.0,\"Magazines\":853.0,\"Outdoor\":1057.0,\"Radio\":582.0,\"Internet\":8119.0,\"Cinema\":199.0}"
+          },
+          {
+            "data_set_id": 6299,
+            "json_data": "{\"Year\":2014.0,\"Television\":4639.0,\"Total\":19321.0,\"Newspapers\":2427.0,\"Magazines\":789.0,\"Outdoor\":1106.0,\"Radio\":625.0,\"Internet\":9516.0,\"Cinema\":220.0}"
+          },
+          {
+            "data_set_id": 6300,
+            "json_data": "{\"Year\":2015.0,\"Television\":5034.0,\"Total\":20856.0,\"Newspapers\":2147.0,\"Magazines\":716.0,\"Outdoor\":1148.0,\"Radio\":665.0,\"Internet\":10889.0,\"Cinema\":258.0}"
+          },
+          {
+            "data_set_id": 6301,
+            "json_data": "{\"Year\":2016.0,\"Television\":5099.0,\"Total\":22606.0,\"Newspapers\":1844.0,\"Magazines\":646.0,\"Outdoor\":1224.0,\"Radio\":701.0,\"Internet\":12815.0,\"Cinema\":277.0}"
+          },
+          {
+            "data_set_id": 6302,
+            "json_data": "{\"Year\":2017.0,\"Television\":4997.0,\"Total\":24174.0,\"Newspapers\":1554.0,\"Magazines\":548.0,\"Outdoor\":1243.0,\"Radio\":737.0,\"Internet\":14813.0,\"Cinema\":282.0}"
+          },
+          {
+            "data_set_id": 6303,
+            "json_data": "{\"Year\":2018.0,\"Television\":5047.0,\"Total\":26291.0,\"Newspapers\":1382.0,\"Magazines\":486.0,\"Outdoor\":1268.0,\"Radio\":774.0,\"Internet\":17058.0,\"Cinema\":276.0}"
+          },
+          {
+            "data_set_id": 6304,
+            "json_data": "{\"Year\":2019.0,\"Television\":4946.0,\"Total\":29021.0,\"Newspapers\":1242.0,\"Magazines\":424.0,\"Outdoor\":1292.0,\"Radio\":762.0,\"Internet\":20013.0,\"Cinema\":340.0}"
+          },
+          {
+            "data_set_id": 6305,
+            "json_data": "{\"Year\":2020.0,\"Television\":4402.0,\"Total\":24403.0,\"Newspapers\":849.0,\"Magazines\":296.0,\"Outdoor\":905.0,\"Radio\":609.0,\"Internet\":17229.0,\"Cinema\":112.0}"
+          },
+          {
+            "data_set_id": 6306,
+            "json_data": "{\"Year\":2021.0,\"Television\":4842.0,\"Total\":27069.0,\"Newspapers\":945.0,\"Magazines\":326.0,\"Outdoor\":1040.0,\"Radio\":701.0,\"Internet\":18969.0,\"Cinema\":246.0}"
+          },
+          {
+            "data_set_id": 6307,
+            "json_data": "{\"Year\":2022.0,\"Television\":4939.0,\"Total\":27679.0,\"Newspapers\":899.0,\"Magazines\":309.0,\"Outdoor\":1072.0,\"Radio\":736.0,\"Internet\":19403.0,\"Cinema\":321.0}"
+          },
+          {
+            "data_set_id": 6308,
+            "json_data": "{\"Year\":2023.0,\"Television\":4988.0,\"Total\":28676.0,\"Newspapers\":857.0,\"Magazines\":294.0,\"Outdoor\":1115.0,\"Radio\":773.0,\"Internet\":20313.0,\"Cinema\":336.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6309,
+        "tab_name": "Adspend, US$, constant",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6310,
+            "json_data": "{\"Year\":1980.0,\"Television\":2330.0,\"Total\":8658.0,\"Newspapers\":3990.0,\"Magazines\":1704.0,\"Outdoor\":401.0,\"Radio\":167.0,\"Internet\":0.0,\"Cinema\":66.0}"
+          },
+          {
+            "data_set_id": 6311,
+            "json_data": "{\"Year\":1981.0,\"Television\":2395.0,\"Total\":8481.0,\"Newspapers\":3839.0,\"Magazines\":1633.0,\"Outdoor\":385.0,\"Radio\":169.0,\"Internet\":0.0,\"Cinema\":60.0}"
+          },
+          {
+            "data_set_id": 6312,
+            "json_data": "{\"Year\":1982.0,\"Television\":2522.0,\"Total\":8660.0,\"Newspapers\":3849.0,\"Magazines\":1668.0,\"Outdoor\":380.0,\"Radio\":187.0,\"Internet\":0.0,\"Cinema\":55.0}"
+          },
+          {
+            "data_set_id": 6313,
+            "json_data": "{\"Year\":1983.0,\"Television\":2858.0,\"Total\":9387.0,\"Newspapers\":4096.0,\"Magazines\":1781.0,\"Outdoor\":399.0,\"Radio\":207.0,\"Internet\":0.0,\"Cinema\":47.0}"
+          },
+          {
+            "data_set_id": 6314,
+            "json_data": "{\"Year\":1984.0,\"Television\":3036.0,\"Total\":10134.0,\"Newspapers\":4474.0,\"Magazines\":1946.0,\"Outdoor\":421.0,\"Radio\":212.0,\"Internet\":0.0,\"Cinema\":45.0}"
+          },
+          {
+            "data_set_id": 6315,
+            "json_data": "{\"Year\":1985.0,\"Television\":3156.0,\"Total\":10528.0,\"Newspapers\":4659.0,\"Magazines\":2038.0,\"Outdoor\":435.0,\"Radio\":192.0,\"Internet\":0.0,\"Cinema\":48.0}"
+          },
+          {
+            "data_set_id": 6316,
+            "json_data": "{\"Year\":1986.0,\"Television\":3698.0,\"Total\":11660.0,\"Newspapers\":4994.0,\"Magazines\":2221.0,\"Outdoor\":495.0,\"Radio\":203.0,\"Internet\":0.0,\"Cinema\":49.0}"
+          },
+          {
+            "data_set_id": 6317,
+            "json_data": "{\"Year\":1987.0,\"Television\":4007.0,\"Total\":12862.0,\"Newspapers\":5525.0,\"Magazines\":2497.0,\"Outdoor\":534.0,\"Radio\":245.0,\"Internet\":0.0,\"Cinema\":54.0}"
+          },
+          {
+            "data_set_id": 6318,
+            "json_data": "{\"Year\":1988.0,\"Television\":4363.0,\"Total\":14332.0,\"Newspapers\":6236.0,\"Magazines\":2800.0,\"Outdoor\":574.0,\"Radio\":295.0,\"Internet\":0.0,\"Cinema\":64.0}"
+          },
+          {
+            "data_set_id": 6319,
+            "json_data": "{\"Year\":1989.0,\"Television\":4463.0,\"Total\":15126.0,\"Newspapers\":6568.0,\"Magazines\":3091.0,\"Outdoor\":607.0,\"Radio\":319.0,\"Internet\":0.0,\"Cinema\":78.0}"
+          },
+          {
+            "data_set_id": 6320,
+            "json_data": "{\"Year\":1990.0,\"Television\":4198.0,\"Total\":14042.0,\"Newspapers\":6081.0,\"Magazines\":2803.0,\"Outdoor\":592.0,\"Radio\":286.0,\"Internet\":0.0,\"Cinema\":82.0}"
+          },
+          {
+            "data_set_id": 6321,
+            "json_data": "{\"Year\":1991.0,\"Television\":3831.0,\"Total\":12421.0,\"Newspapers\":5358.0,\"Magazines\":2378.0,\"Outdoor\":520.0,\"Radio\":252.0,\"Internet\":0.0,\"Cinema\":82.0}"
+          },
+          {
+            "data_set_id": 6322,
+            "json_data": "{\"Year\":1992.0,\"Television\":3942.0,\"Total\":12323.0,\"Newspapers\":5226.0,\"Magazines\":2277.0,\"Outdoor\":530.0,\"Radio\":264.0,\"Internet\":0.0,\"Cinema\":84.0}"
+          },
+          {
+            "data_set_id": 6323,
+            "json_data": "{\"Year\":1993.0,\"Television\":4044.0,\"Total\":12469.0,\"Newspapers\":5353.0,\"Magazines\":2130.0,\"Outdoor\":547.0,\"Radio\":324.0,\"Internet\":0.0,\"Cinema\":71.0}"
+          },
+          {
+            "data_set_id": 6324,
+            "json_data": "{\"Year\":1994.0,\"Television\":4390.0,\"Total\":13525.0,\"Newspapers\":5734.0,\"Magazines\":2307.0,\"Outdoor\":627.0,\"Radio\":394.0,\"Internet\":0.0,\"Cinema\":74.0}"
+          },
+          {
+            "data_set_id": 6325,
+            "json_data": "{\"Year\":1995.0,\"Television\":4646.0,\"Total\":14296.0,\"Newspapers\":5917.0,\"Magazines\":2502.0,\"Outdoor\":658.0,\"Radio\":471.0,\"Internet\":0.0,\"Cinema\":102.0}"
+          },
+          {
+            "data_set_id": 6326,
+            "json_data": "{\"Year\":1996.0,\"Television\":4886.0,\"Total\":15032.0,\"Newspapers\":6073.0,\"Magazines\":2735.0,\"Outdoor\":724.0,\"Radio\":525.0,\"Internet\":0.0,\"Cinema\":88.0}"
+          },
+          {
+            "data_set_id": 6327,
+            "json_data": "{\"Year\":1997.0,\"Television\":5263.0,\"Total\":16268.0,\"Newspapers\":6495.0,\"Magazines\":2963.0,\"Outdoor\":835.0,\"Radio\":593.0,\"Internet\":14.0,\"Cinema\":106.0}"
+          },
+          {
+            "data_set_id": 6328,
+            "json_data": "{\"Year\":1998.0,\"Television\":5635.0,\"Total\":17583.0,\"Newspapers\":6929.0,\"Magazines\":3171.0,\"Outdoor\":1008.0,\"Radio\":687.0,\"Internet\":33.0,\"Cinema\":120.0}"
+          },
+          {
+            "data_set_id": 6329,
+            "json_data": "{\"Year\":1999.0,\"Television\":5960.0,\"Total\":18405.0,\"Newspapers\":7262.0,\"Magazines\":3137.0,\"Outdoor\":1054.0,\"Radio\":754.0,\"Internet\":88.0,\"Cinema\":149.0}"
+          },
+          {
+            "data_set_id": 6330,
+            "json_data": "{\"Year\":2000.0,\"Television\":6303.0,\"Total\":19986.0,\"Newspapers\":8076.0,\"Magazines\":3268.0,\"Outdoor\":1122.0,\"Radio\":858.0,\"Internet\":210.0,\"Cinema\":149.0}"
+          },
+          {
+            "data_set_id": 6331,
+            "json_data": "{\"Year\":2001.0,\"Television\":5633.0,\"Total\":18892.0,\"Newspapers\":7794.0,\"Magazines\":3166.0,\"Outdoor\":1077.0,\"Radio\":775.0,\"Internet\":224.0,\"Cinema\":223.0}"
+          },
+          {
+            "data_set_id": 6332,
+            "json_data": "{\"Year\":2002.0,\"Television\":5811.0,\"Total\":18702.0,\"Newspapers\":7553.0,\"Magazines\":2958.0,\"Outdoor\":1101.0,\"Radio\":774.0,\"Internet\":263.0,\"Cinema\":243.0}"
+          },
+          {
+            "data_set_id": 6333,
+            "json_data": "{\"Year\":2003.0,\"Television\":5785.0,\"Total\":18980.0,\"Newspapers\":7540.0,\"Magazines\":2853.0,\"Outdoor\":1218.0,\"Radio\":815.0,\"Internet\":537.0,\"Cinema\":231.0}"
+          },
+          {
+            "data_set_id": 6334,
+            "json_data": "{\"Year\":2004.0,\"Television\":6103.0,\"Total\":20470.0,\"Newspapers\":7810.0,\"Magazines\":2922.0,\"Outdoor\":1297.0,\"Radio\":833.0,\"Internet\":1260.0,\"Cinema\":245.0}"
+          },
+          {
+            "data_set_id": 6335,
+            "json_data": "{\"Year\":2005.0,\"Television\":6091.0,\"Total\":20822.0,\"Newspapers\":7351.0,\"Magazines\":2834.0,\"Outdoor\":1343.0,\"Radio\":919.0,\"Internet\":2048.0,\"Cinema\":236.0}"
+          },
+          {
+            "data_set_id": 6336,
+            "json_data": "{\"Year\":2006.0,\"Television\":5654.0,\"Total\":20576.0,\"Newspapers\":6877.0,\"Magazines\":2677.0,\"Outdoor\":1364.0,\"Radio\":852.0,\"Internet\":2926.0,\"Cinema\":226.0}"
+          },
+          {
+            "data_set_id": 6337,
+            "json_data": "{\"Year\":2007.0,\"Television\":5691.0,\"Total\":21400.0,\"Newspapers\":6698.0,\"Magazines\":2516.0,\"Outdoor\":1396.0,\"Radio\":856.0,\"Internet\":4002.0,\"Cinema\":242.0}"
+          },
+          {
+            "data_set_id": 6338,
+            "json_data": "{\"Year\":2008.0,\"Television\":5218.0,\"Total\":20859.0,\"Newspapers\":5704.0,\"Magazines\":2188.0,\"Outdoor\":1297.0,\"Radio\":774.0,\"Internet\":5443.0,\"Cinema\":236.0}"
+          },
+          {
+            "data_set_id": 6339,
+            "json_data": "{\"Year\":2009.0,\"Television\":4546.0,\"Total\":17909.0,\"Newspapers\":4386.0,\"Magazines\":1543.0,\"Outdoor\":1058.0,\"Radio\":684.0,\"Internet\":5450.0,\"Cinema\":243.0}"
+          },
+          {
+            "data_set_id": 6340,
+            "json_data": "{\"Year\":2010.0,\"Television\":5017.0,\"Total\":18688.0,\"Newspapers\":4229.0,\"Magazines\":1406.0,\"Outdoor\":1152.0,\"Radio\":685.0,\"Internet\":5958.0,\"Cinema\":242.0}"
+          },
+          {
+            "data_set_id": 6341,
+            "json_data": "{\"Year\":2011.0,\"Television\":4850.0,\"Total\":18473.0,\"Newspapers\":3704.0,\"Magazines\":1232.0,\"Outdoor\":1110.0,\"Radio\":668.0,\"Internet\":6696.0,\"Cinema\":214.0}"
+          },
+          {
+            "data_set_id": 6342,
+            "json_data": "{\"Year\":2012.0,\"Television\":4670.0,\"Total\":18997.0,\"Newspapers\":3233.0,\"Magazines\":1055.0,\"Outdoor\":1181.0,\"Radio\":674.0,\"Internet\":7958.0,\"Cinema\":227.0}"
+          },
+          {
+            "data_set_id": 6343,
+            "json_data": "{\"Year\":2013.0,\"Television\":4781.0,\"Total\":19508.0,\"Newspapers\":2895.0,\"Magazines\":934.0,\"Outdoor\":1157.0,\"Radio\":637.0,\"Internet\":8885.0,\"Cinema\":218.0}"
+          },
+          {
+            "data_set_id": 6344,
+            "json_data": "{\"Year\":2014.0,\"Television\":5004.0,\"Total\":20840.0,\"Newspapers\":2617.0,\"Magazines\":851.0,\"Outdoor\":1193.0,\"Radio\":674.0,\"Internet\":10264.0,\"Cinema\":237.0}"
+          },
+          {
+            "data_set_id": 6345,
+            "json_data": "{\"Year\":2015.0,\"Television\":5427.0,\"Total\":22487.0,\"Newspapers\":2315.0,\"Magazines\":771.0,\"Outdoor\":1238.0,\"Radio\":717.0,\"Internet\":11740.0,\"Cinema\":278.0}"
+          },
+          {
+            "data_set_id": 6346,
+            "json_data": "{\"Year\":2016.0,\"Television\":5462.0,\"Total\":24214.0,\"Newspapers\":1976.0,\"Magazines\":692.0,\"Outdoor\":1311.0,\"Radio\":751.0,\"Internet\":13726.0,\"Cinema\":297.0}"
+          },
+          {
+            "data_set_id": 6347,
+            "json_data": "{\"Year\":2017.0,\"Television\":5213.0,\"Total\":25217.0,\"Newspapers\":1621.0,\"Magazines\":572.0,\"Outdoor\":1296.0,\"Radio\":769.0,\"Internet\":15451.0,\"Cinema\":294.0}"
+          },
+          {
+            "data_set_id": 6348,
+            "json_data": "{\"Year\":2018.0,\"Television\":5137.0,\"Total\":26762.0,\"Newspapers\":1407.0,\"Magazines\":494.0,\"Outdoor\":1291.0,\"Radio\":788.0,\"Internet\":17363.0,\"Cinema\":281.0}"
+          },
+          {
+            "data_set_id": 6349,
+            "json_data": "{\"Year\":2019.0,\"Television\":4946.0,\"Total\":29021.0,\"Newspapers\":1242.0,\"Magazines\":424.0,\"Outdoor\":1292.0,\"Radio\":762.0,\"Internet\":20013.0,\"Cinema\":340.0}"
+          },
+          {
+            "data_set_id": 6350,
+            "json_data": "{\"Year\":2020.0,\"Television\":4368.0,\"Total\":24216.0,\"Newspapers\":843.0,\"Magazines\":294.0,\"Outdoor\":898.0,\"Radio\":605.0,\"Internet\":17097.0,\"Cinema\":112.0}"
+          },
+          {
+            "data_set_id": 6351,
+            "json_data": "{\"Year\":2021.0,\"Television\":4748.0,\"Total\":26540.0,\"Newspapers\":926.0,\"Magazines\":319.0,\"Outdoor\":1020.0,\"Radio\":687.0,\"Internet\":18598.0,\"Cinema\":242.0}"
+          },
+          {
+            "data_set_id": 6352,
+            "json_data": "{\"Year\":2022.0,\"Television\":4762.0,\"Total\":26687.0,\"Newspapers\":867.0,\"Magazines\":298.0,\"Outdoor\":1033.0,\"Radio\":709.0,\"Internet\":18708.0,\"Cinema\":309.0}"
+          },
+          {
+            "data_set_id": 6353,
+            "json_data": "{\"Year\":2023.0,\"Television\":4719.0,\"Total\":27126.0,\"Newspapers\":810.0,\"Magazines\":278.0,\"Outdoor\":1054.0,\"Radio\":731.0,\"Internet\":19215.0,\"Cinema\":318.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6354,
+        "tab_name": "Adspend breakdown,local,News",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6355,
+            "json_data": "{\"Year\":2000.0,\"National\":1914.0,\"Total\":4263.0,\"Regional\":2349.0}"
+          },
+          {
+            "data_set_id": 6356,
+            "json_data": "{\"Year\":2001.0,\"National\":1756.0,\"Total\":4165.0,\"Regional\":2409.0}"
+          },
+          {
+            "data_set_id": 6357,
+            "json_data": "{\"Year\":2002.0,\"National\":1640.0,\"Total\":4087.0,\"Regional\":2447.0}"
+          },
+          {
+            "data_set_id": 6358,
+            "json_data": "{\"Year\":2003.0,\"National\":1617.0,\"Total\":4135.0,\"Regional\":2519.0}"
+          },
+          {
+            "data_set_id": 6359,
+            "json_data": "{\"Year\":2004.0,\"National\":1678.0,\"Total\":4341.0,\"Regional\":2663.0}"
+          },
+          {
+            "data_set_id": 6360,
+            "json_data": "{\"Year\":2005.0,\"National\":1625.0,\"Total\":4170.0,\"Regional\":2545.0}"
+          },
+          {
+            "data_set_id": 6361,
+            "json_data": "{\"Year\":2006.0,\"National\":1626.0,\"Total\":3992.0,\"Regional\":2366.0}"
+          },
+          {
+            "data_set_id": 6362,
+            "json_data": "{\"Year\":2007.0,\"National\":1643.0,\"Total\":3978.0,\"Regional\":2335.0}"
+          },
+          {
+            "data_set_id": 6363,
+            "json_data": "{\"Year\":2008.0,\"National\":1544.0,\"Total\":3510.0,\"Regional\":1966.0}"
+          },
+          {
+            "data_set_id": 6364,
+            "json_data": "{\"Year\":2009.0,\"National\":1306.0,\"Total\":2757.0,\"Regional\":1452.0}"
+          },
+          {
+            "data_set_id": 6365,
+            "json_data": "{\"Year\":2010.0,\"National\":1387.0,\"Total\":2746.0,\"Regional\":1359.0}"
+          },
+          {
+            "data_set_id": 6366,
+            "json_data": "{\"Year\":2011.0,\"National\":1284.0,\"Total\":2513.0,\"Regional\":1228.0}"
+          },
+          {
+            "data_set_id": 6367,
+            "json_data": "{\"Year\":2012.0,\"National\":1173.0,\"Total\":2255.0,\"Regional\":1082.0}"
+          },
+          {
+            "data_set_id": 6368,
+            "json_data": "{\"Year\":2013.0,\"National\":1085.0,\"Total\":2071.0,\"Regional\":987.0}"
+          },
+          {
+            "data_set_id": 6369,
+            "json_data": "{\"Year\":2014.0,\"National\":982.0,\"Total\":1900.0,\"Regional\":918.0}"
+          },
+          {
+            "data_set_id": 6370,
+            "json_data": "{\"Year\":2015.0,\"National\":851.0,\"Total\":1681.0,\"Regional\":830.0}"
+          },
+          {
+            "data_set_id": 6371,
+            "json_data": "{\"Year\":2016.0,\"National\":740.0,\"Total\":1444.0,\"Regional\":704.0}"
+          },
+          {
+            "data_set_id": 6372,
+            "json_data": "{\"Year\":2017.0,\"National\":643.0,\"Total\":1217.0,\"Regional\":574.0}"
+          },
+          {
+            "data_set_id": 6373,
+            "json_data": "{\"Year\":2018.0,\"National\":592.0,\"Total\":1082.0,\"Regional\":490.0}"
+          },
+          {
+            "data_set_id": 6374,
+            "json_data": "{\"Year\":2019.0,\"National\":564.0,\"Total\":973.0,\"Regional\":409.0}"
+          },
+          {
+            "data_set_id": 6375,
+            "json_data": "{\"Year\":2020.0,\"National\":403.0,\"Total\":665.0,\"Regional\":262.0}"
+          },
+          {
+            "data_set_id": 6376,
+            "json_data": "{\"Year\":2021.0,\"National\":452.0,\"Total\":740.0,\"Regional\":288.0}"
+          },
+          {
+            "data_set_id": 6377,
+            "json_data": "{\"Year\":2022.0,\"National\":434.0,\"Total\":704.0,\"Regional\":270.0}"
+          },
+          {
+            "data_set_id": 6378,
+            "json_data": "{\"Year\":2023.0,\"National\":418.0,\"Total\":671.0,\"Regional\":253.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6379,
+        "tab_name": "Adspend breakdown,local,Magaz",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6380,
+            "json_data": "{\"Year\":2000.0,\"Consumer\":645.0,\"Total\":1725.0,\"Business\":1080.0}"
+          },
+          {
+            "data_set_id": 6381,
+            "json_data": "{\"Year\":2001.0,\"Consumer\":670.0,\"Total\":1692.0,\"Business\":1022.0}"
+          },
+          {
+            "data_set_id": 6382,
+            "json_data": "{\"Year\":2002.0,\"Consumer\":675.0,\"Total\":1600.0,\"Business\":925.0}"
+          },
+          {
+            "data_set_id": 6383,
+            "json_data": "{\"Year\":2003.0,\"Consumer\":674.0,\"Total\":1565.0,\"Business\":891.0}"
+          },
+          {
+            "data_set_id": 6384,
+            "json_data": "{\"Year\":2004.0,\"Consumer\":705.0,\"Total\":1624.0,\"Business\":920.0}"
+          },
+          {
+            "data_set_id": 6385,
+            "json_data": "{\"Year\":2005.0,\"Consumer\":703.0,\"Total\":1607.0,\"Business\":904.0}"
+          },
+          {
+            "data_set_id": 6386,
+            "json_data": "{\"Year\":2006.0,\"Consumer\":690.0,\"Total\":1554.0,\"Business\":864.0}"
+          },
+          {
+            "data_set_id": 6387,
+            "json_data": "{\"Year\":2007.0,\"Consumer\":672.0,\"Total\":1494.0,\"Business\":823.0}"
+          },
+          {
+            "data_set_id": 6388,
+            "json_data": "{\"Year\":2008.0,\"Consumer\":633.0,\"Total\":1346.0,\"Business\":713.0}"
+          },
+          {
+            "data_set_id": 6389,
+            "json_data": "{\"Year\":2009.0,\"Consumer\":501.0,\"Total\":970.0,\"Business\":469.0}"
+          },
+          {
+            "data_set_id": 6390,
+            "json_data": "{\"Year\":2010.0,\"Consumer\":512.0,\"Total\":913.0,\"Business\":401.0}"
+          },
+          {
+            "data_set_id": 6391,
+            "json_data": "{\"Year\":2011.0,\"Consumer\":493.0,\"Total\":836.0,\"Business\":343.0}"
+          },
+          {
+            "data_set_id": 6392,
+            "json_data": "{\"Year\":2012.0,\"Consumer\":464.0,\"Total\":736.0,\"Business\":272.0}"
+          },
+          {
+            "data_set_id": 6393,
+            "json_data": "{\"Year\":2013.0,\"Consumer\":430.0,\"Total\":668.0,\"Business\":238.0}"
+          },
+          {
+            "data_set_id": 6394,
+            "json_data": "{\"Year\":2014.0,\"Consumer\":402.0,\"Total\":618.0,\"Business\":215.0}"
+          },
+          {
+            "data_set_id": 6395,
+            "json_data": "{\"Year\":2015.0,\"Consumer\":372.0,\"Total\":560.0,\"Business\":188.0}"
+          },
+          {
+            "data_set_id": 6396,
+            "json_data": "{\"Year\":2016.0,\"Consumer\":345.0,\"Total\":505.0,\"Business\":161.0}"
+          },
+          {
+            "data_set_id": 6397,
+            "json_data": "{\"Year\":2017.0,\"Consumer\":298.0,\"Total\":429.0,\"Business\":131.0}"
+          },
+          {
+            "data_set_id": 6398,
+            "json_data": "{\"Year\":2018.0,\"Consumer\":265.0,\"Total\":380.0,\"Business\":116.0}"
+          },
+          {
+            "data_set_id": 6399,
+            "json_data": "{\"Year\":2019.0,\"Consumer\":233.0,\"Total\":332.0,\"Business\":99.0}"
+          },
+          {
+            "data_set_id": 6400,
+            "json_data": "{\"Year\":2020.0,\"Consumer\":170.0,\"Total\":232.0,\"Business\":62.0}"
+          },
+          {
+            "data_set_id": 6401,
+            "json_data": "{\"Year\":2021.0,\"Consumer\":187.0,\"Total\":255.0,\"Business\":68.0}"
+          },
+          {
+            "data_set_id": 6402,
+            "json_data": "{\"Year\":2022.0,\"Consumer\":181.0,\"Total\":242.0,\"Business\":61.0}"
+          },
+          {
+            "data_set_id": 6403,
+            "json_data": "{\"Year\":2023.0,\"Consumer\":175.0,\"Total\":230.0,\"Business\":55.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6404,
+        "tab_name": "Adspend breakdown,local,In-net",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6405,
+            "json_data": "{\"Year\":2000.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6406,
+            "json_data": "{\"Year\":2001.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6407,
+            "json_data": "{\"Year\":2002.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6408,
+            "json_data": "{\"Year\":2003.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6409,
+            "json_data": "{\"Year\":2004.0,\"Mobile search\":0.0,\"Total\":700.0,\"Desktop display\":198.0,\"Search\":365.0,\"Classified\":137.0,\"Desktop search\":365.0,\"Mobile display\":0.0,\"Display\":198.0}"
+          },
+          {
+            "data_set_id": 6410,
+            "json_data": "{\"Year\":2005.0,\"Mobile search\":0.0,\"Total\":1161.0,\"Desktop display\":286.0,\"Search\":653.0,\"Classified\":223.0,\"Desktop search\":653.0,\"Mobile display\":0.0,\"Display\":286.0}"
+          },
+          {
+            "data_set_id": 6411,
+            "json_data": "{\"Year\":2006.0,\"Mobile search\":0.0,\"Total\":1699.0,\"Desktop display\":386.0,\"Search\":991.0,\"Classified\":322.0,\"Desktop search\":991.0,\"Mobile display\":0.0,\"Display\":386.0}"
+          },
+          {
+            "data_set_id": 6412,
+            "json_data": "{\"Year\":2007.0,\"Mobile search\":0.0,\"Total\":2377.0,\"Desktop display\":503.0,\"Search\":1376.0,\"Classified\":497.0,\"Desktop search\":1376.0,\"Mobile display\":0.0,\"Display\":503.0}"
+          },
+          {
+            "data_set_id": 6413,
+            "json_data": "{\"Year\":2008.0,\"Mobile search\":0.0,\"Total\":3349.0,\"Desktop display\":639.0,\"Search\":1993.0,\"Classified\":717.0,\"Desktop search\":1993.0,\"Mobile display\":0.0,\"Display\":639.0}"
+          },
+          {
+            "data_set_id": 6414,
+            "json_data": "{\"Year\":2009.0,\"Mobile search\":0.0,\"Total\":3426.0,\"Desktop display\":687.0,\"Search\":2082.0,\"Classified\":657.0,\"Desktop search\":2082.0,\"Mobile display\":0.0,\"Display\":687.0}"
+          },
+          {
+            "data_set_id": 6415,
+            "json_data": "{\"Year\":2010.0,\"Mobile search\":0.0,\"Total\":3869.0,\"Desktop display\":905.0,\"Search\":2246.0,\"Classified\":719.0,\"Desktop search\":2246.0,\"Mobile display\":0.0,\"Display\":905.0}"
+          },
+          {
+            "data_set_id": 6416,
+            "json_data": "{\"Year\":2011.0,\"Mobile search\":137.0,\"Total\":4542.0,\"Desktop display\":1015.0,\"Search\":2708.0,\"Classified\":759.0,\"Desktop search\":2571.0,\"Mobile display\":60.0,\"Display\":1075.0}"
+          },
+          {
+            "data_set_id": 6417,
+            "json_data": "{\"Year\":2012.0,\"Mobile search\":365.0,\"Total\":5551.0,\"Desktop display\":1328.0,\"Search\":3087.0,\"Classified\":986.0,\"Desktop search\":2722.0,\"Mobile display\":150.0,\"Display\":1478.0}"
+          },
+          {
+            "data_set_id": 6418,
+            "json_data": "{\"Year\":2013.0,\"Mobile search\":581.0,\"Total\":6357.0,\"Desktop display\":1401.0,\"Search\":3471.0,\"Classified\":1061.0,\"Desktop search\":2890.0,\"Mobile display\":424.0,\"Display\":1825.0}"
+          },
+          {
+            "data_set_id": 6419,
+            "json_data": "{\"Year\":2014.0,\"Mobile search\":800.0,\"Total\":7451.0,\"Desktop display\":1609.0,\"Search\":3768.0,\"Classified\":1262.0,\"Desktop search\":2968.0,\"Mobile display\":812.0,\"Display\":2421.0}"
+          },
+          {
+            "data_set_id": 6420,
+            "json_data": "{\"Year\":2015.0,\"Mobile search\":1238.0,\"Total\":8526.0,\"Desktop display\":1842.0,\"Search\":4137.0,\"Classified\":1301.0,\"Desktop search\":2899.0,\"Mobile display\":1246.0,\"Display\":3088.0}"
+          },
+          {
+            "data_set_id": 6421,
+            "json_data": "{\"Year\":2016.0,\"Mobile search\":1918.0,\"Total\":10034.0,\"Desktop display\":1703.0,\"Search\":5006.0,\"Classified\":1484.0,\"Desktop search\":3088.0,\"Mobile display\":1841.0,\"Display\":3544.0}"
+          },
+          {
+            "data_set_id": 6422,
+            "json_data": "{\"Year\":2017.0,\"Mobile search\":2623.0,\"Total\":11598.0,\"Desktop display\":1739.0,\"Search\":5821.0,\"Classified\":1470.0,\"Desktop search\":3198.0,\"Mobile display\":2568.0,\"Display\":4307.0}"
+          },
+          {
+            "data_set_id": 6423,
+            "json_data": "{\"Year\":2018.0,\"Mobile search\":3373.0,\"Total\":13356.0,\"Desktop display\":1794.0,\"Search\":6656.0,\"Classified\":1451.0,\"Desktop search\":3283.0,\"Mobile display\":3455.0,\"Display\":5249.0}"
+          },
+          {
+            "data_set_id": 6424,
+            "json_data": "{\"Year\":2019.0,\"Mobile search\":4400.0,\"Total\":15670.0,\"Desktop display\":1888.0,\"Search\":8001.0,\"Classified\":1375.0,\"Desktop search\":3600.0,\"Mobile display\":4406.0,\"Display\":6294.0}"
+          },
+          {
+            "data_set_id": 6425,
+            "json_data": "{\"Year\":2020.0,\"Mobile search\":4009.0,\"Total\":13490.0,\"Desktop display\":1331.0,\"Search\":7033.0,\"Classified\":1280.0,\"Desktop search\":3024.0,\"Mobile display\":3846.0,\"Display\":5178.0}"
+          },
+          {
+            "data_set_id": 6426,
+            "json_data": "{\"Year\":2021.0,\"Mobile search\":4701.0,\"Total\":14852.0,\"Desktop display\":1175.0,\"Search\":7968.0,\"Classified\":1197.0,\"Desktop search\":3267.0,\"Mobile display\":4512.0,\"Display\":5687.0}"
+          },
+          {
+            "data_set_id": 6427,
+            "json_data": "{\"Year\":2022.0,\"Mobile search\":5152.0,\"Total\":15193.0,\"Desktop display\":957.0,\"Search\":8446.0,\"Classified\":1002.0,\"Desktop search\":3294.0,\"Mobile display\":4787.0,\"Display\":5745.0}"
+          },
+          {
+            "data_set_id": 6428,
+            "json_data": "{\"Year\":2023.0,\"Mobile search\":5840.0,\"Total\":15905.0,\"Desktop display\":915.0,\"Search\":9206.0,\"Classified\":862.0,\"Desktop search\":3366.0,\"Mobile display\":4922.0,\"Display\":5837.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6429,
+        "tab_name": "Adspend breakdown growth-News",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6430,
+            "json_data": "{\"Year\":2001.0,\"National\":-8.0,\"Total\":-2.0,\"Regional\":3.0}"
+          },
+          {
+            "data_set_id": 6431,
+            "json_data": "{\"Year\":2002.0,\"National\":-7.0,\"Total\":-2.0,\"Regional\":2.0}"
+          },
+          {
+            "data_set_id": 6432,
+            "json_data": "{\"Year\":2003.0,\"National\":-1.0,\"Total\":1.0,\"Regional\":3.0}"
+          },
+          {
+            "data_set_id": 6433,
+            "json_data": "{\"Year\":2004.0,\"National\":4.0,\"Total\":5.0,\"Regional\":6.0}"
+          },
+          {
+            "data_set_id": 6434,
+            "json_data": "{\"Year\":2005.0,\"National\":-3.0,\"Total\":-4.0,\"Regional\":-4.0}"
+          },
+          {
+            "data_set_id": 6435,
+            "json_data": "{\"Year\":2006.0,\"National\":0.0,\"Total\":-4.0,\"Regional\":-7.0}"
+          },
+          {
+            "data_set_id": 6436,
+            "json_data": "{\"Year\":2007.0,\"National\":1.0,\"Total\":0.0,\"Regional\":-1.0}"
+          },
+          {
+            "data_set_id": 6437,
+            "json_data": "{\"Year\":2008.0,\"National\":-6.0,\"Total\":-12.0,\"Regional\":-16.0}"
+          },
+          {
+            "data_set_id": 6438,
+            "json_data": "{\"Year\":2009.0,\"National\":-15.0,\"Total\":-21.0,\"Regional\":-26.0}"
+          },
+          {
+            "data_set_id": 6439,
+            "json_data": "{\"Year\":2010.0,\"National\":6.0,\"Total\":0.0,\"Regional\":-6.0}"
+          },
+          {
+            "data_set_id": 6440,
+            "json_data": "{\"Year\":2011.0,\"National\":-7.0,\"Total\":-9.0,\"Regional\":-10.0}"
+          },
+          {
+            "data_set_id": 6441,
+            "json_data": "{\"Year\":2012.0,\"National\":-9.0,\"Total\":-10.0,\"Regional\":-12.0}"
+          },
+          {
+            "data_set_id": 6442,
+            "json_data": "{\"Year\":2013.0,\"National\":-8.0,\"Total\":-8.0,\"Regional\":-9.0}"
+          },
+          {
+            "data_set_id": 6443,
+            "json_data": "{\"Year\":2014.0,\"National\":-9.0,\"Total\":-8.0,\"Regional\":-7.0}"
+          },
+          {
+            "data_set_id": 6444,
+            "json_data": "{\"Year\":2015.0,\"National\":-13.0,\"Total\":-12.0,\"Regional\":-10.0}"
+          },
+          {
+            "data_set_id": 6445,
+            "json_data": "{\"Year\":2016.0,\"National\":-13.0,\"Total\":-14.0,\"Regional\":-15.0}"
+          },
+          {
+            "data_set_id": 6446,
+            "json_data": "{\"Year\":2017.0,\"National\":-13.0,\"Total\":-16.0,\"Regional\":-18.0}"
+          },
+          {
+            "data_set_id": 6447,
+            "json_data": "{\"Year\":2018.0,\"National\":-8.0,\"Total\":-11.0,\"Regional\":-15.0}"
+          },
+          {
+            "data_set_id": 6448,
+            "json_data": "{\"Year\":2019.0,\"National\":-5.0,\"Total\":-10.0,\"Regional\":-17.0}"
+          },
+          {
+            "data_set_id": 6449,
+            "json_data": "{\"Year\":2020.0,\"National\":-29.0,\"Total\":-32.0,\"Regional\":-36.0}"
+          },
+          {
+            "data_set_id": 6450,
+            "json_data": "{\"Year\":2021.0,\"National\":12.0,\"Total\":11.0,\"Regional\":10.0}"
+          },
+          {
+            "data_set_id": 6451,
+            "json_data": "{\"Year\":2022.0,\"National\":-4.0,\"Total\":-5.0,\"Regional\":-6.0}"
+          },
+          {
+            "data_set_id": 6452,
+            "json_data": "{\"Year\":2023.0,\"National\":-4.0,\"Total\":-5.0,\"Regional\":-6.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6453,
+        "tab_name": "Adspend breakdown growth -Magaz",
+        "tab_topic": "Growth in Advertising Expenditure at current prices (%) - Magazine",
+        "data_set": [
+          {
+            "data_set_id": 6454,
+            "json_data": "{\"Year\":2001.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6455,
+            "json_data": "{\"Year\":2002.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6456,
+            "json_data": "{\"Year\":2003.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6457,
+            "json_data": "{\"Year\":2004.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6458,
+            "json_data": "{\"Year\":2005.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6459,
+            "json_data": "{\"Year\":2006.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6460,
+            "json_data": "{\"Year\":2007.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6461,
+            "json_data": "{\"Year\":2008.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6462,
+            "json_data": "{\"Year\":2009.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6463,
+            "json_data": "{\"Year\":2010.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6464,
+            "json_data": "{\"Year\":2011.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6465,
+            "json_data": "{\"Year\":2012.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6466,
+            "json_data": "{\"Year\":2013.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6467,
+            "json_data": "{\"Year\":2014.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6468,
+            "json_data": "{\"Year\":2015.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6469,
+            "json_data": "{\"Year\":2016.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6470,
+            "json_data": "{\"Year\":2017.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6471,
+            "json_data": "{\"Year\":2018.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6472,
+            "json_data": "{\"Year\":2019.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6473,
+            "json_data": "{\"Year\":2020.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6474,
+            "json_data": "{\"Year\":2021.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6475,
+            "json_data": "{\"Year\":2022.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          },
+          {
+            "data_set_id": 6476,
+            "json_data": "{\"Year\":2023.0,\"Consumer\":0.0,\"Total\":0.0,\"Business\":0.0}"
+          }
+        ]
+      },
+      {
+        "tab_id": 6477,
+        "tab_name": "Adspend breakdown growth-In-net",
+        "tab_topic": "",
+        "data_set": [
+          {
+            "data_set_id": 6478,
+            "json_data": "{\"Year\":2001.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6479,
+            "json_data": "{\"Year\":2002.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6480,
+            "json_data": "{\"Year\":2003.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6481,
+            "json_data": "{\"Year\":2004.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6482,
+            "json_data": "{\"Year\":2005.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6483,
+            "json_data": "{\"Year\":2006.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6484,
+            "json_data": "{\"Year\":2007.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6485,
+            "json_data": "{\"Year\":2008.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6486,
+            "json_data": "{\"Year\":2009.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6487,
+            "json_data": "{\"Year\":2010.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6488,
+            "json_data": "{\"Year\":2011.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6489,
+            "json_data": "{\"Year\":2012.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6490,
+            "json_data": "{\"Year\":2013.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6491,
+            "json_data": "{\"Year\":2014.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6492,
+            "json_data": "{\"Year\":2015.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6493,
+            "json_data": "{\"Year\":2016.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6494,
+            "json_data": "{\"Year\":2017.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6495,
+            "json_data": "{\"Year\":2018.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6496,
+            "json_data": "{\"Year\":2019.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6497,
+            "json_data": "{\"Year\":2020.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6498,
+            "json_data": "{\"Year\":2021.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6499,
+            "json_data": "{\"Year\":2022.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          },
+          {
+            "data_set_id": 6500,
+            "json_data": "{\"Year\":2023.0,\"Mobile search\":0.0,\"Total\":0.0,\"Desktop display\":0.0,\"Search\":0.0,\"Classified\":0.0,\"Desktop search\":0.0,\"Mobile display\":0.0,\"Display\":0.0}"
+          }
+        ]
+      }
+    ],
+    "sheet_meta": {
+      "id": 3,
+      "sheet_name": "United Kingdom Tables",
+      "sheet_code": "UKT"
+    }
+  },
+  "meta": {
+    "status": 1,
+    "detail": "Success"
+  }
+}
