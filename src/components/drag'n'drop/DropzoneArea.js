@@ -1,37 +1,32 @@
-import { DropzoneAreaBase } from "material-ui-dropzone";
-import React, { Component } from "react";
+import { DropzoneDialog } from "material-ui-dropzone";
+import React from "react";
 
-export default class DropzoneArea extends Component {
-  
-  constructor(props) {
-    super(props);
-    this.state = {
-      files: [],
-    };
-  }
-  
-  handleChange(files) {
-    this.setState({
-      files: files,
-    });
-  }
+export default function DropzoneDialogPopup(props) {
+  const { openPopup, setOpenPopup } = props;
 
-  render() {
-    
-    return (
-      <DropzoneAreaBase
-        onChange={this.handleChange.bind(this)}
+  function SubmitFile(file) {
+    console.log("submitted");
+  }
+  return (
+    <div>
+      <DropzoneDialog
+        open={openPopup}
         showPreviews={true}
         useChipsForPreview
-        showPreviewsInDropzone={true}
-        previewText="Selected file"
-        onDelete={true}
+        onClose={() => setOpenPopup(false)}
+        cancelButtonText={"cancel"}
+        submitButtonText={"submit"}
         acceptedFiles={[
           "application/vnd.ms-excel",
           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         ]}
+        showPreviews={true}
+        showFileNamesInPreview={true}
+        onSave={(files) => {
+          setOpenPopup(false);
+          SubmitFile(files);
+        }}
       />
-    );
-  }
+    </div>
+  );
 }
-

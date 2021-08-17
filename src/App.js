@@ -1,15 +1,22 @@
 import "./App.css";
-import { Container, Typography } from "@material-ui/core";
+import { Container, CssBaseline, Typography } from "@material-ui/core";
 import DropzoneArea from "./components/drag'n'drop/DropzoneArea";
+import Dashboard from "./components/Admin/Dashboard";
 
 function App() {
   return (
-    <Container maxWidth="md">
-      <Typography variant="h2" align="center">
+    <>
+
+      <Dashboard/>
+      
+      <Container>
+        {/* <Typography variant="h2" align="center">
         dragNdrop
       </Typography>
-      <DropzoneArea />
-    </Container>
+      <DropzoneArea /> */}
+      </Container>
+      <CssBaseline />
+    </>
   );
 }
 
