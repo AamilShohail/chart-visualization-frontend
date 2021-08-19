@@ -18,8 +18,9 @@ export default function DataGridDemo() {
       columnsData.push({
         field: label,
         headerName: label,
-        width: 150,
+        // width: 150,
         type: "number",
+        flex:1
       });
     });
     setColumns(columnsData);

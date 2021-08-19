@@ -2,11 +2,11 @@ import React from "react";
 
 import styles from "./Dashboard.module.css";
 
-import { Bar, Mix, Stack } from "./charts/ChartFactory";
-import Table from "./table/Table";
-import ChartFactory from "./charts/ChartFactory";
-import DataControl from "./DataControl";
-import Card from "./ui/card/DataCard";
+import { Bar, Mix, Stack } from "../components/charts/ChartFactory";
+import Table from "../components/table/Table";
+import ChartFactory from "../components/charts/ChartFactory";
+import DataControl from "../components/DataControl";
+import Card from "../components/ui/card/DataCard";
 
 import { useSelector } from "react-redux";
 

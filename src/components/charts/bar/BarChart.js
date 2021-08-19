@@ -161,9 +161,7 @@ const ApexBarChart = () => {
       },
     },
   });
-  const selectedTabDropdown = useSelector(
-    (state) => state.sheet.selectedTabName
-  );
+  const selectedTabDropdown = useSelector((state) => state.sheet.selectedTabName);
   const tabData = useSelector((state) => state.sheet.rows);
 
   useEffect(() => {
@@ -178,9 +176,7 @@ const ApexBarChart = () => {
     delete founded.tab_name;
     delete founded.Year;
     delete founded.Total;
-    dispatch(
-      sheetActions.changeBarChartDropdown({ barChartData: { ...founded } })
-    );
+    dispatch(sheetActions.changeBarChartDropdown({ barChartData: { ...founded } }));
     const properties = Object.keys(founded);
     setLabels(properties);
     setChartOptions({
@@ -202,9 +198,7 @@ const ApexBarChart = () => {
     delete founded.tab_name;
     delete founded.Year;
     delete founded.Total;
-    dispatch(
-      sheetActions.changeBarChartDropdown({ barChartData: { ...founded } })
-    );
+    dispatch(sheetActions.changeBarChartDropdown({ barChartData: { ...founded } }));
     const properties = Object.keys(founded);
     setLabels(properties);
     setChartOptions({
@@ -217,10 +211,7 @@ const ApexBarChart = () => {
     setChartData([{ data: roundedValues }]);
   };
   const toggleAxisHandler = () => {
-    const gradientType =
-      chartOptions.fill.gradient.type === "vertical"
-        ? "horizontal"
-        : "vertical";
+    const gradientType = chartOptions.fill.gradient.type === "vertical" ? "horizontal" : "vertical";
     setChartOptions({
       ...chartOptions,
       plotOptions: {
@@ -323,11 +314,11 @@ const ApexBarChart = () => {
         // height={50}
       />
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <button className={styles.btn} onClick={toggleAxisHandler}>
-          {/* Download PPT */}
+        <button style={{ margin: "5px", padding: "5px" }} onClick={toggleAxisHandler}>
+          Toggle Axis
         </button>
-        <button className={styles.btn} onClick={downloadPPT}>
-          {/* Download PPT */}
+        <button style={{ margin: "5px", padding: "5px" }} onClick={downloadPPT}>
+          Download pptx
         </button>
       </div>
     </div>

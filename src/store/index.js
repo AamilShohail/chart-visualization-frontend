@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import sheetReducer from './sheet'
 import uiReducer from './ui'
+import authReducer from './auth-slice'
 
 const store = configureStore({
     reducer:{
         sheet:sheetReducer,
-        ui:uiReducer
+        ui:uiReducer,
+        auth:authReducer
     }
 });
 

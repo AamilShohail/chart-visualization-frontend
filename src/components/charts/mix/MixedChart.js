@@ -129,9 +129,7 @@ const ApexChart = () => {
 
   const barChartTabHandler = (e) => {
     setSelectedYear(e.target.value);
-    const found = tabData.find(
-      (el) => el.Year === parseInt(e.target.value)
-    );
+    const found = tabData.find((el) => el.Year === parseInt(e.target.value));
     const founded = { ...found };
     delete founded.id;
     delete founded.tab_name;
@@ -152,7 +150,7 @@ const ApexChart = () => {
     const values = Object.values(sheetData);
     setBarData({ ...barData, data: values });
     setChartOption({ ...chartOption, labels: properties });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tabData.length, sheetData]);
 
   useEffect(() => {
@@ -168,7 +166,7 @@ const ApexChart = () => {
     delete founded.Total;
     const properties = Object.keys(founded);
     setChartOption({ ...chartOption, labels: [properties] });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -178,6 +176,7 @@ const ApexChart = () => {
           id="dropdown"
           value={selectedYear}
           onChange={barChartTabHandler}
+          className="ui dropdown"
         >
           {years.map((el) => {
             return (
@@ -188,12 +187,8 @@ const ApexChart = () => {
           })}
         </select>
       </div>
-      <ReactApexChart
-        options={chartOption}
-        series={[lineData, barData]}
-        type="line"
-      />
-      <button>Download PPT</button>
+      <ReactApexChart options={chartOption} series={[lineData, barData]} type="line" />
+      <button style={{ margin: "5px", padding: "5px" }}>Download pptx</button>
     </div>
   );
 };

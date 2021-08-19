@@ -14,25 +14,19 @@ export default function Sidebar() {
       style={{
         background: isLight ? "#FFFFFF" : "#2A2E35",
         transition: "background 500ms ease-in-out, color 1000ms ease-in-out",
-        boxShadow: isLight
-          ? "5px 5px 5px 5px #aaaaaa"
-          : "5px 5px 5px 5px #12181B",
+        boxShadow: isLight ? "5px 5px 5px 5px #aaaaaa" : "5px 5px 5px 5px #12181B",
       }}
     >
       <ul className="Navbar-ul">
         <li className="Navbar-logo">
-          <a href="/home" className="Navbar-link">
+          <Link href="/" className="Navbar-link">
             <span className="Navbar-logo-text">
-              <img
-                style={{ width: "35px", marginLeft: "5px" }}
-                src={logo}
-                alt="company logo"
-              ></img>
+              <img style={{ width: "35px", marginLeft: "5px" }} src={logo} alt="company logo"></img>
             </span>
-          </a>
+          </Link>
         </li>
         <li className="Navbar-li">
-          <Link to="/home" className="Navbar-link">
+          <Link to="/" className="Navbar-link">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -68,7 +62,7 @@ export default function Sidebar() {
           </Link>
         </li>
         <li className="Navbar-li">
-          <Link to="/project" className="Navbar-link">
+          <Link to="/admin-dashboard" className="Navbar-link">
             {" "}
             <svg
               aria-hidden="true"
@@ -93,7 +87,7 @@ export default function Sidebar() {
                 ></path>
               </g>
             </svg>
-            <span className="Navbar-link-text">Profile</span>
+            <span className="Navbar-link-text">AdminDashboard</span>
           </Link>
         </li>
         <li className="Navbar-li">
@@ -102,35 +96,18 @@ export default function Sidebar() {
             <svg
               aria-hidden="true"
               focusable="false"
-              data-prefix="fad"
-              data-icon="alien-monster"
+              data-prefix="fas"
+              data-icon="file-excel"
+              class="svg-inline--fa fa-file-excel fa-w-12"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 576 512"
-              className="svg-inline--fa fa-alien-monster fa-w-18 fa-9x"
+              viewBox="0 0 384 512"
             >
               <g className="fa-group">
                 <path
-                  fill="currentColor"
-                  d="M49.106,178.729c6.472,4.567,25.981,18.131,58.528,40.685c32.548,22.554,57.482,39.92,74.803,52.099
-              c1.903,1.335,5.946,4.237,12.131,8.71c6.186,4.476,11.326,8.093,15.416,10.852c4.093,2.758,9.041,5.852,14.849,9.277
-              c5.806,3.422,11.279,5.996,16.418,7.7c5.14,1.718,9.898,2.569,14.275,2.569h0.287h0.288c4.377,0,9.137-0.852,14.277-2.569
-              c5.137-1.704,10.615-4.281,16.416-7.7c5.804-3.429,10.752-6.52,14.845-9.277c4.093-2.759,9.229-6.376,15.417-10.852
-              c6.184-4.477,10.232-7.375,12.135-8.71c17.508-12.179,62.051-43.11,133.615-92.79c13.894-9.703,25.502-21.411,34.827-35.116
-              c9.332-13.699,13.993-28.07,13.993-43.105c0-12.564-4.523-23.319-13.565-32.264c-9.041-8.947-19.749-13.418-32.117-13.418H45.679
-              c-14.655,0-25.933,4.948-33.832,14.844C3.949,79.562,0,91.934,0,106.779c0,11.991,5.236,24.985,15.703,38.974
-              C26.169,159.743,37.307,170.736,49.106,178.729z"
                   className="fa-secondary"
-                ></path>
-                <path
                   fill="currentColor"
-                  d="M483.072,209.275c-62.424,42.251-109.824,75.087-142.177,98.501c-10.849,7.991-19.65,14.229-26.409,18.699
-              c-6.759,4.473-15.748,9.041-26.98,13.702c-11.228,4.668-21.692,6.995-31.401,6.995h-0.291h-0.287
-              c-9.707,0-20.177-2.327-31.405-6.995c-11.228-4.661-20.223-9.229-26.98-13.702c-6.755-4.47-15.559-10.708-26.407-18.699
-              c-25.697-18.842-72.995-51.68-141.896-98.501C17.987,202.047,8.375,193.762,0,184.437v226.685c0,12.57,4.471,23.319,13.418,32.265
-              c8.945,8.949,19.701,13.422,32.264,13.422h420.266c12.56,0,23.315-4.473,32.261-13.422c8.949-8.949,13.418-19.694,13.418-32.265
-              V184.437C503.441,193.569,493.927,201.854,483.072,209.275z"
-                  className="fa-primary"
+                  d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm60.1 106.5L224 336l60.1 93.5c5.1 8-.6 18.5-10.1 18.5h-34.9c-4.4 0-8.5-2.4-10.6-6.3C208.9 405.5 192 373 192 373c-6.4 14.8-10 20-36.6 68.8-2.1 3.9-6.1 6.3-10.5 6.3H110c-9.5 0-15.2-10.5-10.1-18.5l60.3-93.5-60.3-93.5c-5.2-8 .6-18.5 10.1-18.5h34.8c4.4 0 8.5 2.4 10.6 6.3 26.1 48.8 20 33.6 36.6 68.5 0 0 6.1-11.7 36.6-68.5 2.1-3.9 6.2-6.3 10.6-6.3H274c9.5-.1 15.2 10.4 10.1 18.4zM384 121.9v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
                 ></path>
               </g>
             </svg>{" "}
@@ -170,7 +147,7 @@ export default function Sidebar() {
               c0-4.757,2.617-11.14,7.847-19.13c5.235-7.994,11.752-14.186,19.562-18.565c7.419-4.186,13.219-7.56,17.411-10.133
               c4.196-2.566,9.664-6.715,16.423-12.421c6.756-5.712,11.991-11.375,15.698-16.988c3.713-5.614,7.046-12.896,9.996-21.844
               c2.956-8.945,4.428-18.558,4.428-28.835C314.639,98.397,310.734,83.314,302.935,68.951z"
-                  className="fa-primary"
+                  className="fa-secondary"
                 ></path>
               </g>
             </svg>{" "}
