@@ -62,7 +62,7 @@ export default function Sidebar() {
           </Link>
         </li>
         <li className="Navbar-li">
-          <Link to="/admin-dashboard" className="Navbar-link">
+          <Link to="/admin/user-dashboard" className="Navbar-link">
             {" "}
             <svg
               aria-hidden="true"
