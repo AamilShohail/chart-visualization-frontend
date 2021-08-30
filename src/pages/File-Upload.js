@@ -1,16 +1,34 @@
-import React from "react";
-import { Container, Typography } from "@material-ui/core";
-import DropzoneArea from "../components/drag'n'drop/DropzoneArea";
+import { DropzoneAreaBase } from "material-ui-dropzone";
+import React, { Component } from "react";
 
-function FileUpload() {
-  return (
-    <Container maxWidth="md">
-      <Typography variant="h2" align="center">
-        dragNdrop
-      </Typography>
-      <DropzoneArea />
-    </Container>
-  );
+export default class DropzoneArea extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      files: [],
+    };
+  }
+
+  handleChange(files) {
+    this.setState({
+      files: files,
+    });
+  }
+
+  render() {
+    return (
+      <DropzoneAreaBase
+        onChange={this.handleChange.bind(this)}
+        showPreviews={true}
+        useChipsForPreview
+        showPreviewsInDropzone={true}
+        previewText="Selected file"
+        onDelete={true}
+        acceptedFiles={[
+          "application/vnd.ms-excel",
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        ]}
+      />
+    );
+  }
 }
-
-export default FileUpload;
