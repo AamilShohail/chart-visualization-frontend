@@ -4,9 +4,22 @@ import { useEffect, useState } from "react";
 
 import { useSelector } from "react-redux";
 
+import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
+
+const tableStyle = {
+  height: "100%",
+  width: "100%",
+  color: "black",
+};
+
 export default function DataGridDemo() {
   const tabData = useSelector((state) => state.sheet.rows);
   const [columns, setColumns] = useState([]);
+  const theme = createMuiTheme({
+    typography: {
+      fontSize: 24,
+    },
+  });
   useEffect(() => {
     if (tabData.length === 0) return null;
     // set years to chart options
@@ -18,21 +31,17 @@ export default function DataGridDemo() {
       columnsData.push({
         field: label,
         headerName: label,
-        // width: 150,
         type: "number",
-        flex:1
+        flex: 1,
       });
     });
     setColumns(columnsData);
   }, [tabData]);
   return (
-    <div style={{ height: "100%", width: "100%", color: "black" }}>
-      <DataGrid
-        rows={tabData}
-        columns={columns}
-        pageSize={5}
-        disableSelectionOnClick={true}
-      />
+    <div style={tableStyle}>
+      <MuiThemeProvider theme={theme}>
+        <DataGrid rows={tabData} columns={columns} pageSize={5} disableSelectionOnClick={true} />
+      </MuiThemeProvider>
     </div>
   );
 }

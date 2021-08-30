@@ -15,7 +15,7 @@ function AdminDashboards() {
     setUsers(users.data);
   };
   return (
-    <div style={{ padding: "10px", background: "white", height: "100vh" }}>
+    <div style={{ padding: "10px", background: "white", height: "100vh",paddingLeft:"10rem" }}>
     <h1>Users</h1>
       {Users.map((user) => (
         <UserCard user={user} />

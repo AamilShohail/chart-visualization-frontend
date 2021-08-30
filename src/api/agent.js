@@ -8,24 +8,25 @@ const config = {
 
 const responseBody = (response) => response.data;
 
+// for testing
 const sleep = (ms) => (response) =>
   new Promise((resolve) => setTimeout(() => resolve(response), ms));
 
 const requests = {
-  get: (url) => axios.get(url).then(sleep(1000).then(responseBody)),
+  get: (url) => axios.get(url).then(responseBody),
   getSecured: (url) =>
     axios
       .get(url, {
         headers: { Authorization: `Bearer ${localStorage.token}` },
       })
       .then(responseBody),
-  post:(url,body)=> axios.post(url,body).then(responseBody)
+  post: (url, body) => axios.post(url, body).then(responseBody),
 };
 
-export const Auth ={
-  login :loginCredential=> requests.post(`/auth/signin`,loginCredential)
-} 
+export const Auth = {
+  login: (loginCredential) => requests.post(`/auth/signin`, loginCredential),
+};
 
-export const AdminDashboard ={
-  fetchUsers:(url)=>requests.getSecured('/user/all',config)
-}
+export const AdminDashboard = {
+  fetchUsers: (url) => requests.getSecured("/user/all", config),
+};

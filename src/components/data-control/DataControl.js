@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { sheetActions } from "../store/sheet";
+import { sheetActions } from "../../store/sheet";
 import {  Dropdown } from "semantic-ui-react";
 
-import tafResponse from "../assets/telecom_adspend_forecasts.json";
-import uktResponse from "../assets/united_kingdom_tables.json";
+import tafResponse from "../../assets/telecom_adspend_forecasts.json";
+import uktResponse from "../../assets/united_kingdom_tables.json";
 
-import { changeResponseStructure, getTabList } from "../helpers/helper";
+import { changeResponseStructure, getTabList } from "../../helpers/helper";
 
 export default function DataControl() {
   const dispatch = useDispatch();
@@ -51,7 +51,8 @@ export default function DataControl() {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 180) {
+    if (offset > 50) {
+      console.log(offset)
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -101,9 +102,8 @@ export default function DataControl() {
           ? {
               position: "fixed",
               zIndex: "2",
-              marginTop: "-170px",
+              marginTop: "-30px",
               width: "100%",
-              background: "gray",
               marginLeft: "-100px",
               display: "flex",
               justifyContent: "center",

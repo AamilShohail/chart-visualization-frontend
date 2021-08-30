@@ -311,10 +311,10 @@ const ApexBarChart = () => {
         options={chartOptions}
         series={chartData}
         type="bar"
-        // height={50}
+        // height={350}
       />
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <button style={{ margin: "5px", padding: "5px" }} onClick={toggleAxisHandler}>
+        <button style={{}} onClick={toggleAxisHandler}>
           Toggle Axis
         </button>
         <button style={{ margin: "5px", padding: "5px" }} onClick={downloadPPT}>

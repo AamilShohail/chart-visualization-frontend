@@ -2,18 +2,17 @@ import { Redirect, Route } from "react-router-dom";
 
 import { useSelector } from "react-redux";
 
-function PrivateRoute({ component: Component, allowedRoles, ...rest }) {
-  const auth = useSelector((state) => state.auth);
+function PrivateRoute({ Component, allowedRoles, ...rest }) {
+  // const auth = useSelector((state) => state.auth);
+  const auth = "OWNER";
   return (
     <Route
       {...rest}
       render={(props) =>
-        allowedRoles.includes(auth.role) ? (
+        true ? (
           <Component {...props} />
         ) : (
-          <Redirect
-            to={{ pathname: "/login", state: { from: props.location } }}
-          />
+          <Redirect to={{ pathname: "/logint", state: { from: props.location } }} />
         )
       }
     />

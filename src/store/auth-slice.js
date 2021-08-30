@@ -16,7 +16,7 @@ const authSlice = createSlice({
       state.token = action.payload.token;
       state.isAuthenticated = true;
       //Array from response
-      state.role = action.payload.role[0];
+      state.role = action.payload.role[0].authority;
       // state.loading = false;
       state.user = action.payload.user;
     },
