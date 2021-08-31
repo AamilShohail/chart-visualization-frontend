@@ -9,7 +9,6 @@ function AppRoute() {
   return (
     <div>
       <Switch>
-        {/* <Route path={`${process.env.PUBLIC_URL}`} component={Dashboard} /> */}
         <PrivateRoute
           Component={UserRoute}
           path={`${process.env.PUBLIC_URL}/user`}
