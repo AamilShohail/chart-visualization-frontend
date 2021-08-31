@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import { Button, Card, CardActionArea, CardContent } from "@material-ui/core";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  FormControl,
+  MenuItem,
+  InputLabel,
+  Select as DropDownSelect,
+} from "@material-ui/core";
 import { Typography } from "antd";
 import DropzoneDialogPopup from "../drag'n'drop/DropzoneArea";
 
@@ -21,6 +29,15 @@ const useStyles = makeStyles((theme) => ({
   },
   divider: {
     margin: theme.spacing(2, 0),
+  },
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+  },
+  SelectCtrl: {
+    margin: theme.spacing(1),
+    width: 250,
+    marginLeft: -2,
   },
 }));
 export default function AutoGrid() {
@@ -44,13 +61,28 @@ export default function AutoGrid() {
                     color="textSecondary"
                     component="p"
                   >
-                    <Button
-                      variant="contained"
-                      color="secondary"
-                      onClick={() => setOpenPopup(true)}
+                    <FormControl
+                      variant="outlined"
+                      className={classes.formControl}
                     >
-                      Add Excel File
-                    </Button>
+                      <InputLabel id="demo-simple-select-outlined-label">
+                        File Type Preference
+                      </InputLabel>
+                      <DropDownSelect
+                        labelId="demo-simple-select-outlined-label"
+                        id="demo-simple-select-outlined"
+                        className={classes.SelectCtrl}
+                      >
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10} onClick={() => setOpenPopup(true)}>
+                          Sales
+                        </MenuItem>
+                        <MenuItem value={20}>Income</MenuItem>
+                        <MenuItem value={30}>Profit</MenuItem>
+                      </DropDownSelect>
+                    </FormControl>
                   </Typography>
                 </CardContent>
               </CardActionArea>
