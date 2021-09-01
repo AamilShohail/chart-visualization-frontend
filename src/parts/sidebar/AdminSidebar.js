@@ -3,7 +3,7 @@ import "./Sidebar.css";
 import { Link } from "react-router-dom";
 import logo from "./void-logo.PNG";
 import { useSelector, useDispatch } from "react-redux";
-import { uiActions } from "../../../store/ui";
+import { uiActions } from "../../store/ui";
 
 export default function Sidebar() {
   const dispatch = useDispatch();
@@ -19,14 +19,14 @@ export default function Sidebar() {
     >
       <ul className="Navbar-ul">
         <li className="Navbar-logo">
-          <Link href="/" className="Navbar-link">
+          <Link to="/admin/home" className="Navbar-link">
             <span className="Navbar-logo-text">
               <img style={{ width: "35px", marginLeft: "5px" }} src={logo} alt="company logo"></img>
             </span>
           </Link>
         </li>
         <li className="Navbar-li">
-          <Link to="/" className="Navbar-link">
+          <Link to="/admin/user-dashboard" className="Navbar-link">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -115,7 +115,7 @@ export default function Sidebar() {
           </Link>
         </li>
         <li className="Navbar-li">
-          <Link to="/about" className="Navbar-link">
+          <Link to="/admin/about" className="Navbar-link">
             {" "}
             <svg
               aria-hidden="true"

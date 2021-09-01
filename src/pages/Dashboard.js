@@ -1,14 +1,11 @@
 import React from "react";
-
-import styles from "./Dashboard.module.css";
-
-import { Bar, Mix, Stack } from "../components/charts/ChartFactory";
-import Table from "../components/table/Table";
-import ChartFactory from "../components/charts/ChartFactory";
-import DataControl from "../components/data-control/DataControl";
-import Card from "../components/ui/card/DataCard";
-
+import { Bar, Mix, Stack } from "../parts/charts/ChartFactory";
+import Table from "../parts/table/Table";
+import ChartFactory from "../parts/charts/ChartFactory";
+import DataControl from "../parts/data-control/DataControl";
 import { useSelector } from "react-redux";
+
+import styles from "../style/Dashboard.module.css";
 
 export default function Dashboard() {
   const isLight = useSelector((state) => state.ui.themeIsLight);
@@ -42,6 +39,7 @@ export default function Dashboard() {
           style={{
             background: isLight ? "#182B4D" : "#2A2E35",
             boxShadow: isLight ? "15px 15px 15px  #aaaaaa" : "25px 25px 25px  #000",
+            marginRight: "15px",
           }}
         >
           <ChartFactory type={Bar} />

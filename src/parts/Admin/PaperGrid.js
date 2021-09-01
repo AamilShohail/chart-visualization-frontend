@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { Button, Card, CardActionArea, CardContent } from "@material-ui/core";
 import { Typography } from "antd";
-import DropzoneDialogPopup from "../drag'n'drop/DropzoneArea";
+import DropzoneDialogPopup from "../../components/drag'n'drop/DropzoneArea";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({

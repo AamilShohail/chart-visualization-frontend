@@ -1,0 +1,16 @@
+.main_layout {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  margin-left: 5rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    margin: 0rem;
+  }
+}

@@ -311,7 +311,7 @@ const ApexBarChart = () => {
         options={chartOptions}
         series={chartData}
         type="bar"
-        // height={350}
+        // height="100%"
       />
       <div style={{ display: "flex", justifyContent: "center" }}>
         <button style={{}} onClick={toggleAxisHandler}>
