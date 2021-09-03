@@ -1,36 +1,39 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = "http://localhost:8081";
 
 const config = {
-  headers: { Authorization: `Bearer ${localStorage.token}` },
+    headers: {Authorization: `Bearer ${localStorage.token}`},
 };
 
 const responseBody = (response) => response.data;
 
 // for testing
 const sleep = (ms) => (response) =>
-  new Promise((resolve) => setTimeout(() => resolve(response), ms));
+    new Promise((resolve) => setTimeout(() => resolve(response), ms));
 
 const requests = {
-  get: (url) => axios.get(url).then(responseBody),
-  getSecured: (url) =>
-    axios
-      .get(url, {
-        headers: { Authorization: `Bearer ${localStorage.token}` },
-      })
-      .then(responseBody),
-  post: (url, body) => axios.post(url, body).then(responseBody),
+    get: (url) => axios.get(url).then(responseBody),
+    getSecured: (url) =>
+        axios
+            .get(url, {
+                headers: {Authorization: `Bearer ${localStorage.token}`},
+            })
+            .then(responseBody),
+    post: (url, body) => axios.post(url, body).then(responseBody),
 };
 
 export const Auth = {
-  login: (loginCredential) => requests.post(`/auth/signin`, loginCredential),
+    login: (loginCredential) => requests.post(`/auth/signin`, loginCredential),
 };
 
 export const AdminDashboard = {
-  fetchUsers: (url) => requests.getSecured("/user/all", config),
+    fetchUsers: (url) => requests.getSecured("/user/all", config),
 };
 
-export const Sheet = {
-  
+export const RegisterUser = (values) => {
+    return axios.post(axios.defaults.baseURL + "/auth/signup", values);
 };
+export const Sheet = {};
+
+export default {RegisterUser}

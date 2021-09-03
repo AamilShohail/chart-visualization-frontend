@@ -56,5 +56,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "formik": "^2.2.9",
+    "react-toastify": "^8.0.2",
+    "yup": "^0.32.9"
   }
 }
