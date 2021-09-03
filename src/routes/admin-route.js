@@ -4,7 +4,6 @@ import SideBar from "../parts/sidebar/AdminSidebar";
 import FileUpload from "../pages/File-Upload";
 import UserDashboard from "../pages/Dashboard";
 import AdminDashboards from "../pages/AdminDashboard";
-import AdminGrid from "../parts/Admin/PaperGrid";
 import PrivateRoute from "./private-route";
 import NotFound from "../pages/NoAccess";
 
@@ -33,7 +32,7 @@ function AdminRoutes() {
             allowedRoles={["ROLE_ADMIN"]}
           />
           <PrivateRoute
-            component={AdminGrid}
+            component={AdminDashboards}
             path={`${process.env.PUBLIC_URL}/admin/home`}
             allowedRoles={["ROLE_ADMIN"]}
           />
