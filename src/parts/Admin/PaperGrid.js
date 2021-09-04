@@ -66,99 +66,23 @@ export default function AutoGrid() {
                                         File Upload
                                     </Typography>
 
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        <Button
-                                            variant="contained"
-                                            color="secondary"
-                                            onClick={() => setOpenPopup(true)}
-                                        >
-                                            Add Excel File
-                                        </Button>
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Link to="/admin/users">
-                        <Grid item xs>
-                            <Card className={classes.Cardroot}>
-                                <CardActionArea>
-                                    <CardContent>
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                            Users
-                                        </Typography>
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            description
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </Grid>
-                    </Link>
-                    <Grid item xs>
-                        <Card className={classes.Cardroot}>
-                            <CardActionArea>
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Item 2
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        description
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid item xs>
-                        <Card className={classes.Cardroot}>
-                            <CardActionArea>
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Item 3
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        description
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                </Grid>
-            </div>
-            <div>
-                <Grid container className={classes.root1} direction='column' spacing={8}>
-                    <Grid item xs={12}>
-                        <Grid
-                            container
-                            direction='row'
-                            justify='space-between'
-                            alignContent='center'
-                            spacing={4}>
-                            <Grid item>
-                                <Typography
-                                    variant='button'
-                                    align='left'
-                                    color='primary'
-                                    className={classes.heading}>
-                                    Add User Information
-                                </Typography>
-                            </Grid>
-                            <Grid item>
-                                <Button
-                                    variant='contained'
-                                    color='primary'
-                                    className={classes.button}
-                                    onClick={handleModuleClick}>
-                                    ADD
-                                </Button>
-                            </Grid>
-                            <AddUserDialog open={moduleOpen} handleClose={handleModuleClose}/>
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </div>
-            <DropzoneDialogPopup openPopup={openPopup} setOpenPopup={setOpenPopup}/>
-        </>
-    );
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      onClick={() => setOpenPopup(true)}
+                    >
+                      Add Excel File
+                    </Button>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+        </Grid>
+      </div>
+      <DropzoneDialogPopup openPopup={openPopup} setOpenPopup={setOpenPopup} />
+    </>
+  );
 }
 
