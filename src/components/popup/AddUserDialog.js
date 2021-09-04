@@ -51,30 +51,32 @@ function AddUserDialog(props) {
         validationSchema: validationSchema,
         onSubmit: (values) => {
             Agent.RegisterUser(values)
+            //TODO: add toast
                 .then((res) => {
                     if (res.status === 201) {
-                        toast.success("User Registration Successful", {
-                            position: "top-center",
-                            autoClose: 3000,
-                            hideProgressBar: false,
-                            closeOnClick: true,
-                            pauseOnHover: true,
-                            draggable: true,
-                            progress: undefined,
-                        });
+                        // toast.success("User Registration Successful", {
+                        //     position: "top-center",
+                        //     autoClose: 3000,
+                        //     hideProgressBar: false,
+                        //     closeOnClick: true,
+                        //     pauseOnHover: true,
+                        //     draggable: true,
+                        //     progress: undefined,
+                        // });
                         formik.resetForm();
                     }
                 })
                 .catch((error) =>
-                    toast.error("User Already exists", {
-                        position: "top-center",
-                        autoClose: 3000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                    })
+                console.log(error)
+                    // toast.error("User Already exists", {
+                    //     position: "top-center",
+                    //     autoClose: 3000,
+                    //     hideProgressBar: false,
+                    //     closeOnClick: true,
+                    //     pauseOnHover: true,
+                    //     draggable: true,
+                    //     progress: undefined,
+                    // })
                 );
             handleClose();
             formik.setValues(initialValues);
