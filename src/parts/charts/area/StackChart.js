@@ -146,7 +146,8 @@ const ApexChart = () => {
   useEffect(() => {
     if (tabData.length === 0) return null;
     const yearsForTab = [];
-    tabData.forEach((el) => yearsForTab.push(el.Year));
+    tabData.forEach((el) => yearsForTab.push(parseInt(el.Year)));
+    console.log("st",{tabData})
     // set years to chart options
     let labels = Object.keys(tabData[0]);
     const deletionKeys = ["id", "Total", "tab_name", "Year"];
@@ -157,24 +158,27 @@ const ApexChart = () => {
       tabData.forEach((row) => {
         data.push(row[`${label}`]);
       });
+      console.log('final ',{data})
       const seriesObj = {
         name: label,
-        type: "area",
+        // type: "area",
         data: data,
       };
       seriesData.push(seriesObj);
     });
     const Years = [];
     tabData.forEach((row) => {
-      Years.push(row.Year);
+      Years.push(parseInt(row.Year));
     });
+    console.log({Years})
     setChartOptions({
       ...chartOptions,
-      xaxis: { ...chartOptions.xaxis, categories: Years },
+      xaxis: { ...chartOptions.xaxis, categories:Years },
     });
+    // console.log({seriesData})
     setStackData(seriesData);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tabData, selectedTab, sheetData]);
+  }, [tabData]);
 
   return (
     <div id="chart">

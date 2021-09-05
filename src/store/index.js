@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import sheetReducer from './sheet'
+import sheetReducer from './sheet-slice'
 import uiReducer from './ui'
 import authReducer from './auth-slice'
 

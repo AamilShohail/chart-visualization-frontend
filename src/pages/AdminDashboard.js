@@ -43,7 +43,7 @@ function AdminDashboards() {
   const ActivateIcon = (user) => <button onClick={() => editItem(user)}>Activate</button>;
 
   useEffect(() => {
-    console.log("userfetch");
+    console.log("Admin Dashboard mounted");
     fetchUser();
   }, []);
   const fetchUser = async () => {

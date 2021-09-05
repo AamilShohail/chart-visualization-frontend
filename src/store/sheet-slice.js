@@ -1,13 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialSheetState = {
-  sheets: [
-    { id: 1, code: "TAF", name: "Telecoms Adspend Forecasts" },
-    { id: 2, code: "UKT", name: "United Kingdom Tables" },
-    // { id: 3, code: "FBM", name: "Forecast By Market" },
-  ],
+  sheets: [],
   sheetData: {},
-  //tabList <- all tab id and relevant value 
+  //tabList <- all tab id and relevant value
   tabList: [],
   //selected tab
   selectedTabName: "",
@@ -23,15 +19,18 @@ const sheetSlice = createSlice({
   name: "sheet",
   initialState: initialSheetState,
   reducers: {
+    SetSheetsMeta(state, action) {
+      state.sheets = action.payload.sheet_list;
+      // state.sheets = action.payload.sheet_list[1].sheet_name;
+    },
     ChangeSheet(state, action) {
+      console.log('action ',{...action.payload})
       state.sheetData = action.payload.sheetData;
       state.tabList = action.payload.dropDownValues;
       state.tabData = action.payload.tabsData;
-      state.selectedTabName = state.tabList[0].tab_name;
+      state.selectedTabName = action.payload.tabsData[0].tab_name;
 
-      const selectedSheetData = state.tabData.find(
-        (el) => el.tab_name === state.selectedTabName
-      );
+      const selectedSheetData =action.payload.tabsData.find((el) => el.tab_name ===action.payload.tabsData[0].tab_name);
 
       const visualizeDataRows = [];
 

@@ -5,12 +5,12 @@ const ApexChart = () => {
   const [lineData, setLineData] = useState({
     name: "Website Blog",
     type: "column",
-    data: [440, 505, 414, 671, 227, 413],
+    data: [],
   });
   const [barData, setBarData] = useState({
     name: "Social Media",
     type: "line",
-    data: [23, 42, 35, 27, 43, 39],
+    data: [],
   });
 
   const [chartOption, setChartOption] = useState({
@@ -129,7 +129,7 @@ const ApexChart = () => {
 
   const barChartTabHandler = (e) => {
     setSelectedYear(e.target.value);
-    const found = tabData.find((el) => el.Year === parseInt(e.target.value));
+    const found = tabData.find((el) => el.Year == parseInt(e.target.value));
     const founded = { ...found };
     delete founded.id;
     delete founded.tab_name;
@@ -154,20 +154,19 @@ const ApexChart = () => {
   }, [tabData.length, sheetData]);
 
   useEffect(() => {
-    if (tabData.length === 0) return null;
-    const yearsForTab = [];
-    tabData.forEach((el) => yearsForTab.push(el.Year));
-    setYears(yearsForTab);
-    const found = tabData.find((el) => el.Year === parseInt(selectedYear));
-    const founded = { ...found };
-    delete founded.id;
-    delete founded.tab_name;
-    delete founded.Year;
-    delete founded.Total;
-    const properties = Object.keys(founded);
-    setChartOption({ ...chartOption, labels: [properties] });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    // if (tabData.length === 0) return null;
+    // const yearsForTab = [];
+    // tabData.forEach((el) => yearsForTab.push(el.Year));
+    // setYears(yearsForTab);
+    // const found = tabData.find((el) => el.Year == parseInt(selectedYear));
+    // const founded = { ...found };
+    // delete founded.id;
+    // delete founded.tab_name;
+    // delete founded.Year;
+    // delete founded.Total;
+    // const properties = Object.keys(founded);
+    // setChartOption({ ...chartOption, labels: [properties] });
+  }, [chartOption, selectedYear, tabData]);
 
   return (
     <div id="chart">

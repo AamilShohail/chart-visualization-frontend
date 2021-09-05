@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactApexChart from "react-apexcharts";
 import { useSelector, useDispatch } from "react-redux";
-import { sheetActions } from "../../../store/sheet";
+import { sheetActions } from "../../../store/sheet-slice";
 import pptxgen from "pptxgenjs";
 
 import styles from "./BarChart.module.css";
@@ -165,34 +165,37 @@ const ApexBarChart = () => {
   const tabData = useSelector((state) => state.sheet.rows);
 
   useEffect(() => {
-    console.log("Bar chart useEffect");
+    console.log("Bar chart useEffect" , tabData);
     if (tabData.length === 0) return null;
     const yearsForTab = [];
     tabData.forEach((el) => yearsForTab.push(el.Year));
+    console.log({yearsForTab})
     setYears(yearsForTab);
-    const found = tabData.find((el) => el.Year === parseInt(selectedYear));
-    const founded = { ...found };
-    delete founded.id;
-    delete founded.tab_name;
-    delete founded.Year;
-    delete founded.Total;
-    dispatch(sheetActions.changeBarChartDropdown({ barChartData: { ...founded } }));
-    const properties = Object.keys(founded);
-    setLabels(properties);
-    setChartOptions({
-      ...chartOptions,
-      xaxis: { ...chartOptions.xaxis, categories: properties },
-    });
-    let values = Object.values(founded);
-    setValues(values);
-    let roundedValues = values.map((v) => Math.round(v * 100) / 100);
-    setChartData([{ data: roundedValues }]);
+    // const found = tabData.find((el) => el.Year == parseInt(selectedYear));
+    // const founded = { ...found };
+    // console.log({founded})
+    // delete founded.id;
+    // delete founded.tab_name;
+    // delete founded.Year;
+    // delete founded.Total;
+    // // dispatch(sheetActions.changeBarChartDropdown({ barChartData: { ...founded } }));
+    // const properties = Object.keys(founded);
+    // setLabels(properties);
+    // setChartOptions({
+    //   ...chartOptions,
+    //   xaxis: { ...chartOptions.xaxis, categories: properties },
+    // });
+    // let values = Object.values(founded);
+    // setValues(values);
+    // let roundedValues = values.map((v) => Math.round(v * 100) / 100);
+    // console.log('Barchart ',roundedValues)
+    // setChartData([{ data: roundedValues }]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTabDropdown, selectedYear]);
 
   const handleYearChange = (e) => {
     setSelectedYear(e.target.value);
-    const found = tabData.find((el) => el.Year === parseInt(e.target.value));
+    const found = tabData.find((el) => el.Year == parseInt(e.target.value));
     const founded = { ...found };
     delete founded.id;
     delete founded.tab_name;

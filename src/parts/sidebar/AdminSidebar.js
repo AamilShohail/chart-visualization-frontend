@@ -98,7 +98,7 @@ export default function Sidebar() {
               focusable="false"
               data-prefix="fas"
               data-icon="file-excel"
-              class="svg-inline--fa fa-file-excel fa-w-12"
+              className="svg-inline--fa fa-file-excel fa-w-12"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"

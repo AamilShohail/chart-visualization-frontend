@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Bar, Mix, Stack } from "../parts/charts/ChartFactory";
 import Table from "../parts/table/Table";
 import ChartFactory from "../parts/charts/ChartFactory";
@@ -10,6 +10,9 @@ import styles from "../style/Dashboard.module.css";
 export default function Dashboard() {
   const isLight = useSelector((state) => state.ui.themeIsLight);
 
+  useEffect(() => {
+    console.log("charts mounted")
+  }, [])
   return (
     <div
       className={styles.dashboard_main}

@@ -11,11 +11,11 @@ export const getTabList = (tabs) => {
   // change to tab name centralized
   export const changeResponseStructure = (inputResponse) => {
     return {
-      sheet_id: inputResponse.data.sheet_id,
-      sheet_name: inputResponse.data.sheet_meta.sheet_name,
-      sheet_code: inputResponse.data.sheet_meta.sheet_code,
-      uploaded_date: inputResponse.data.uploaded_date,
-      tabs: inputResponse.data.tabs.map((el) => ({
+      sheet_id: inputResponse.data[0].sheet_id,
+      sheet_name: inputResponse.data[0].sheet_meta.sheet_name,
+      sheet_code: inputResponse.data[0].sheet_meta.sheet_code,
+      uploaded_date: inputResponse.data[0].uploaded_date,
+      tabs: inputResponse.data[0].tabs.map((el) => ({
         tab_id: el.tab_id,
         tab_name: el.tab_name,
         tab_topic: el.tab_topic,

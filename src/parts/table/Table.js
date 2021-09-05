@@ -12,8 +12,9 @@ const tableStyle = {
   color: "black",
 };
 
-export default function DataGridDemo() {
+export default function TableDataGrid() {
   const tabData = useSelector((state) => state.sheet.rows);
+  const [pageSize, setPageSize] = React.useState(5);
   const [columns, setColumns] = useState([]);
   const theme = createMuiTheme({
     typography: {
@@ -40,7 +41,15 @@ export default function DataGridDemo() {
   return (
     <div style={tableStyle}>
       <MuiThemeProvider theme={theme}>
-        <DataGrid rows={tabData} columns={columns} pageSize={5} disableSelectionOnClick={true} />
+        <DataGrid
+          rows={tabData}
+          columns={columns}
+          // pageSize={(50, 25, 10)}
+          pageSize={pageSize}
+          onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
+          rowsPerPageOptions={[5, 10, 20]}
+          disableSelectionOnClick={true}
+        />
       </MuiThemeProvider>
     </div>
   );
