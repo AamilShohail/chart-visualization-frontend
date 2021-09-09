@@ -10,10 +10,12 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import SearchBar from "material-ui-search-bar";
-import { Box } from "@material-ui/core";
+import { Box,Grid,Typography,Button} from "@material-ui/core";
 import { Container } from "semantic-ui-react";
+import { toggleUserStatus } from "../store/adminDashboard-action";
 
 import AdminGrid from "../parts/Admin/PaperGrid";
+import AddUserDialog from "../components/popup/AddUserDialog";
 
 const useStyles = makeStyles({
   table: {
@@ -22,6 +24,7 @@ const useStyles = makeStyles({
 });
 
 function AdminDashboards() {
+  const [moduleOpen, setModuleOpen] = useState(false);
   const [rows, setRows] = useState([]);
   const [searched, setSearched] = useState("");
   const classes = useStyles();
@@ -33,12 +36,18 @@ function AdminDashboards() {
     });
     setRows(filteredRows);
   };
+  const handleModuleClick = () => {
+    setModuleOpen(true);
+  };
+  const handleModuleClose = () => {
+    setModuleOpen(false);
+  };
 
   const cancelSearch = () => {
     setSearched("");
     requestSearch(searched);
   };
-  const editItem = (user) => console.log("test",{user});
+  const editItem = (user) => toggleUserStatus(user);
   const BlockIcon = (user) => <button onClick={() => editItem(user)}>Block</button>;
   const ActivateIcon = (user) => <button onClick={() => editItem(user)}>Activate</button>;
 
@@ -55,6 +64,27 @@ function AdminDashboards() {
   return (
     <Box p={5}>
       <AdminGrid />
+        <Grid item xs={10}>
+          <Grid container direction="row" justify="space-between" alignContent="center" spacing={4}>
+            <Grid item>
+              <Typography variant="button" align="left" color="primary" className={classes.heading}>
+                Add User Information
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Button
+                variant="contained"
+                color="primary"
+                className={classes.button}
+                onClick={handleModuleClick}
+              >
+                ADD NEW USER
+              </Button>
+            </Grid>
+            <AddUserDialog open={moduleOpen} handleClose={handleModuleClose} />
+          </Grid>
+        </Grid>
+      
       <Box pt={5}>
         <Paper>
           <SearchBar

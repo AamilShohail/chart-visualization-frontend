@@ -27,10 +27,12 @@ const requests = {
     formData.append("file", file);
     return axios.post(url, formData, FormDataConfig).then(responseBody);
   },
+  put:(url,body) => axios.put(url,body,JWTconfig).then(responseBody)
 };
 
 export const Auth = {
   login: (loginCredential) => requests.post(`/auth/signin`, loginCredential),
+  loadUser:(token)=> requests.post(`/auth/extractuser/${localStorage.token}`)
 };
 
 export const AdminDashboard = {
@@ -39,6 +41,7 @@ export const AdminDashboard = {
     id = parseInt(id);
     return requests.formUrlPost(`excel/upload/${id}`, file);
   },
+  updateUser:(updatedUser,id) =>requests.put(`/user/update/${id}`,updatedUser)
 };
 
 export const RegisterUser = (values) => {

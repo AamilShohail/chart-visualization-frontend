@@ -52,16 +52,24 @@ export default function AutoGrid() {
 
   const classes = useStyles();
   const [openPopup, setOpenPopup] = useState(false);
+  const handleModuleClick = () => {
+    setModuleOpen(true);
+  };
+  const handleModuleClose = () => {
+    setModuleOpen(false);
+  };
 
-  const uploadSheet = async(file) => {
-    console.log(file,'start');
+  const uploadSheet = async (file) => {
+    console.log(file, "start");
     let namesUploaded = [];
     let namesSheet = [];
     file.forEach((f) => namesUploaded.push(f.name.split(".")[0]));
     sheets.forEach((s) => namesSheet.push(s.sheet_name));
     //isError if there is error
     const isNoError = isSubset(namesSheet, namesUploaded);
-    if (!isNoError) return;
+    if (!isNoError) {
+      console.log("Sheet name error - chk name of your sheets with system sheets")
+      return};
     console.log("proceed");
     const newFile = [];
     file.forEach((f) => {
@@ -72,8 +80,8 @@ export default function AutoGrid() {
       });
     });
     console.log({ newFile });
-    const re =await uploadSheets(newFile);
-    console.log('re',re)
+    const re = await uploadSheets(newFile);
+    console.log("re", re);
   };
 
   return (

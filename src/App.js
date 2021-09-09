@@ -2,13 +2,15 @@ import "./App.css";
 import "semantic-ui-css/semantic.min.css";
 import { useState, useEffect } from "react";
 import Loading from "./components/ui/loading/Loading";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
 import UserRoutes from "./routes/user-route";
 import AdminRoutes from "./routes/admin-route";
 import PublicRoute from "./routes/public-route";
+import { loadUser } from "./store/auth-action";
 
 function App() {
+  const dispatch = useDispatch();
   const [IsLoading, setIsLoading] = useState(true);
   const IsAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const role = useSelector((state) => state.auth.role);
@@ -16,6 +18,7 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => setIsLoading(false), 1500);
+    dispatch(loadUser());
   }, []);
   useEffect(() => {
     if (role === "ROLE_ADMIN") setIsAdmin(true);
