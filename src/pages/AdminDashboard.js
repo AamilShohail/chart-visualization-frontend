@@ -10,9 +10,10 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import SearchBar from "material-ui-search-bar";
-import { Box,Grid,Typography,Button} from "@material-ui/core";
+import { Box, Grid, Typography, Button } from "@material-ui/core";
 import { Container } from "semantic-ui-react";
 import { toggleUserStatus } from "../store/adminDashboard-action";
+import CreateSheet from "../components/modal/CreateSheetDialog";
 
 import AdminGrid from "../parts/Admin/PaperGrid";
 import AddUserDialog from "../components/popup/AddUserDialog";
@@ -25,6 +26,7 @@ const useStyles = makeStyles({
 
 function AdminDashboards() {
   const [moduleOpen, setModuleOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const [rows, setRows] = useState([]);
   const [searched, setSearched] = useState("");
   const classes = useStyles();
@@ -35,6 +37,19 @@ function AdminDashboards() {
       return row.username.toLowerCase().includes(searchedVal.toLowerCase());
     });
     setRows(filteredRows);
+  };
+  const handleOpen = () => {
+    console.log("handle open");
+    setOpen(true);
+  };
+
+  const sheetDataSubmitHandler = () => {
+    console.log("sheet submit");
+    setOpen(false);
+  };
+  const sheetDataCancelHandler = () => {
+    console.log("sheet cancel");
+    setOpen(false);
   };
   const handleModuleClick = () => {
     setModuleOpen(true);
@@ -64,27 +79,32 @@ function AdminDashboards() {
   return (
     <Box p={5}>
       <AdminGrid />
-        <Grid item xs={10}>
-          <Grid container direction="row" justify="space-between" alignContent="center" spacing={4}>
-            <Grid item>
-              <Typography variant="button" align="left" color="primary" className={classes.heading}>
-                Add User Information
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Button
-                variant="contained"
-                color="primary"
-                className={classes.button}
-                onClick={handleModuleClick}
-              >
-                ADD NEW USER
-              </Button>
-            </Grid>
-            <AddUserDialog open={moduleOpen} handleClose={handleModuleClose} />
+      <Grid item xs={10}>
+        <Grid container direction="row" alignContent="center" spacing={4}>
+          <Grid item>
+            <Button
+              variant="contained"
+              color="primary"
+              className={classes.button}
+              onClick={handleModuleClick}
+            >
+              ADD NEW USER
+            </Button>
           </Grid>
+          <Grid item>
+            <Button variant="contained" className={classes.button} onClick={handleOpen}>
+              ADD NEW SHEET
+            </Button>
+          </Grid>
+          <AddUserDialog open={moduleOpen} handleClose={handleModuleClose} />
+          <CreateSheet
+            submitHandler={sheetDataSubmitHandler}
+            cancelHandler={sheetDataCancelHandler}
+            isOpen={open}
+          />
         </Grid>
-      
+      </Grid>
+
       <Box pt={5}>
         <Paper>
           <SearchBar

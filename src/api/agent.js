@@ -21,27 +21,30 @@ const sleep = (ms) => (response) =>
 const requests = {
   get: (url) => axios.get(url).then(responseBody),
   getSecured: (url) => axios.get(url, JWTconfig).then(responseBody),
+  postSecured: (url, body) => axios.post(url, body, JWTconfig).then(responseBody),
   post: (url, body) => axios.post(url, body).then(responseBody),
   formUrlPost: (url, file) => {
     let formData = new FormData();
     formData.append("file", file);
     return axios.post(url, formData, FormDataConfig).then(responseBody);
   },
-  put:(url,body) => axios.put(url,body,JWTconfig).then(responseBody)
+  put: (url, body) => axios.put(url, body, JWTconfig).then(responseBody),
 };
 
 export const Auth = {
   login: (loginCredential) => requests.post(`/auth/signin`, loginCredential),
-  loadUser:(token)=> requests.post(`/auth/extractuser/${localStorage.token}`)
+  loadUser: (token) => requests.post(`/auth/extractuser/${localStorage.token}`),
 };
 
 export const AdminDashboard = {
   fetchUsers: (url) => requests.getSecured("/user/all"),
+  uploadSheetData: (sheetCode, sheetName) =>
+    requests.postSecured("/meta/create", { sheetCode, sheetName }),
   uploadSheet: (id, file) => {
     id = parseInt(id);
     return requests.formUrlPost(`excel/upload/${id}`, file);
   },
-  updateUser:(updatedUser,id) =>requests.put(`/user/update/${id}`,updatedUser)
+  updateUser: (updatedUser, id) => requests.put(`/user/update/${id}`, updatedUser),
 };
 
 export const RegisterUser = (values) => {

@@ -22,7 +22,7 @@ export const toggleUserStatus = async (user) => {
   const { roles, username } = user;
   const updatedUser = {
     active: updatedStatus,
-    roles,
+    role:roles,
     username,
   };
   console.log({ updatedUser }, userId);
