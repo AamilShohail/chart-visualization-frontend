@@ -42,9 +42,11 @@ export const AdminDashboard = {
     requests.postSecured("/meta/create", { sheetCode, sheetName }),
   uploadSheet: (id, file) => {
     id = parseInt(id);
-    return requests.formUrlPost(`excel/upload/${id}`, file);
+    return requests.formUrlPost(`/excel/upload/${id}`, file);
   },
   updateUser: (updatedUser, id) => requests.put(`/user/update/${id}`, updatedUser),
+  setNewSheet:(newSheetData)=>requests.postSecured(`/meta/create`,newSheetData)
+
 };
 
 export const RegisterUser = (values) => {

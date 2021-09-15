@@ -45,25 +45,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function AddSheetModal({ submitHandler, isOpen, cancelHandler }) {
+
   const formik = useFormik({
     initialValues: initialValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      AdminDashboard.RegisterUser(values)
-        //TODO: add toast
+      console.log(values)
+      AdminDashboard.setNewSheet(values)
         .then((res) => {
-          if (res.status === 201) {
-            // toast.success("User Registration Successful", {
-            //     position: "top-center",
-            //     autoClose: 3000,
-            //     hideProgressBar: false,
-            //     closeOnClick: true,
-            //     pauseOnHover: true,
-            //     draggable: true,
-            //     progress: undefined,
-            // });
-            formik.resetForm();
+          if (res.status === 200) {
             console.log("sheet data uploaded");
+            formik.resetForm();
           }
         })
         .catch(
@@ -71,15 +63,6 @@ export default function AddSheetModal({ submitHandler, isOpen, cancelHandler }) 
             console.log("error in sheet data uploaded");
             console.log(error);
           }
-          // toast.error("User Already exists", {
-          //     position: "top-center",
-          //     autoClose: 3000,
-          //     hideProgressBar: false,
-          //     closeOnClick: true,
-          //     pauseOnHover: true,
-          //     draggable: true,
-          //     progress: undefined,
-          // })
         );
       cancelHandler();
       formik.setValues(initialValues);
@@ -93,6 +76,7 @@ export default function AddSheetModal({ submitHandler, isOpen, cancelHandler }) 
       aria-describedby="alert-dialog-description"
     >
       {/* <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle> */}
+      <form onSubmit={formik.handleSubmit}>
       <DialogContent>
         <Grid container spacing={2}>
           <Grid item xs={12}>
@@ -101,11 +85,13 @@ export default function AddSheetModal({ submitHandler, isOpen, cancelHandler }) 
                 <TextField
                   id="email"
                   variant="outlined"
-                  type="email"
+                  type="text"
                   label="Sheet Code"
-                  name="Sheet_Code"
+                  name="sheetCode"
                   fullWidth
                   color="primary"
+                  value={formik.values.sheetCode}
+                  onChange={formik.handleChange}
                 />
               </Grid>
             </Grid>
@@ -118,7 +104,9 @@ export default function AddSheetModal({ submitHandler, isOpen, cancelHandler }) 
                   label="Sheet Name"
                   variant="outlined"
                   fullWidth
-                  name="Sheet Name"
+                  name="sheetName"
+                  value={formik.values.sheetName}
+                  onChange={formik.handleChange}
                 />
               </Grid>
             </Grid>
@@ -129,10 +117,11 @@ export default function AddSheetModal({ submitHandler, isOpen, cancelHandler }) 
         <Button onClick={cancelHandler} color="primary">
           cancel
         </Button>
-        <Button onClick={submitHandler} color="primary" autoFocus>
+        <Button type='submit' color="primary" autoFocus>
           submit
         </Button>
       </DialogActions>
+      </form>
     </Dialog>
   );
 }

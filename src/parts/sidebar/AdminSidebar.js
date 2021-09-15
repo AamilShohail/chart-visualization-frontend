@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "./void-logo.PNG";
 import { useSelector, useDispatch } from "react-redux";
 import { uiActions } from "../../store/ui";
+import { authActions } from "../../store/auth-slice";
 
 export default function Sidebar() {
   const dispatch = useDispatch();
@@ -114,46 +115,6 @@ export default function Sidebar() {
             <span className="Navbar-link-text">File Upload</span>
           </Link>
         </li>
-        <li className="Navbar-li">
-          <Link to="/admin/about" className="Navbar-link">
-            {" "}
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fad"
-              data-icon="alien-monster"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 576 512"
-              className="svg-inline--fa fa-alien-monster fa-w-18 fa-9x"
-            >
-              <g className="fa-group">
-                <path
-                  fill="currentColor"
-                  d="M212.994,274.074h-68.522c-3.042,0-5.708,1.149-7.992,3.429c-2.286,2.286-3.427,4.948-3.427,7.994v68.525
-                              c0,3.046,1.145,5.712,3.427,7.994c2.284,2.279,4.947,3.426,7.992,3.426h68.522c3.042,0,5.715-1.144,7.99-3.426
-                              c2.29-2.282,3.433-4.948,3.433-7.994v-68.525c0-3.046-1.14-5.708-3.433-7.994C218.709,275.217,216.036,274.074,212.994,274.074z"
-                  className="fa-secondary"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M302.935,68.951c-7.806-14.378-17.891-26.506-30.266-36.406c-12.367-9.896-26.271-17.799-41.685-23.697
-              C215.567,2.952,200.246,0,185.016,0C127.157,0,83,25.315,52.544,75.946c-1.521,2.473-2.046,5.137-1.571,7.993
-              c0.478,2.852,1.953,5.232,4.427,7.135l46.824,35.691c2.474,1.52,4.854,2.281,7.139,2.281c3.427,0,6.375-1.525,8.852-4.57
-              c13.702-17.128,23.887-28.072,30.548-32.833c8.186-5.518,18.461-8.276,30.833-8.276c11.61,0,21.838,3.046,30.692,9.132
-              c8.85,6.092,13.271,13.135,13.271,21.129c0,8.942-2.375,16.178-7.135,21.698c-4.757,5.518-12.754,10.845-23.986,15.986
-              c-14.842,6.661-28.457,16.988-40.823,30.978c-12.375,13.991-18.558,28.885-18.558,44.682v12.847c0,3.62,0.994,7.187,2.996,10.708
-              c2,3.524,4.425,5.283,7.282,5.283h68.521c3.046,0,5.708-1.472,7.994-4.432c2.279-2.942,3.426-6.036,3.426-9.267
-              c0-4.757,2.617-11.14,7.847-19.13c5.235-7.994,11.752-14.186,19.562-18.565c7.419-4.186,13.219-7.56,17.411-10.133
-              c4.196-2.566,9.664-6.715,16.423-12.421c6.756-5.712,11.991-11.375,15.698-16.988c3.713-5.614,7.046-12.896,9.996-21.844
-              c2.956-8.945,4.428-18.558,4.428-28.835C314.639,98.397,310.734,83.314,302.935,68.951z"
-                  className="fa-secondary"
-                ></path>
-              </g>
-            </svg>{" "}
-            <span className="Navbar-link-text">Who-we-are</span>
-          </Link>
-        </li>
         <li
           className="Navbar-li Navbar-link"
           id="themeButton"
@@ -236,6 +197,25 @@ export default function Sidebar() {
           </svg>
           <span className="Navbar-link-text">Themify</span>
           {/* </a> */}
+        </li>
+        <li className="Navbar-li Navbar-link" onClick={() => dispatch(authActions.logout())}>
+          {" "}
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="sign-out-alt"
+            class="svg-inline--fa fa-sign-out-alt fa-w-16"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="red"
+              d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z"
+            ></path>
+          </svg>
+          <span className="Navbar-link-text">LogOut</span>
         </li>
       </ul>
     </nav>

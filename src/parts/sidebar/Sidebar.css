@@ -21,10 +21,14 @@
     padding: 0;
 
 }
+.Navbar-li:nth-last-child(2) {
+    margin-bottom: 0px;
+    margin-top: auto;
+}
 
 .Navbar-li:last-child {
     margin-bottom: 20px;
-    margin-top: auto;
+    /* margin-top: auto; */
 }
 
 .Navbar-link svg {
