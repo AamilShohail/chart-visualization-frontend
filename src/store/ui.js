@@ -1,8 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialUiState = {
-  themeIsLight: true,
-  loading:false
+  themeIsLight: false,
+  loading: true,
+  authError: false,
+  sheetMetaLoad: false,
+  sheetUpload:false
 };
 
 const uiSlice = createSlice({
@@ -12,14 +15,23 @@ const uiSlice = createSlice({
     changeTheme(state, action) {
       state.themeIsLight = !state.themeIsLight;
     },
-    loadingStart(state,action){
-      console.log('loading start')
-      state.loading = true
+    loadingStart(state, action) {
+      console.debug("ui slice =>loading start");
+      state.loading = true;
     },
-    loadingEnd(state,action){
-      console.log('loading end')
-      state.loading = false
-    }
+    loadingEnd(state, action) {
+      console.debug("loading end");
+      state.loading = false;
+    },
+    loginError(state, action) {
+      state.authError = true;
+    },
+    SheetMetaLoadingChange(state, action) {
+      state.sheetMetaLoad = action.payload;
+    },
+    uploadSheetLoadingChange(state, action) {
+      state.sheetUpload = action.payload;
+    },
   },
 });
 

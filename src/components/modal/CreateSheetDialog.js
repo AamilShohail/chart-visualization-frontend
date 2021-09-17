@@ -45,23 +45,23 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function AddSheetModal({ submitHandler, isOpen, cancelHandler }) {
-
+  
   const formik = useFormik({
     initialValues: initialValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      console.log(values)
+      //console.log(values)
       AdminDashboard.setNewSheet(values)
         .then((res) => {
           if (res.status === 200) {
-            console.log("sheet data uploaded");
+            //console.log("sheet data uploaded");
             formik.resetForm();
           }
         })
         .catch(
           (error) => {
-            console.log("error in sheet data uploaded");
-            console.log(error);
+            //console.log("error in sheet data uploaded");
+            //console.log(error);
           }
         );
       cancelHandler();

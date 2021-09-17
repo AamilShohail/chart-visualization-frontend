@@ -9,6 +9,7 @@ function ChartFactory({ type }) {
       return <MixedChart />;
     case Stack:
       return <StackChart />;
+    
     default:
       console.error("No Chart type found");
       return null;

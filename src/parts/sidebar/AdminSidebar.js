@@ -27,7 +27,7 @@ export default function Sidebar() {
           </Link>
         </li>
         <li className="Navbar-li">
-          <Link to="/admin/user-dashboard" className="Navbar-link">
+          <Link to="/admin/home" className="Navbar-link">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -88,7 +88,7 @@ export default function Sidebar() {
                 ></path>
               </g>
             </svg>
-            <span className="Navbar-link-text">AdminDashboard</span>
+            <span className="Navbar-link-text">User Dashboard</span>
           </Link>
         </li>
         <li className="Navbar-li">

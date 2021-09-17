@@ -5,8 +5,8 @@ import { uiActions } from "./ui";
 export const userLogin = (username, password) => {
   return async (dispatch) => {
     try {
+//      console.debug("auth action--> userLogin : loading => start");
       const loggedUser = await login(username, password);
-      console.log("re", { ...loggedUser.data });
       dispatch(
         authActions.login({
           role: loggedUser.data.user.authorities,
@@ -17,24 +17,30 @@ export const userLogin = (username, password) => {
       dispatch(uiActions.loadingEnd());
     } catch (e) {
       dispatch(authActions.loginError());
-      console.log({ e });
+      dispatch(uiActions.loadingEnd());
+      dispatch(uiActions.loginError())
+
     }
   };
 };
-export const loadUser = (token) => {
+//load user with previous session if not logged out
+export const loadUser = () => {
   return async (dispatch) => {
     try {
+      console.debug("auth action--> loadUser : loading => start");
       const loggedUser = await loadUserByToken();
-      console.log("log ", { loggedUser });
+      console.debug("auth action--> loadUser : loading => end");
       dispatch(
         authActions.loadUser({
           role: loggedUser.data.roles,
           user: loggedUser.data.username,
         })
       );
+      dispatch(uiActions.loadingEnd());
     } catch (e) {
-      console.log("load user error ", e);
+      console.debug("auth action--> loadUser: error", e);
       dispatch(authActions.loginError());
+      dispatch(uiActions.loadingEnd());
     }
   };
 };
@@ -43,7 +49,6 @@ const loadUserByToken = async () => {
   if (!response) {
     throw new Error("Could not login right now");
   }
-  console.log({ response });
   return response;
 };
 
@@ -52,6 +57,5 @@ const login = async (username, password) => {
   if (!response) {
     throw new Error("Could not login right now");
   }
-  console.log({ response });
   return response;
 };

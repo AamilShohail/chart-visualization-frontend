@@ -16,15 +16,7 @@ const ApexChart = () => {
         },
       },
     },
-    colors: [
-      "#008FFB",
-      "#00E396",
-      "#CED4DC",
-      "#ff7411",
-      "#f14",
-      "#11F",
-      "#8f0",
-    ],
+    colors: ["#008FFB", "#00E396", "#CED4DC", "#ff7411", "#f14", "#11F", "#8f0"],
     grid: {
       show: false,
     },
@@ -59,8 +51,8 @@ const ApexChart = () => {
       size: 0,
     },
     xaxis: {
-      type: "numeric",
-      // categories:[2001,2002,2003],
+      type: "date",
+      categories: [],
       labels: {
         show: true,
         style: {
@@ -140,15 +132,19 @@ const ApexChart = () => {
   const [stackData, setStackData] = useState([]);
 
   const tabData = useSelector((state) => state.sheet.rows);
-  const selectedTab = useSelector((state) => state.sheet.selectedTabName);
-  const sheetData = useSelector((state) => state.sheet.sheetData);
+  const selectedTabName = useSelector((state) => state.sheet.selectedTabName);
+  const selectedSheetName = useSelector((state) => state.sheet.sheetData);
+  const [graphTitle, setGraphTitle] = useState("Graph title");
 
   useEffect(() => {
+    const GraphTitle = `${selectedSheetName.name}-${selectedTabName}`;
+    setGraphTitle(GraphTitle);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedTabName, selectedSheetName]);
+  useEffect(() => {
     if (tabData.length === 0) return null;
-    const yearsForTab = [];
-    tabData.forEach((el) => yearsForTab.push(parseInt(el.Year)));
-    console.log("st",{tabData})
-    // set years to chart options
+    // const yearsForTab = [];
+    // tabData.forEach((el) => yearsForTab.push(parseInt(el.Year)));
     let labels = Object.keys(tabData[0]);
     const deletionKeys = ["id", "Total", "tab_name", "Year"];
     labels = labels.filter((label) => !deletionKeys.includes(label));
@@ -158,36 +154,28 @@ const ApexChart = () => {
       tabData.forEach((row) => {
         data.push(row[`${label}`]);
       });
-      console.log('final ',{data})
       const seriesObj = {
         name: label,
-        // type: "area",
         data: data,
       };
       seriesData.push(seriesObj);
     });
     const Years = [];
     tabData.forEach((row) => {
-      Years.push(parseInt(row.Year));
+      Years.push(row.Year);
     });
-    console.log({Years})
     setChartOptions({
       ...chartOptions,
-      xaxis: { ...chartOptions.xaxis, categories:Years },
+      xaxis: { ...chartOptions.xaxis, categories: [...Years] },
     });
-    // console.log({seriesData})
     setStackData(seriesData);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tabData]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tabData, selectedSheetName]);
 
   return (
     <div id="chart">
-      <ReactApexChart
-        options={chartOptions}
-        series={stackData}
-        type="area"
-        height={650}
-      />
+      <h2 style={{ color: "white", width: "100%", textAlign: "center",marginTop:"5px" }}>{graphTitle}</h2>
+      <ReactApexChart options={chartOptions} series={stackData} type="area" height={650} />
     </div>
   );
 };

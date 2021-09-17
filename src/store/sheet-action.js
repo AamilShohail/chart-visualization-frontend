@@ -1,29 +1,34 @@
 import { Sheet } from "../api/agent";
 import { sheetActions } from "./sheet-slice";
 import { getTabList, changeResponseStructure } from "../helpers/helper";
+import { uiActions } from "./ui";
 
+//get all system sheets data
 export const getSheetMeta = () => {
   return async (dispatch) => {
     try {
+      //console.log("getSheetMeta started")
+      dispatch(uiActions.SheetMetaLoadingChange(true));
       const sheets = await fetchSheetMeta();
       dispatch(
         sheetActions.SetSheetsMeta({
           sheet_list: sheets.data,
         })
       );
+      dispatch(uiActions.SheetMetaLoadingChange(false));
     } catch (e) {
-      //   dispatch(authActions.loginError())
-      console.log({ e });
+      dispatch(uiActions.SheetMetaLoadingChange(false));
     }
   };
 };
+//set user selected node to visualize graph
 export const setSheet = (sheetId) => {
   return async (dispatch) => {
     try {
       const sheetPayload = await fetchSheetById(sheetId);
       dispatch(sheetActions.ChangeSheet(sheetPayload));
     } catch (e) {
-      console.log(e);
+      //console.log(e);
     }
   };
 };
@@ -33,8 +38,7 @@ const fetchSheetById = async (sheetId) => {
   if (!response) {
     throw new Error("Could not login right now");
   }
-  console.log(response.data[0].sheet_meta.sheet_name );
-
+  //console.log(response.data[0].sheet_meta.sheet_name);
   const sheetData = {
     uploadedDate: response.data[0].uploaded_date,
     id: response.data[0].sheet_id,
@@ -55,6 +59,6 @@ const fetchSheetMeta = async () => {
   if (!response) {
     throw new Error("Could not login right now");
   }
-  console.log('fetch sheets',{ response });
+  //console.log("fetch sheets", { response });
   return response;
 };

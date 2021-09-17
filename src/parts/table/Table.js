@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import { useSelector } from "react-redux";
 
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
+import { createTheme, MuiThemeProvider } from "@material-ui/core/styles";
 
 const tableStyle = {
   height: "100%",
@@ -16,7 +16,7 @@ export default function TableDataGrid() {
   const tabData = useSelector((state) => state.sheet.rows);
   const [pageSize, setPageSize] = React.useState(5);
   const [columns, setColumns] = useState([]);
-  const theme = createMuiTheme({
+  const theme = createTheme({
     typography: {
       fontSize: 24,
     },
@@ -25,7 +25,8 @@ export default function TableDataGrid() {
     if (tabData.length === 0) return null;
     // set years to chart options
     let labels = Object.keys(tabData[0]);
-    const deletionKeys = ["tab_name", "Year"];
+    //console.log('labels',{labels})
+    const deletionKeys = ["tab_name","id"];
     labels = labels.filter((label) => !deletionKeys.includes(label));
     const columnsData = [];
     labels.forEach((label) => {

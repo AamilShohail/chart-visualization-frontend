@@ -8,22 +8,23 @@ import UserRoutes from "./routes/user-route";
 import AdminRoutes from "./routes/admin-route";
 import PublicRoute from "./routes/public-route";
 import { loadUser } from "./store/auth-action";
+import {role} from './constant'
 
 function App() {
   const dispatch = useDispatch();
-  const [IsLoading, setIsLoading] = useState(true);
   const IsAuthenticated = useSelector((state) => state.auth.isAuthenticated);
-  const role = useSelector((state) => state.auth.role);
+  const loggedUserRole = useSelector((state) => state.auth.role);
+  const isLoading = useSelector(state=>state.ui.loading)
   const [IsAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 1500);
+    //for development
     dispatch(loadUser());
-  }, []);
+  }, [dispatch]);
   useEffect(() => {
-    if (role === "ROLE_ADMIN") setIsAdmin(true);
-  }, [role]);
-  if (IsLoading) {
+    if (loggedUserRole === role.admin) setIsAdmin(true);
+  }, [loggedUserRole]);
+  if (isLoading) {
     return <Loading />;
   }
   return (

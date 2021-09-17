@@ -15,6 +15,8 @@ import { useDispatch } from "react-redux";
 import MLink from "@material-ui/core/Link";
 import {uiActions} from "../../store/ui"
 import {userLogin} from "../../store/auth-action"
+import Alert from "../../components/alert/Alert"
+import  {useSelector} from "react-redux"
 
 
 function Copyright() {
@@ -56,6 +58,7 @@ export default function SignIn() {
   const [Username, setUsername] = useState("");
   const [Password, setPassword] = useState("");
 
+ const isError = useSelector(state => state.ui.authError)
 
   const usernameChange = (e) => {
     setUsername(e.target.value);
@@ -68,7 +71,7 @@ export default function SignIn() {
     // your submit logic
     dispatch(uiActions.loadingStart())
     e.preventDefault();
-    console.log(Username,Password)
+    //console.log(Username,Password)
     dispatch(userLogin(Username, Password));
   };
   return (
@@ -146,6 +149,7 @@ export default function SignIn() {
           <Copyright />
         </Box>
       </Container>
+     {isError&& <Alert severity="error" message="check username and password"/>}
     </div>
   );
 }

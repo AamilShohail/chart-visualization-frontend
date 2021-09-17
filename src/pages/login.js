@@ -1,6 +1,7 @@
 import React from "react";
 import Login from "../parts/auth/login";
 import Particles from "react-particles-js";
+import Alert from "../components/alert/Alert"
 
 function login() {
   return (

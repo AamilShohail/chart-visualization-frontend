@@ -9,11 +9,11 @@ import styles from "../style/Layout.module.css";
 
 function UserRoutes() {
   return (
-    <div className={styles.main_layout}>
-      <div className={styles.sidebar}>
+    <div>
+      {/* <div className={styles.sidebar}>
         <SideBar />
-      </div>
-      <div className={styles.content}>
+      </div> */}
+      <div >
         <Switch>
           <PrivateRoute
             component={Dashboard}

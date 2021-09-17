@@ -6,10 +6,14 @@ import { Typography } from "antd";
 import DropzoneDialogPopup from "../../components/drag'n'drop/DropzoneArea";
 import { Link } from "react-router-dom";
 import AddUserDialog from "../../components/popup/AddUserDialog";
+import { ToastContainer, toast } from "react-toastify";
 
 import { useSelector } from "react-redux";
 import { isSubset } from "../../helpers/helper";
 import { uploadSheets } from "../../store/adminDashboard-action";
+import Alert from "../../components/alert/Alert";
+import { cssTransition } from "react-toastify";
+import Backdrop from "../../components/Backdrop/BackDrop";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,6 +53,8 @@ const useStyles = makeStyles((theme) => ({
 export default function AutoGrid() {
   const [moduleOpen, setModuleOpen] = useState(false);
   const sheets = useSelector((state) => state.sheet.sheets);
+  const [isNameError, setIsNameError] = useState(false);
+  const [Loading, setLoading] = useState(false);
 
   const classes = useStyles();
   const [openPopup, setOpenPopup] = useState(false);
@@ -58,19 +64,39 @@ export default function AutoGrid() {
   const handleModuleClose = () => {
     setModuleOpen(false);
   };
-
+  const Zoom = cssTransition({
+    enter: "zoomIn",
+    exit: "zoomOut",
+    appendPosition: false,
+    collapse: true,
+    collapseDuration: 300,
+  });
   const uploadSheet = async (file) => {
-    console.log(file, "start");
+    //console.log(file, "start");
+    setLoading(true);
     let namesUploaded = [];
     let namesSheet = [];
     file.forEach((f) => namesUploaded.push(f.name.split(".")[0]));
     sheets.forEach((s) => namesSheet.push(s.sheet_name));
     //isError if there is error
     const isNoError = isSubset(namesSheet, namesUploaded);
+    setIsNameError(isNoError);
     if (!isNoError) {
-      console.log("Sheet name error - chk name of your sheets with system sheets")
-      return};
-    console.log("proceed");
+      //console.log(" Sheet name error - check name of your sheets with system sheets");
+      toast("🧐 Sheet name error - check name of your sheets with system sheets", {
+        position: "bottom-left",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      setLoading(false);
+      return;
+    }
+    //console.log("proceed");
+    setOpenPopup(false)
     const newFile = [];
     file.forEach((f) => {
       sheets.forEach((s) => {
@@ -79,9 +105,10 @@ export default function AutoGrid() {
         }
       });
     });
-    console.log({ newFile });
+    //console.log({ newFile });
     const re = await uploadSheets(newFile);
-    console.log("re", re);
+    setLoading(false);
+    //console.log("re", re);
   };
 
   return (
@@ -95,7 +122,7 @@ export default function AutoGrid() {
                   <Typography gutterBottom variant="h5" component="h2">
                     File Upload
                   </Typography>
-                  <p>Hello</p>
+                  <p></p>
                   <Typography variant="body2" color="textSecondary" component="p">
                     <Button
                       variant="contained"
@@ -111,10 +138,26 @@ export default function AutoGrid() {
           </Grid>
         </Grid>
       </div>
-      <DropzoneDialogPopup
-        openPopup={openPopup}
-        setOpenPopup={setOpenPopup}
-        uploadSheet={uploadSheet}
+      {openPopup && (
+        <DropzoneDialogPopup
+          openPopup={openPopup}
+          setOpenPopup={setOpenPopup}
+          uploadSheet={uploadSheet}
+          isError={isNameError}
+        />
+      )}
+      {Loading && <Backdrop show={true} />}
+      <ToastContainer
+        position="bottom-left"
+        autoClose={15000}
+        transition={Zoom}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
       />
     </>
   );

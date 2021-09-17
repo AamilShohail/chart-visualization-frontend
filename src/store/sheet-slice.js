@@ -1,7 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialSheetState = {
+  //system sheets detail
   sheets: [],
+  //selected sheet meta data
   sheetData: {},
   //tabList <- all tab id and relevant value
   tabList: [],
@@ -9,7 +11,7 @@ const initialSheetState = {
   selectedTabName: "",
   // all tabs data
   tabData: [],
-  //single tab data
+  //selected tab data
   rows: [],
 
   barChart: {},
@@ -24,7 +26,7 @@ const sheetSlice = createSlice({
       // state.sheets = action.payload.sheet_list[1].sheet_name;
     },
     ChangeSheet(state, action) {
-      console.log('action ',{...action.payload})
+      //console.log('change sheet action ',{...action.payload})
       state.sheetData = action.payload.sheetData;
       state.tabList = action.payload.dropDownValues;
       state.tabData = action.payload.tabsData;

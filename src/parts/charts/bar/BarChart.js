@@ -18,11 +18,11 @@ const ApexBarChart = () => {
     chart: {
       events: {
         animationEnd: function (chartContext, options) {
-          // console.log("animation end");
+          // //console.log("animation end");
         },
         click: function (event, chartContext, config) {
           // The last parameter config contains additional information like `seriesIndex` and `dataPointIndex` for cartesian charts
-          // console.log(chartContext, event, config);
+          // //console.log(chartContext, event, config);
         },
       },
       toolbar: {
@@ -84,10 +84,10 @@ const ApexBarChart = () => {
     },
     fill: {
       type: "gradient",
-      colors: ["#9C27B0"],
+      colors: ["#5E72E4"],
       gradient: {
         shade: "dark",
-        gradientToColors: ["#5E72E4", "#9C27B0"],
+        gradientToColors: ["#5E72E4", "#5E72E4"],
         inverseColors: true,
         shadeIntensity: 0.7,
         opacityFrom: 0.9,
@@ -97,83 +97,117 @@ const ApexBarChart = () => {
       },
     },
     xaxis: {
+      type: "date",
       categories: [],
+      labels: {
+        show: true,
+        style: {
+          colors: ["#fff"],
+        },
+      },
+      title: {
+        text: "Advertising Medium",
+        style: {
+          color: "#fff",
+        },
+      },
     },
     subtitle: {
-      text: "Subtitle for graph",
+      text: "graph title",
       align: "center",
       margin: 10,
       offsetX: 0,
       offsetY: 0,
       floating: false,
       style: {
-        fontSize: "20px",
-        fontWeight: "bold",
+        fontSize: "22px",
+        // fontWeight: "bold",
         fontFamily: undefined,
         color: "#9699a2",
       },
     },
     //tooltip disabled
+    // tooltip: {
+    //   enabled: true,
+    //   enabledOnSeries: true,
+    //   shared: true,
+    //   followCursor: true,
+    //   intersect: false,
+    //   inverseOrder: false,
+    //   custom: undefined,
+    //   fillSeriesColor: true,
+    //   theme: false,
+    //   style: {
+    //     fontSize: "12px",
+    //     fontFamily: undefined,
+    //   },
+    //   onDatasetHover: {
+    //     highlightDataSeries: false,
+    //   },
+    //   x: {
+    //     show: true,
+    //     // format: "dd MMM",
+    //     formatter: undefined,
+    //   },
+    //   y: {
+    //     show: false,
+    //     formatter: undefined,
+    //     title: {
+    //       formatter: (seriesName) => seriesName,
+    //     },
+    //   },
+    //   z: {
+    //     formatter: undefined,
+    //     title: "Size: ",
+    //   },
+    //   marker: {
+    //     show: false,
+    //   },
+    //   items: {
+    //     display: "flex",
+    //   },
+    //   fixed: {
+    //     enabled: true,
+    //     position: "topRight",
+    //     offsetX: 0,
+    //     offsetY: 0,
+    //   },
+    // },
     tooltip: {
-      enabled: true,
-      enabledOnSeries: true,
-      shared: true,
-      followCursor: true,
-      intersect: false,
-      inverseOrder: false,
-      custom: undefined,
-      fillSeriesColor: true,
-      theme: false,
-      style: {
-        fontSize: "12px",
-        fontFamily: undefined,
-      },
-      onDatasetHover: {
-        highlightDataSeries: false,
-      },
-      x: {
-        show: true,
-        format: "dd MMM",
-        formatter: undefined,
-      },
-      y: {
-        show: false,
-        formatter: undefined,
-        title: {
-          formatter: (seriesName) => seriesName,
-        },
-      },
-      z: {
-        formatter: undefined,
-        title: "Size: ",
-      },
-      marker: {
-        show: false,
-      },
-      items: {
-        display: "flex",
-      },
       fixed: {
-        enabled: false,
-        position: "topRight",
-        offsetX: 0,
-        offsetY: 0,
+        enabled: true,
+        position: "topLeft", // topRight, topLeft, bottomRight, bottomLeft
+        offsetY: 30,
+        offsetX: 60,
+      },
+    },
+    legend: {
+      position: "bottom",
+      labels: {
+        //color bottom label
+        colors: "white",
       },
     },
   });
-  const selectedTabDropdown = useSelector((state) => state.sheet.selectedTabName);
+  const selectedTabName = useSelector((state) => state.sheet.selectedTabName);
   const tabData = useSelector((state) => state.sheet.rows);
-
+  const selectedSheetName = useSelector((state) => state.sheet.sheetData);
   useEffect(() => {
-    console.log("Bar chart useEffect" , tabData);
+    console.log({ selectedTabName, selectedYear, selectedSheetName });
+    const GraphTitle = `${selectedSheetName.name}-${selectedTabName} in ${selectedYear}`;
+    setChartOptions({ ...chartOptions, subtitle: { ...chartOptions.subtitle, text: GraphTitle } });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedTabName, selectedYear, selectedSheetName]);
+  useEffect(() => {
+    //console.log("Bar chart useEffect" , tabData);
     if (tabData.length === 0) return null;
     const yearsForTab = [];
     tabData.forEach((el) => yearsForTab.push(el.Year));
-    console.log({yearsForTab})
+    //console.log({yearsForTab})
     setYears(yearsForTab);
     // const found = tabData.find((el) => el.Year == parseInt(selectedYear));
     // const founded = { ...found };
-    // console.log({founded})
+    // //console.log({founded})
     // delete founded.id;
     // delete founded.tab_name;
     // delete founded.Year;
@@ -188,10 +222,10 @@ const ApexBarChart = () => {
     // let values = Object.values(founded);
     // setValues(values);
     // let roundedValues = values.map((v) => Math.round(v * 100) / 100);
-    // console.log('Barchart ',roundedValues)
+    // //console.log('Barchart ',roundedValues)
     // setChartData([{ data: roundedValues }]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedTabDropdown, selectedYear]);
+  }, [selectedTabName, selectedYear]);
 
   const handleYearChange = (e) => {
     setSelectedYear(e.target.value);

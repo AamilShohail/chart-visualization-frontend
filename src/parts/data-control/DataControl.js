@@ -20,7 +20,7 @@ export default function DataControl() {
     dispatch(sheetActions.changeTab({ selectedTab: data.value }));
   };
   const handleSheetChangeHandler = (e, data) => {
-    console.log(data.value)
+    //console.log(data.value)
     // fetchSheetById(data.value)
     dispatch(setSheet(data.value))
     // let response;
@@ -60,7 +60,7 @@ export default function DataControl() {
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 50) {
-      // console.log(offset)
+      // //console.log(offset)
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -103,9 +103,8 @@ export default function DataControl() {
     setTabOptions([...tabDropdown]);
   }, [tabDropdownValues, sheetDropdownValues]);
   useEffect(() => {
-    dispatch(getSheetMeta());
-    console.log({sheetDropdownValues})
-  }, [dispatch])
+    //console.log({sheetDropdownValues})
+  }, [])
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
