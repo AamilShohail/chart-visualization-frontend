@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { AdminDashboard } from "../api/agent";
-import { useSelector } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -17,6 +16,8 @@ import CreateSheet from "../components/modal/CreateSheetDialog";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import "react-toastify/dist/ReactToastify.css";
+import { useDispatch, useSelector } from "react-redux";
+import { getSheetMeta } from "../store/sheet-action";
 
 import AdminGrid from "../parts/Admin/PaperGrid";
 import AddUserDialog from "../components/popup/AddUserDialog";
@@ -33,6 +34,7 @@ const theme = createTheme({
 });
 
 function AdminDashboards() {
+  const dispatch = useDispatch();
   const [moduleOpen, setModuleOpen] = useState(false);
   const [open, setOpen] = useState(false);
   const [rows, setRows] = useState([]);
@@ -40,6 +42,7 @@ function AdminDashboards() {
   const classes = useStyles();
   const [users, setUsers] = useState([]);
   const [Loading, setLoading] = useState(false);
+  const sheets = useSelector((state) => state.sheet.sheets);
 
   const requestSearch = (searchedVal) => {
     const filteredRows = users.filter((row) => {
@@ -77,6 +80,7 @@ function AdminDashboards() {
 
   useEffect(() => {
     //console.log("Admin Dashboard mounted");
+    dispatch(getSheetMeta());
     fetchUser();
   }, []);
   const fetchUser = async () => {
@@ -89,7 +93,6 @@ function AdminDashboards() {
   };
   return (
     <Box p={5}>
-      <AdminGrid />
       <Grid item xs={10}>
         <Grid container direction="row" alignContent="center" spacing={4}>
           <Grid item>
@@ -169,6 +172,12 @@ function AdminDashboards() {
           </Paper>
         </Box>
       </ThemeProvider>
+      <div>
+        <h1>Sheets In System </h1>
+      </div>
+      {sheets.map((sheet) => (
+        <h3>{sheet.sheet_name}</h3>
+      ))}
       <br />
     </Box>
   );

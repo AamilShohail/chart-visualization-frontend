@@ -33,7 +33,7 @@ const requests = {
 
 export const Auth = {
   login: (loginCredential) => requests.post(`/auth/signin`, loginCredential),
-  loadUser: () => requests.post(`/auth/extractuser/${localStorage.token}`),
+  loadUser: () => requests.getSecured(`/auth/extractuser/${localStorage.token}`),
 };
 
 export const AdminDashboard = {
@@ -53,7 +53,7 @@ export const RegisterUser = (values) => {
 };
 export const Sheet = {
   fetchSheetsMeta: () => requests.getSecured("/meta/sheet"),
-  fetchSheetById: (id) => requests.getSecured(`excel/sheet/${id}`),
+  fetchSheetById: (id) => requests.getSecured(`excel/sheets/${id}`),
 };
 
 export default { RegisterUser };
