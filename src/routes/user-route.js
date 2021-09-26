@@ -3,9 +3,6 @@ import { Route, Switch, Redirect } from "react-router";
 import Dashboard from "../pages/Dashboard";
 import PrivateRoute from "./private-route";
 import NotFound from "../pages/NoAccess";
-import SideBar from "../parts/sidebar/AdminSidebar";
-
-import styles from "../style/Layout.module.css";
 
 function UserRoutes() {
   return (

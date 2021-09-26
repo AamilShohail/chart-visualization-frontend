@@ -4,31 +4,22 @@ import {
   DialogContentText,
   DialogContent,
   DialogTitle,
-  makeStyles,
   Dialog,
   Typography,
 } from "@material-ui/core";
 import React from "react";
-import AddUserLayout from "./AddUserLayout";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import { ToastContainer } from "react-toastify";
 import Agent from "../../api/agent";
-import { ToastContainer, toast } from "react-toastify";
+import AddUserLayout from "./AddUserLayout";
+import { AdminDashboard } from "../../api/agent";
 
 const initialValues = {
   email: "",
   username: "",
   roles: "",
 };
-
-const useStyles = makeStyles((theme) => ({
-  container: {
-    width: "1300px",
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-  },
-}));
 
 const validationSchema = Yup.object({
   email: Yup.string("Enter user email id").required("email is Required"),
@@ -37,21 +28,22 @@ const validationSchema = Yup.object({
 });
 
 function AddUserDialog(props) {
-  const { open, handleClose } = props;
+  const { open, handleClose,userRegisterHandler } = props;
   const formik = useFormik({
     initialValues: initialValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      Agent.RegisterUser(values)
-        //TODO: add toast
-        .then((res) => {
-          if (res.status === 201) {
-            formik.resetForm();
-          }
-        })
-        .catch(
-          (error) => console.log(error)
-        );
+      userRegisterHandler(values)
+      // Agent.RegisterUser(values)
+      //   .then(AdminDashboard.fetchUsers())
+      //   //TODO: add toast
+      //   .then((res) => {
+      //     if (res.status === 201) {
+      //       formik.resetForm();
+      //     }
+      //   })
+      //   .catch((error) => console.log(error));
+      console.log('submit handlers')
       handleClose();
       formik.setValues(initialValues);
     },

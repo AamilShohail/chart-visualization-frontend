@@ -14,6 +14,7 @@ const tableStyle = {
 
 export default function TableDataGrid() {
   const tabData = useSelector((state) => state.sheet.rows);
+
   const [pageSize, setPageSize] = React.useState(5);
   const [columns, setColumns] = useState([]);
   const theme = createTheme({

@@ -51,19 +51,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function AutoGrid() {
-  const [moduleOpen, setModuleOpen] = useState(false);
   const sheets = useSelector((state) => state.sheet.sheets);
   const [isNameError, setIsNameError] = useState(false);
   const [Loading, setLoading] = useState(false);
 
   const classes = useStyles();
   const [openPopup, setOpenPopup] = useState(false);
-  const handleModuleClick = () => {
-    setModuleOpen(true);
-  };
-  const handleModuleClose = () => {
-    setModuleOpen(false);
-  };
   const Zoom = cssTransition({
     enter: "zoomIn",
     exit: "zoomOut",
@@ -96,7 +89,7 @@ export default function AutoGrid() {
       return;
     }
     //console.log("proceed");
-    setOpenPopup(false)
+    setOpenPopup(false);
     const newFile = [];
     file.forEach((f) => {
       sheets.forEach((s) => {
@@ -105,38 +98,16 @@ export default function AutoGrid() {
         }
       });
     });
-    //console.log({ newFile });
-    const re = await uploadSheets(newFile);
+    const response = await uploadSheets(newFile);
     setLoading(false);
-    //console.log("re", re);
   };
 
   return (
     <>
       <div className={classes.root}>
-        <Grid container spacing={3}>
-          <Grid item xs>
-            <Card className={classes.Cardroot}>
-              <CardActionArea>
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    File Upload
-                  </Typography>
-                  <p></p>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    <Button
-                      variant="contained"
-                      color="secondary"
-                      onClick={() => setOpenPopup(true)}
-                    >
-                      Add Excel File
-                    </Button>
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-        </Grid>
+        <Button variant="contained" color="secondary" onClick={() => setOpenPopup(true)}>
+          Add Excel File
+        </Button>
       </div>
       {openPopup && (
         <DropzoneDialogPopup
@@ -146,7 +117,7 @@ export default function AutoGrid() {
           isError={isNameError}
         />
       )}
-      {Loading && <Backdrop show={true} />}
+      {Loading && <Backdrop message="Uploading Sheets 📤 ๛..." show={true} />}
       <ToastContainer
         position="bottom-left"
         autoClose={15000}

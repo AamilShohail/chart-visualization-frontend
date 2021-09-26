@@ -1,11 +1,12 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router";
+
 import SideBar from "../parts/sidebar/AdminSidebar";
-import FileUpload from "../pages/File-Upload";
 import UserDashboard from "../pages/Dashboard";
 import AdminDashboards from "../pages/AdminDashboard";
-import PrivateRoute from "./private-route";
 import NotFound from "../pages/NoAccess";
+
+import PrivateRoute from "./private-route";
 
 import styles from "../style/Layout.module.css";
 function AdminRoutes() {
@@ -16,16 +17,6 @@ function AdminRoutes() {
       </div>
       <div className={styles.content}>
         <Switch>
-          <PrivateRoute
-            component={FileUpload}
-            path={`${process.env.PUBLIC_URL}/admin/file-upload`}
-            allowedRoles={["ROLE_ADMIN"]}
-          />
-          <PrivateRoute
-            component={AdminDashboards}
-            path={`${process.env.PUBLIC_URL}/admin/users`}
-            allowedRoles={["ROLE_ADMIN"]}
-          />
           <PrivateRoute
             component={UserDashboard}
             path={`${process.env.PUBLIC_URL}/admin/user-dashboard`}

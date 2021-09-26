@@ -46,14 +46,11 @@ export const AdminDashboard = {
   },
   updateUser: (updatedUser, id) => requests.put(`/user/update/${id}`, updatedUser),
   setNewSheet: (newSheetData) => requests.postSecured(`/meta/create`, newSheetData),
+  createUser: (values) => requests.postSecured("/auth/signup", values),
+  fetchSheetsMeta: () => requests.getSecured("/meta/sheet"),
 };
 
-export const RegisterUser = (values) => {
-  return axios.post(axios.defaults.baseURL + "/auth/signup", values);
-};
 export const Sheet = {
   fetchSheetsMeta: () => requests.getSecured("/meta/sheet"),
   fetchSheetById: (id) => requests.getSecured(`excel/sheets/${id}`),
 };
-
-export default { RegisterUser };

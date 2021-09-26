@@ -3,7 +3,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 
 import "./BackDrop.css";
 
-const backdrop = ({ show }) => {
+const backdrop = ({ show,message }) => {
   const cssClasses = ["Backdrop", show ? "BackdropOpen" : "BackdropClosed"];
   return (
     <div className={cssClasses.join(" ")}>
@@ -11,7 +11,7 @@ const backdrop = ({ show }) => {
       <div
         style={{ display: "flex", height: "100vh", justifyContent: "center", alignItems: "center",flexDirection:"column" }}
       >
-        <h1>Sheet uploading 📥 ... </h1>
+        <h1>{message}... </h1>
         <CircularProgress />
       </div>
     </div>

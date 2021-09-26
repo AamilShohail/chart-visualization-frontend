@@ -15,6 +15,8 @@ import YearBar from "../parts/charts/year-based-charts/yearBar";
 export default function Dashboard() {
   const isLight = useSelector((state) => state.ui.themeIsLight);
   const Loading = useSelector((state) => state.ui.sheetMetaLoad);
+  const selectedSheetName = useSelector((state) => state.sheet.sheetData);
+  const selectedTabName = useSelector((state) => state.sheet.selectedTabName);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -37,7 +39,13 @@ export default function Dashboard() {
           >
             <DataControl />
           </div>
-
+          <h1
+            style={{
+              color: !isLight ? "#e8e8e4" : "#12181B",
+            }}
+          >
+            Sheet: {selectedSheetName.name} | Tab:{selectedTabName}
+          </h1>
           <div
             className={styles.table}
             style={{
@@ -46,6 +54,13 @@ export default function Dashboard() {
           >
             <Table />
           </div>
+          <p
+            style={{
+              color: !isLight ? "#e8e8e4" : "#12181B",
+            }}
+          >
+            Here all amounts are in million US$
+          </p>
           <div className={styles.charts_wrapper}>
             <div
               className={styles.chart_container_wrapper}

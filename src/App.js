@@ -1,9 +1,12 @@
 import "./App.css";
 import "semantic-ui-css/semantic.min.css";
+import "react-toastify/dist/ReactToastify.css";
+
 import { useState, useEffect } from "react";
 import Loading from "./components/ui/loading/Loading";
 import { useSelector, useDispatch } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
+
 import UserRoutes from "./routes/user-route";
 import AdminRoutes from "./routes/admin-route";
 import PublicRoute from "./routes/public-route";
@@ -18,7 +21,6 @@ function App() {
   const [IsAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    //for development
     dispatch(loadUser());
   }, [dispatch]);
   useEffect(() => {
@@ -30,7 +32,6 @@ function App() {
   return (
     <Router>
       {IsAuthenticated ? IsAdmin ? <AdminRoutes /> : <UserRoutes /> : <PublicRoute />}
-      {/* <Dg/> */}
     </Router>
   );
 }
