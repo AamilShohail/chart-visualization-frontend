@@ -8,7 +8,11 @@ import uktResponse from "../../assets/united_kingdom_tables.json";
 
 import { changeResponseStructure, getTabList } from "../../helpers/helper";
 
-import { getSheetMeta,setSheet } from "../../store/sheet-action";
+import { getSheetMeta, setSheet } from "../../store/sheet-action";
+
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import InputLabel from "@mui/material/InputLabel";
 
 export default function DataControl() {
   const dispatch = useDispatch();
@@ -22,7 +26,7 @@ export default function DataControl() {
   const handleSheetChangeHandler = (e, data) => {
     //console.log(data.value)
     // fetchSheetById(data.value)
-    dispatch(setSheet(data.value))
+    dispatch(setSheet(data.value));
     // let response;
     // if (data.value === "United Kingdom Tables") {
     //   response = uktResponse;
@@ -69,7 +73,7 @@ export default function DataControl() {
   useEffect(() => {}, []);
 
   // useEffect(() => {
-    // dispatch(getSheetMeta());
+  // dispatch(getSheetMeta());
   //   //set sheet id 3 as default
   //   const response = uktResponse;
   //   // let response;
@@ -104,7 +108,7 @@ export default function DataControl() {
   }, [tabDropdownValues, sheetDropdownValues]);
   useEffect(() => {
     //console.log({sheetDropdownValues})
-  }, [])
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -138,24 +142,32 @@ export default function DataControl() {
       >
         <Dropdown
           placeholder="Select Sheet"
-          fluid
-          search
-          selection
+          button
+          className="icon"
+          floating
+          labeled
+          icon="file"
           options={SheetOptions}
+          search
           onChange={handleSheetChangeHandler}
           style={{
             margin: "10px",
+            width: 250,
           }}
         />
         <Dropdown
           placeholder="Select Tab"
-          fluid
-          search
-          selection
+          button
+          className="icon"
+          floating
+          labeled
+          icon="world"
           options={TabOptions}
+          search
           onChange={handleTabChangeHandler}
           style={{
             margin: "10px",
+            width: 250,
           }}
         />
       </div>

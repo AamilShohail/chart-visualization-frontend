@@ -5,6 +5,12 @@ import { sheetActions } from "../../../store/sheet-slice";
 import pptxgen from "pptxgenjs";
 
 import styles from "./BarChart.module.css";
+import { DownloadOutlined } from "@mui/icons-material";
+import Button from "@mui/material/Button";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import InputLabel from "@mui/material/InputLabel";
+import FormControl from "@mui/material/FormControl";
 
 const ApexBarChart = () => {
   const dispatch = useDispatch();
@@ -195,7 +201,10 @@ const ApexBarChart = () => {
   useEffect(() => {
     console.log({ selectedTabName, selectedYear, selectedSheetName });
     const GraphTitle = `${selectedSheetName.name}-${selectedTabName} in ${selectedYear}`;
-    setChartOptions({ ...chartOptions, subtitle: { ...chartOptions.subtitle, text: GraphTitle } });
+    setChartOptions({
+      ...chartOptions,
+      subtitle: { ...chartOptions.subtitle, text: GraphTitle },
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTabName, selectedYear, selectedSheetName]);
   useEffect(() => {
@@ -235,7 +244,9 @@ const ApexBarChart = () => {
     delete founded.tab_name;
     delete founded.Year;
     delete founded.Total;
-    dispatch(sheetActions.changeBarChartDropdown({ barChartData: { ...founded } }));
+    dispatch(
+      sheetActions.changeBarChartDropdown({ barChartData: { ...founded } })
+    );
     const properties = Object.keys(founded);
     setLabels(properties);
     setChartOptions({
@@ -248,7 +259,10 @@ const ApexBarChart = () => {
     setChartData([{ data: roundedValues }]);
   };
   const toggleAxisHandler = () => {
-    const gradientType = chartOptions.fill.gradient.type === "vertical" ? "horizontal" : "vertical";
+    const gradientType =
+      chartOptions.fill.gradient.type === "vertical"
+        ? "horizontal"
+        : "vertical";
     setChartOptions({
       ...chartOptions,
       plotOptions: {
@@ -329,21 +343,27 @@ const ApexBarChart = () => {
   };
   return (
     <div id="chart">
-      <select
-        id="dropdown"
-        value={selectedYear}
-        className="ui dropdown"
-        onChange={handleYearChange}
+      <FormControl
+        style={{ width: 200, left: 250, marginTop: 10 }}
+        fullWidth={false}
       >
-        {years.map((year) => {
-          return (
-            <option key={year} value={year}>
-              {year}
-            </option>
-          );
-        })}
-      </select>
-
+        <InputLabel style={{ color: "white" }}>Year</InputLabel>
+        <Select
+          id="dropdown"
+          value={selectedYear}
+          onChange={handleYearChange}
+          label="year"
+          style={{ color: "white", alignItems: "center", textAlign: "center" }}
+        >
+          {years.map((year) => {
+            return (
+              <MenuItem key={year} value={year}>
+                {year}
+              </MenuItem>
+            );
+          })}
+        </Select>
+      </FormControl>
       <ReactApexChart
         options={chartOptions}
         series={chartData}
@@ -351,12 +371,20 @@ const ApexBarChart = () => {
         // height="100%"
       />
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <button style={{}} onClick={toggleAxisHandler}>
+        <Button variant="outlined" onClick={toggleAxisHandler}>
           Toggle Axis
-        </button>
-        <button style={{ margin: "5px", padding: "5px" }} onClick={downloadPPT}>
+        </Button>
+        <Button
+          variant="outlined"
+          style={{ marginLeft: 3 }}
+          startIcon={<DownloadOutlined />}
+          onClick={downloadPPT}
+        >
           Download pptx
-        </button>
+        </Button>
+        {/* <button style={{ margin: "5px", padding: "5px" }} onClick={downloadPPT}>
+          Download pptx
+        </button> */}
       </div>
     </div>
   );

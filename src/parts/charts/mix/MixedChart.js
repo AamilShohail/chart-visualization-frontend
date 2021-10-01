@@ -1,6 +1,10 @@
 import ReactApexChart from "react-apexcharts";
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+import { FormControl } from "@mui/material";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import InputLabel from "@mui/material/InputLabel";
 
 const ApexChart = () => {
   const [chartOptions, setChartOptions] = useState({
@@ -197,7 +201,9 @@ const ApexChart = () => {
   //Bar1
   const chartOneHandler = (e) => {
     setChartOneValue(e.target.value);
-    const thirdChart = allSeriesData.find((label) => label.name === e.target.value);
+    const thirdChart = allSeriesData.find(
+      (label) => label.name === e.target.value
+    );
     console.log(series);
     const updatedSeries = [...series];
     const setObj = {
@@ -212,7 +218,9 @@ const ApexChart = () => {
   //Bar2
   const chartTwoHandler = (e) => {
     setChartTwoValue(e.target.value);
-    const thirdChart = allSeriesData.find((label) => label.name === e.target.value);
+    const thirdChart = allSeriesData.find(
+      (label) => label.name === e.target.value
+    );
     // console.log(series);
     const updatedSeries = [...series];
     const setObj = {
@@ -226,7 +234,9 @@ const ApexChart = () => {
   //line
   const chartThreeHandler = (e) => {
     setChartThreeValue(e.target.value);
-    const thirdChart = allSeriesData.find((label) => label.name === e.target.value);
+    const thirdChart = allSeriesData.find(
+      (label) => label.name === e.target.value
+    );
     // console.log(series);
     const updatedSeries = [...series];
     const setObj = {
@@ -241,54 +251,88 @@ const ApexChart = () => {
 
   return (
     <div id="chart">
-      <div>
-        <select
-          id="dropdown"
-          value={chartOneValue}
-          onChange={chartOneHandler}
-          className="ui dropdown"
-        >
-          {dropDownsValues.map((el) => {
-            return (
-              <option key={el} value={el}>
-                {el}
-              </option>
-            );
-          })}
-        </select>
-        <select
-          id="dropdown"
-          value={chartTwoValue}
-          onChange={chartTwoHandler}
-          className="ui dropdown"
-        >
-          {dropDownsValues.map((el) => {
-            return (
-              <option key={el} value={el}>
-                {el}
-              </option>
-            );
-          })}
-        </select>
-        <select
-          id="dropdown"
-          value={chartThreeValue}
-          onChange={chartThreeHandler}
-          className="ui dropdown"
-        >
-          {dropDownsValues.map((el) => {
-            return (
-              <option key={el} value={el}>
-                {el}
-              </option>
-            );
-          })}
-        </select>
+      <div style={{  paddingLeft: 50,margin: 10 }}>
+        <FormControl style={{ width: 200, paddingRight: 5 }}>
+          <InputLabel style={{ color: "white" }}>Source 1</InputLabel>
+          <Select
+            id="dropdown"
+            value={chartOneValue}
+            onChange={chartOneHandler}
+            label="Source 1"
+            style={{
+              color: "white",
+              alignItems: "center",
+              textAlign: "center",
+            }}
+          >
+            {dropDownsValues.map((el) => {
+              return (
+                <MenuItem key={el} value={el}>
+                  {el}
+                </MenuItem>
+              );
+            })}
+          </Select>
+        </FormControl>
+        <FormControl style={{ width: 200, paddingRight: 5 }}>
+          <InputLabel style={{ color: "white" }}>Source 2</InputLabel>
+          <Select
+            value={chartTwoValue}
+            onChange={chartTwoHandler}
+            label="Source 2"
+            style={{
+              color: "white",
+              alignItems: "center",
+              textAlign: "center",
+            }}
+          >
+            {dropDownsValues.map((el) => {
+              return (
+                <MenuItem key={el} value={el}>
+                  {el}
+                </MenuItem>
+              );
+            })}
+          </Select>
+        </FormControl>
+        <FormControl style={{ width: 200, paddingRight: 5 }}>
+          <InputLabel style={{ color: "white" }}>Source 3</InputLabel>
+          <Select
+            value={chartThreeValue}
+            onChange={chartThreeHandler}
+            label="Source 3"
+            style={{
+              color: "white",
+              alignItems: "center",
+              textAlign: "center",
+            }}
+          >
+            {dropDownsValues.map((el) => {
+              return (
+                <MenuItem key={el} value={el}>
+                  {el}
+                </MenuItem>
+              );
+            })}
+          </Select>
+        </FormControl>
       </div>
-      <h2 style={{ color: "white", width: "100%", textAlign: "center", marginTop: "5px" }}>
+      <h2
+        style={{
+          color: "white",
+          width: "100%",
+          textAlign: "center",
+          marginTop: "5px",
+        }}
+      >
         {graphTitle}
       </h2>
-      <ReactApexChart options={chartOptions} series={series} type="area" height={650} />
+      <ReactApexChart
+        options={chartOptions}
+        series={series}
+        type="area"
+        height={650}
+      />
     </div>
   );
 };
