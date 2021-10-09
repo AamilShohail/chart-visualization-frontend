@@ -2,15 +2,17 @@ import axios from "axios";
 
 axios.defaults.baseURL = "http://localhost:8080";
 //Hosting Error 👽
-const JWTconfig = {
-  headers: { Authorization: `Bearer ${localStorage.token}` },
-};
-const FormDataConfig = {
-  headers: {
-    Authorization: `Bearer ${localStorage.token}`,
-    "content-type": "multipart/form-data",
-  },
-};
+// const JWTconfig = () => {
+//   return {
+//     headers: { Authorization: `Bearer ${localStorage.token}` },
+//   };
+// };
+// const FormDataConfig = {
+//   headers: {
+//     Authorization: `Bearer ${localStorage.token}`,
+//     "content-type": "multipart/form-data",
+//   },
+// };
 
 const responseBody = (response) => response.data;
 
@@ -28,19 +30,19 @@ const requests = {
       .then(sleep(1000))
       .then(responseBody),
   postSecured: (url, body) =>
-    axios
-      .post(url, body, {
-        headers: { Authorization: `Bearer ${localStorage.token}` },
-      })
-      .then(sleep(3000))
-      .then(responseBody),
+    axios.post(url, body).then(sleep(3000)).then(responseBody),
   post: (url, body) =>
     axios.post(url, body).then(sleep(3000)).then(responseBody),
   formUrlPost: (url, file) => {
     let formData = new FormData();
     formData.append("file", file);
     return axios
-      .post(url, formData, FormDataConfig)
+      .post(url, formData, {
+        headers: {
+          Authorization: `Bearer ${localStorage.token}`,
+          "content-type": "multipart/form-data",
+        },
+      })
       .then(sleep(8000))
       .then(responseBody);
   },
@@ -60,7 +62,7 @@ export const Auth = {
 };
 
 export const AdminDashboard = {
-  fetchUsers: (url) => requests.getSecured("/user/all"),
+  fetchUsers: () => requests.getSecured("/user/all"),
   uploadSheetData: (sheetCode, sheetName) =>
     requests.postSecured("/meta/create", { sheetCode, sheetName }),
   uploadSheet: (id, file) => {
