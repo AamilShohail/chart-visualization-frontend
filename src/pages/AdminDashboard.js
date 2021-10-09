@@ -93,8 +93,7 @@ function AdminDashboards() {
   let webApiUrl = "http://localhost:8080/user/all";
   let allSheetsMeta = "http://localhost:8080/meta/sheet";
   useEffect(() => {
-    console.log("Admin dashboard mounted, ", localStorage.token);
-    dispatch(getSheetMeta());
+    //dispatch(getSheetMeta());
     fetchUser();
     fetchSheetsMeta();
   }, []);
@@ -102,13 +101,13 @@ function AdminDashboards() {
     console.log("Admin dashboard --> fetch users : start");
     try {
       setLoading(true);
-      //const users = await AdminDashboard.fetchUsers();
-      const users = await axios.get(webApiUrl, {
-        headers: { Authorization: `Bearer ${localStorage.token}` },
-      });
+      const users = await AdminDashboard.fetchUsers();
+      // const users = await axios.get(webApiUrl, {
+      //   headers: { Authorization: `Bearer ${localStorage.token}` },
+      // });
       console.log("Admin dashboard --> fetch users : end ", { users });
-      setRows(users.data.data);
-      setUsers(users.data.data);
+      setRows(users.data);
+      setUsers(users.data);
       setLoading(false);
     } catch (e) {
       console.log("Admin dashboard --> fetch users : error ", e);
@@ -118,12 +117,12 @@ function AdminDashboards() {
   const fetchSheetsMeta = async () => {
     try {
       setLoading(true);
-      //const allSheets = await AdminDashboard.fetchSheetsMeta();
-      const allSheets = await axios.get(allSheetsMeta, {
-        headers: { Authorization: `Bearer ${localStorage.token}` },
-      });
+      const allSheets = await AdminDashboard.fetchSheetsMeta();
+      // const allSheets = await axios.get(allSheetsMeta, {
+      //   headers: { Authorization: `Bearer ${localStorage.token}` },
+      // });
       console.log(allSheets);
-      setSheetNames([...allSheets.data.data]);
+      setSheetNames([...allSheets.data]);
 
       setLoading(false);
     } catch (e) {

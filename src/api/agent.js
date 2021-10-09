@@ -1,6 +1,7 @@
 import axios from "axios";
 
 axios.defaults.baseURL = "http://localhost:8080";
+//Hosting Error 👽
 const JWTconfig = {
   headers: { Authorization: `Bearer ${localStorage.token}` },
 };
@@ -20,9 +21,19 @@ const sleep = (ms) => (response) =>
 const requests = {
   get: (url) => axios.get(url).then(sleep(3000)).then(responseBody),
   getSecured: (url) =>
-    axios.get(url, JWTconfig).then(sleep(1000)).then(responseBody),
+    axios
+      .get(url, {
+        headers: { Authorization: `Bearer ${localStorage.token}` },
+      })
+      .then(sleep(1000))
+      .then(responseBody),
   postSecured: (url, body) =>
-    axios.post(url, body, JWTconfig).then(sleep(3000)).then(responseBody),
+    axios
+      .post(url, body, {
+        headers: { Authorization: `Bearer ${localStorage.token}` },
+      })
+      .then(sleep(3000))
+      .then(responseBody),
   post: (url, body) =>
     axios.post(url, body).then(sleep(3000)).then(responseBody),
   formUrlPost: (url, file) => {
@@ -34,7 +45,12 @@ const requests = {
       .then(responseBody);
   },
   put: (url, body) =>
-    axios.put(url, body, JWTconfig).then(sleep(3000)).then(responseBody),
+    axios
+      .put(url, body, {
+        headers: { Authorization: `Bearer ${localStorage.token}` },
+      })
+      .then(sleep(3000))
+      .then(responseBody),
 };
 
 export const Auth = {
