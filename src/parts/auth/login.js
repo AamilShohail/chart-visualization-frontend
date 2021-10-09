@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
@@ -13,11 +13,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import { useDispatch } from "react-redux";
 import MLink from "@material-ui/core/Link";
-import {uiActions} from "../../store/ui"
-import {userLogin} from "../../store/auth-action"
-import Alert from "../../components/alert/Alert"
-import  {useSelector} from "react-redux"
-
+import { uiActions } from "../../store/ui";
+import { userLogin } from "../../store/auth-action";
+import Alert from "../../components/alert/Alert";
+import { useSelector } from "react-redux";
 
 function Copyright() {
   return (
@@ -53,12 +52,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignIn() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const classes = useStyles();
   const [Username, setUsername] = useState("");
   const [Password, setPassword] = useState("");
 
- const isError = useSelector(state => state.ui.authError)
+  const isError = useSelector((state) => state.ui.authError);
 
   const usernameChange = (e) => {
     setUsername(e.target.value);
@@ -68,10 +67,8 @@ export default function SignIn() {
   };
 
   const handleSubmit = (e) => {
-    // your submit logic
-    dispatch(uiActions.loadingStart())
+    // submit logic
     e.preventDefault();
-    //console.log(Username,Password)
     dispatch(userLogin(Username, Password));
   };
   return (
@@ -149,7 +146,9 @@ export default function SignIn() {
           <Copyright />
         </Box>
       </Container>
-     {isError&& <Alert severity="error" message="check username and password"/>}
+      {isError && (
+        <Alert severity="error" message="check username and password" />
+      )}
     </div>
   );
 }

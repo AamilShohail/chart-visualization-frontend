@@ -18,16 +18,19 @@ function AdminRoutes() {
       <div className={styles.content}>
         <Switch>
           <PrivateRoute
-            component={UserDashboard}
-            path={`${process.env.PUBLIC_URL}/admin/user-dashboard`}
-            allowedRoles={["ROLE_ADMIN"]}
-          />
-          <PrivateRoute
             component={AdminDashboards}
             path={`${process.env.PUBLIC_URL}/admin/home`}
             allowedRoles={["ROLE_ADMIN"]}
           />
-          <Route path={`${process.env.PUBLIC_URL}/not-found`} component={NotFound} />
+          <PrivateRoute
+            component={UserDashboard}
+            path={`${process.env.PUBLIC_URL}/admin/user-dashboard`}
+            allowedRoles={["ROLE_ADMIN"]}
+          />
+          <Route
+            path={`${process.env.PUBLIC_URL}/not-found`}
+            component={NotFound}
+          />
           <Route path={`${process.env.PUBLIC_URL}/`}>
             <Redirect to={`${process.env.PUBLIC_URL}/admin/home`} />
           </Route>

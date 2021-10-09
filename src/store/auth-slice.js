@@ -11,15 +11,16 @@ const authSlice = createSlice({
   },
   reducers: {
     login(state, action) {
+      console.log("auth_slice--> login :", { ...action.payload });
       localStorage.setItem("token", action.payload.token);
       state.token = action.payload.token;
       state.isAuthenticated = true;
       //Array from response
       state.role = action.payload.role[0].authority;
-      // state.loading = false;
       state.user = action.payload.user;
     },
     loadUser(state, action) {
+      console.log("auth_slice--> loadUser :", { ...action.payload });
       state.token = localStorage.getItem("token");
       state.isAuthenticated = true;
       state.role = action.payload.role;
@@ -27,7 +28,7 @@ const authSlice = createSlice({
       state.user = action.payload.user;
     },
     logout(state) {
-      localStorage.removeItem("token");
+      localStorage.setItem("token", "error token");
       state.token = null;
       state.isAuthenticated = false;
       state.role = "guest";
@@ -35,15 +36,15 @@ const authSlice = createSlice({
       state.user = null;
     },
     //no register
-    registerSuccess(state, action) { },
+    registerSuccess(state, action) {},
     //no register
-    registerFail(state, action) { },
+    registerFail(state, action) {},
     loginError(state) {
       localStorage.removeItem("token");
       state.token = null;
       state.isAuthenticated = false;
       state.loading = false;
-      state.role = 'gust'
+      state.role = "gust";
       // state.error = true
     },
   },

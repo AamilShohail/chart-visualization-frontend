@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 import Paper from "@material-ui/core/Paper";
 import SearchBar from "material-ui-search-bar";
@@ -14,7 +15,11 @@ import {
   Table,
 } from "@material-ui/core";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import { createTheme, ThemeProvider, makeStyles } from "@material-ui/core/styles";
+import {
+  createTheme,
+  ThemeProvider,
+  makeStyles,
+} from "@material-ui/core/styles";
 import { useDispatch, useSelector } from "react-redux";
 
 import CreateSheet from "../components/modal/CreateSheetDialog";
@@ -79,33 +84,47 @@ function AdminDashboards() {
     requestSearch(searched);
   };
   const editItem = (user) => toggleUserStatus(user);
-  const BlockIcon = (user) => <button onClick={() => editItem(user)}>Block</button>;
-  const ActivateIcon = (user) => <button onClick={() => editItem(user)}>Activate</button>;
-
+  const BlockIcon = (user) => (
+    <button onClick={() => editItem(user)}>Block</button>
+  );
+  const ActivateIcon = (user) => (
+    <button onClick={() => editItem(user)}>Activate</button>
+  );
+  let webApiUrl = "http://localhost:8080/user/all";
+  let allSheetsMeta = "http://localhost:8080/meta/sheet";
   useEffect(() => {
+    console.log("Admin dashboard mounted, ", localStorage.token);
     dispatch(getSheetMeta());
     fetchUser();
     fetchSheetsMeta();
-  }, [dispatch]);
+  }, []);
   const fetchUser = async () => {
-    console.log("Admin dashboard --> fetch users : start")
+    console.log("Admin dashboard --> fetch users : start");
     try {
       setLoading(true);
-      const users = await AdminDashboard.fetchUsers();
-      console.log("Admin dashboard --> fetch users : end")
-      setRows(users.data);
-      setUsers(users.data);
+      //const users = await AdminDashboard.fetchUsers();
+      const users = await axios.get(webApiUrl, {
+        headers: { Authorization: `Bearer ${localStorage.token}` },
+      });
+      console.log("Admin dashboard --> fetch users : end ", { users });
+      setRows(users.data.data);
+      setUsers(users.data.data);
       setLoading(false);
     } catch (e) {
-      console.log("Admin dashboard --> fetch users : error ",e)
+      console.log("Admin dashboard --> fetch users : error ", e);
       setLoading(false);
     }
   };
   const fetchSheetsMeta = async () => {
     try {
       setLoading(true);
-      const allSheets = await AdminDashboard.fetchSheetsMeta();
-      setSheetNames([...allSheets.data]);
+      //const allSheets = await AdminDashboard.fetchSheetsMeta();
+      const allSheets = await axios.get(allSheetsMeta, {
+        headers: { Authorization: `Bearer ${localStorage.token}` },
+      });
+      console.log(allSheets);
+      setSheetNames([...allSheets.data.data]);
+
       setLoading(false);
     } catch (e) {
       setLoading(false);
@@ -204,7 +223,9 @@ function AdminDashboards() {
                           <TableCell align="left"> {row.username}</TableCell>
                           <TableCell align="left">{row.email}</TableCell>
                           <TableCell align="left">{row.roles}</TableCell>
-                          <TableCell align="left">{row.active ? "Active" : "Blocked"}</TableCell>
+                          <TableCell align="left">
+                            {row.active ? "Active" : "Blocked"}
+                          </TableCell>
                           <TableCell align="left">
                             {row.active ? BlockIcon(row) : ActivateIcon(row)}
                           </TableCell>
@@ -240,7 +261,9 @@ function AdminDashboards() {
         </>
       ))}
       <br />
-      {Loading && <Backdrop message="Admin Dashboard 🤵  Loading" show={true} />}
+      {Loading && (
+        <Backdrop message="Admin Dashboard 🤵  Loading" show={true} />
+      )}
     </Box>
   );
 }

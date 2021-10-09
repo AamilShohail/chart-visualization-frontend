@@ -4,8 +4,8 @@ import { uiActions } from "./ui";
 
 export const userLogin = (username, password) => {
   return async (dispatch) => {
+    dispatch(uiActions.loadingStart());
     try {
-//      console.debug("auth action--> userLogin : loading => start");
       const loggedUser = await login(username, password);
       dispatch(
         authActions.login({
@@ -18,8 +18,7 @@ export const userLogin = (username, password) => {
     } catch (e) {
       dispatch(authActions.loginError());
       dispatch(uiActions.loadingEnd());
-      dispatch(uiActions.loginError())
-
+      dispatch(uiActions.loginError());
     }
   };
 };
