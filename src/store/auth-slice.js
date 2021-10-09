@@ -5,7 +5,7 @@ const authSlice = createSlice({
   initialState: {
     token: localStorage.getItem("token"),
     isAuthenticated: false,
-    role: "user",
+    role: "gust",
     loading: true,
     user: null,
   },
@@ -34,13 +34,16 @@ const authSlice = createSlice({
       state.loading = false;
       state.user = null;
     },
-    registerSuccess(state, action) {},
-    registerFail(state, action) {},
+    //no register
+    registerSuccess(state, action) { },
+    //no register
+    registerFail(state, action) { },
     loginError(state) {
-      // localStorage.removeItem("token");
-      // state.token = null;
+      localStorage.removeItem("token");
+      state.token = null;
       state.isAuthenticated = false;
       state.loading = false;
+      state.role = 'gust'
       // state.error = true
     },
   },

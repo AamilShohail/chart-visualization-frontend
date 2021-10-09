@@ -83,19 +83,21 @@ function AdminDashboards() {
   const ActivateIcon = (user) => <button onClick={() => editItem(user)}>Activate</button>;
 
   useEffect(() => {
-    //console.log("Admin Dashboard mounted");
     dispatch(getSheetMeta());
     fetchUser();
     fetchSheetsMeta();
   }, [dispatch]);
   const fetchUser = async () => {
+    console.log("Admin dashboard --> fetch users : start")
     try {
       setLoading(true);
       const users = await AdminDashboard.fetchUsers();
+      console.log("Admin dashboard --> fetch users : end")
       setRows(users.data);
       setUsers(users.data);
       setLoading(false);
     } catch (e) {
+      console.log("Admin dashboard --> fetch users : error ",e)
       setLoading(false);
     }
   };
