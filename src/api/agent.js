@@ -30,7 +30,12 @@ const requests = {
       .then(sleep(1000))
       .then(responseBody),
   postSecured: (url, body) =>
-    axios.post(url, body).then(sleep(3000)).then(responseBody),
+    axios
+      .post(url, body, {
+        headers: { Authorization: `Bearer ${localStorage.token}` },
+      })
+      .then(sleep(3000))
+      .then(responseBody),
   post: (url, body) =>
     axios.post(url, body).then(sleep(3000)).then(responseBody),
   formUrlPost: (url, file) => {

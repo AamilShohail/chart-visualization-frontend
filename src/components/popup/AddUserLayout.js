@@ -1,7 +1,6 @@
 import { Grid, MenuItem, TextField, Typography } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import * as Yup from "yup";
 
 const useStyles = makeStyles({
   root: {
@@ -34,7 +33,12 @@ function AddUserLayout(props) {
         <Grid item xs={12}>
           <Grid container direction="row" spacing={1}>
             <Grid item xs={5}>
-              <Typography color="secondary" align="left" variant="h4" gutterBottom>
+              <Typography
+                color="secondary"
+                align="left"
+                variant="h4"
+                gutterBottom
+              >
                 E-mail
               </Typography>
             </Grid>
@@ -59,7 +63,12 @@ function AddUserLayout(props) {
         <Grid item xs={12}>
           <Grid container direction="row" spacing={1}>
             <Grid item xs={5}>
-              <Typography variant="h4" gutterBottom color="secondary" align="left">
+              <Typography
+                variant="h4"
+                gutterBottom
+                color="secondary"
+                align="left"
+              >
                 Username
               </Typography>
             </Grid>
@@ -73,7 +82,9 @@ function AddUserLayout(props) {
                 onBlur={formik.handleBlur}
                 value={formik.values.username}
                 onChange={formik.handleChange}
-                error={formik.touched.username && Boolean(formik.errors.username)}
+                error={
+                  formik.touched.username && Boolean(formik.errors.username)
+                }
                 helperText={formik.touched.username && formik.errors.username}
               />
             </Grid>
@@ -82,7 +93,12 @@ function AddUserLayout(props) {
         <Grid item xs={12}>
           <Grid container direction="row" spacing={1}>
             <Grid item xs={5}>
-              <Typography variant="h4" gutterBottom color="secondary" align="left">
+              <Typography
+                variant="h4"
+                gutterBottom
+                color="secondary"
+                align="left"
+              >
                 Role
               </Typography>
             </Grid>
