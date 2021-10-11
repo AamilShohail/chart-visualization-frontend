@@ -93,7 +93,7 @@ function AdminDashboards() {
   let webApiUrl = "http://localhost:8080/user/all";
   let allSheetsMeta = "http://localhost:8080/meta/sheet";
   useEffect(() => {
-    //dispatch(getSheetMeta());
+    dispatch(getSheetMeta());
     fetchUser();
     fetchSheetsMeta();
   }, []);
