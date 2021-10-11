@@ -347,27 +347,38 @@ const ApexBarChart = () => {
   };
   return (
     <div id="chart">
-      <FormControl
-        style={{ width: 200, left: 250, marginTop: 10 }}
-        fullWidth={false}
+      <div
+        style={{
+          width: "100%",
+          justifyContent: "center",
+          display: "flex",
+          alignItems: "center",
+          marginTop: "20px",
+        }}
       >
-        <InputLabel style={{ color: "white" }}>Year</InputLabel>
-        <Select
-          id="dropdown"
-          value={selectedYear}
-          onChange={handleYearChange}
-          label="year"
-          style={{ color: "white", alignItems: "center", textAlign: "center" }}
-        >
-          {years.map((year) => {
-            return (
-              <MenuItem key={year} value={year}>
-                {year}
-              </MenuItem>
-            );
-          })}
-        </Select>
-      </FormControl>
+        <FormControl style={{ width: 200 }} fullWidth={false}>
+          <InputLabel style={{ color: "white" }}>Year</InputLabel>
+          <Select
+            id="dropdown"
+            value={selectedYear}
+            onChange={handleYearChange}
+            label="year"
+            style={{
+              color: "white",
+              alignItems: "center",
+              textAlign: "center",
+            }}
+          >
+            {years.map((year) => {
+              return (
+                <MenuItem key={year} value={year}>
+                  {year}
+                </MenuItem>
+              );
+            })}
+          </Select>
+        </FormControl>
+      </div>
       <h2
         style={{
           color: "white",
