@@ -16,7 +16,15 @@ const ApexChart = () => {
         },
       },
     },
-    colors: ["#008FFB", "#00E396", "#CED4DC", "#ff7411", "#f14", "#11F", "#8f0"],
+    colors: [
+      "#008FFB",
+      "#00E396",
+      "#CED4DC",
+      "#ff7411",
+      "#f14",
+      "#11F",
+      "#8f0",
+    ],
     grid: {
       show: false,
     },
@@ -146,7 +154,8 @@ const ApexChart = () => {
     // const yearsForTab = [];
     // tabData.forEach((el) => yearsForTab.push(parseInt(el.Year)));
     let labels = Object.keys(tabData[0]);
-    const deletionKeys = ["id", "Total", "tab_name", "Year"];
+    //deleting keys
+    const deletionKeys = ["id", "tab_name", "Year"];
     labels = labels.filter((label) => !deletionKeys.includes(label));
     const seriesData = [];
     labels.forEach((label) => {
@@ -174,8 +183,22 @@ const ApexChart = () => {
 
   return (
     <div id="chart">
-      <h2 style={{ color: "white", width: "100%", textAlign: "center",marginTop:"5px" }}>{graphTitle}</h2>
-      <ReactApexChart options={chartOptions} series={stackData} type="area" height={650} />
+      <h2
+        style={{
+          color: "white",
+          width: "100%",
+          textAlign: "center",
+          marginTop: "5px",
+        }}
+      >
+        {graphTitle}
+      </h2>
+      <ReactApexChart
+        options={chartOptions}
+        series={stackData}
+        type="area"
+        height={650}
+      />
     </div>
   );
 };

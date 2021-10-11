@@ -247,7 +247,7 @@ const ApexBarChart = () => {
     delete founded.id;
     delete founded.tab_name;
     delete founded.Year;
-    delete founded.Total;
+    //delete founded.Total;
     dispatch(
       sheetActions.changeBarChartDropdown({ barChartData: { ...founded } })
     );

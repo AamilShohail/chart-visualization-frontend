@@ -168,7 +168,7 @@ const ApexChart = () => {
     // const yearsForTab = [];
     // tabData.forEach((el) => yearsForTab.push(parseInt(el.Year)));
     let labels = Object.keys(tabData[0]);
-    const deletionKeys = ["id", "Total", "tab_name", "Year"];
+    const deletionKeys = ["id", "tab_name", "Year"];
     labels = labels.filter((label) => !deletionKeys.includes(label));
     const seriesData = [];
     labels.forEach((label) => {
@@ -253,7 +253,7 @@ const ApexChart = () => {
     <div id="chart">
       <div style={{ paddingLeft: 300, margin: 10 }}>
         <FormControl style={{ width: 250, paddingRight: 5 }}>
-          <InputLabel style={{ color: "white" }}>Source 1</InputLabel>
+          <InputLabel style={{ color: "white" }}>Bar Chart 🔵 </InputLabel>
           <Select
             id="dropdown"
             value={chartOneValue}
@@ -275,7 +275,7 @@ const ApexChart = () => {
           </Select>
         </FormControl>
         <FormControl style={{ width: 250, paddingRight: 5 }}>
-          <InputLabel style={{ color: "white" }}>Source 2</InputLabel>
+          <InputLabel style={{ color: "white" }}>Bar Chart 🟢 </InputLabel>
           <Select
             value={chartTwoValue}
             onChange={chartTwoHandler}
@@ -296,7 +296,7 @@ const ApexChart = () => {
           </Select>
         </FormControl>
         <FormControl style={{ width: 250, paddingRight: 5 }}>
-          <InputLabel style={{ color: "white" }}>Source 3</InputLabel>
+          <InputLabel style={{ color: "white" }}>Line Chart 🔴 </InputLabel>
           <Select
             value={chartThreeValue}
             onChange={chartThreeHandler}
