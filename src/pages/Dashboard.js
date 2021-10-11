@@ -49,7 +49,9 @@ export default function Dashboard() {
           <div
             className={styles.table}
             style={{
-              boxShadow: isLight ? "15px 15px 15px  #aaaaaa" : "25px 25px 25px  #000",
+              boxShadow: isLight
+                ? "15px 15px 15px  #aaaaaa"
+                : "25px 25px 25px  #000",
             }}
           >
             <Table />
@@ -66,20 +68,13 @@ export default function Dashboard() {
               className={styles.chart_container_wrapper}
               style={{
                 background: isLight ? "#182B4D" : "#2A2E35",
-                boxShadow: isLight ? "15px 15px 15px  #aaaaaa" : "25px 25px 25px  #000",
+                boxShadow: isLight
+                  ? "15px 15px 15px  #aaaaaa"
+                  : "25px 25px 25px  #000",
                 marginRight: "15px",
               }}
             >
               <ChartFactory type={Bar} />
-            </div>
-            <div
-              className={styles.chart_container_wrapper}
-              style={{
-                background: isLight ? "#182B4D" : "#2A2E35",
-                boxShadow: isLight ? "15px 15px 15px  #aaaaaa" : "25px 35px 35px  #000",
-              }}
-            >
-              <ChartFactory type={Mix} />
             </div>
           </div>
           <div className={styles.chart_row}>
@@ -87,7 +82,9 @@ export default function Dashboard() {
               className={styles.chart_container_wrapper}
               style={{
                 background: isLight ? "#182B4D" : "#2A2E35",
-                boxShadow: isLight ? "15px 25px 15px  #aaaaaa" : "25px 35px 35px  #000",
+                boxShadow: isLight
+                  ? "15px 25px 15px  #aaaaaa"
+                  : "25px 35px 35px  #000",
               }}
             >
               <ChartFactory type={Stack} />
@@ -98,7 +95,9 @@ export default function Dashboard() {
               className={styles.chart_container_wrapper}
               style={{
                 background: isLight ? "#182B4D" : "#2A2E35",
-                boxShadow: isLight ? "15px 25px 15px  #aaaaaa" : "25px 35px 35px  #000",
+                boxShadow: isLight
+                  ? "15px 25px 15px  #aaaaaa"
+                  : "25px 35px 35px  #000",
               }}
             >
               <YearBar />

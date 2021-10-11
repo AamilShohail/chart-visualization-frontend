@@ -382,6 +382,7 @@ const ApexBarChart = () => {
         options={chartOptions}
         series={chartData}
         type="bar"
+        height={550}
         // height="100%"
       />
       <div style={{ display: "flex", justifyContent: "center" }}>
