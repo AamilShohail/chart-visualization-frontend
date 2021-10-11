@@ -16,9 +16,10 @@ const ApexBarChart = () => {
   const dispatch = useDispatch();
   const [chartData, setChartData] = useState([]);
   const [years, setYears] = useState([]);
-  const [selectedYear, setSelectedYear] = useState("2020");
+  const [selectedYear, setSelectedYear] = useState("");
   const [labels, setLabels] = useState([]);
   const [values, setValues] = useState([]);
+  const [graphTitle, setGraphTitle] = useState("Graph title");
 
   const [chartOptions, setChartOptions] = useState({
     chart: {
@@ -118,20 +119,20 @@ const ApexBarChart = () => {
         },
       },
     },
-    subtitle: {
-      text: "graph title",
-      align: "center",
-      margin: 10,
-      offsetX: 0,
-      offsetY: 0,
-      floating: false,
-      style: {
-        fontSize: "22px",
-        // fontWeight: "bold",
-        fontFamily: undefined,
-        color: "#9699a2",
-      },
-    },
+    // subtitle: {
+    //   text: "graph title",
+    //   align: "center",
+    //   margin: 10,
+    //   offsetX: 0,
+    //   offsetY: 0,
+    //   floating: false,
+    //   style: {
+    //     fontSize: "22px",
+    //     // fontWeight: "bold",
+    //     fontFamily: undefined,
+    //     color: "#9699a2",
+    //   },
+    // },
     //tooltip disabled
     // tooltip: {
     //   enabled: true,
@@ -200,11 +201,14 @@ const ApexBarChart = () => {
   const selectedSheetName = useSelector((state) => state.sheet.sheetData);
   useEffect(() => {
     console.log({ selectedTabName, selectedYear, selectedSheetName });
-    const GraphTitle = `${selectedSheetName.name}-${selectedTabName} in ${selectedYear}`;
-    setChartOptions({
-      ...chartOptions,
-      subtitle: { ...chartOptions.subtitle, text: GraphTitle },
-    });
+    const GraphTitle = selectedSheetName.name
+      ? `${selectedSheetName.name}-${selectedTabName} in ${selectedYear}`
+      : " ";
+    setGraphTitle(GraphTitle);
+    // setChartOptions({
+    //   ...chartOptions,
+    //   subtitle: { ...chartOptions.subtitle, text: GraphTitle },
+    // });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTabName, selectedYear, selectedSheetName]);
   useEffect(() => {
@@ -364,6 +368,16 @@ const ApexBarChart = () => {
           })}
         </Select>
       </FormControl>
+      <h2
+        style={{
+          color: "white",
+          width: "100%",
+          textAlign: "center",
+          marginTop: "5px",
+        }}
+      >
+        {graphTitle}
+      </h2>
       <ReactApexChart
         options={chartOptions}
         series={chartData}
