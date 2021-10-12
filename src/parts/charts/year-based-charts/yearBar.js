@@ -253,12 +253,12 @@ const ApexChart = () => {
     <div id="chart">
       <div style={{ paddingLeft: 300, margin: 10 }}>
         <FormControl style={{ width: 250, paddingRight: 5 }}>
-          <InputLabel style={{ color: "white" }}>Bar Chart 🔵 </InputLabel>
+          <InputLabel style={{ color: "white" }}>Bar Chart 🔵</InputLabel>
           <Select
             id="dropdown"
             value={chartOneValue}
             onChange={chartOneHandler}
-            label="Source 1"
+            label="Bar Chart 🔵"
             style={{
               color: "white",
               alignItems: "center",
@@ -275,11 +275,11 @@ const ApexChart = () => {
           </Select>
         </FormControl>
         <FormControl style={{ width: 250, paddingRight: 5 }}>
-          <InputLabel style={{ color: "white" }}>Bar Chart 🟢 </InputLabel>
+          <InputLabel style={{ color: "white" }}>Bar Chart 🟢</InputLabel>
           <Select
             value={chartTwoValue}
             onChange={chartTwoHandler}
-            label="Source 2"
+            label="Bar Chart 🟢"
             style={{
               color: "white",
               alignItems: "center",
@@ -296,11 +296,11 @@ const ApexChart = () => {
           </Select>
         </FormControl>
         <FormControl style={{ width: 250, paddingRight: 5 }}>
-          <InputLabel style={{ color: "white" }}>Line Chart 🔴 </InputLabel>
+          <InputLabel style={{ color: "white" }}>Line Chart 🔴</InputLabel>
           <Select
             value={chartThreeValue}
             onChange={chartThreeHandler}
-            label="Source 3"
+            label="Line Chart 🔴"
             style={{
               color: "white",
               alignItems: "center",
