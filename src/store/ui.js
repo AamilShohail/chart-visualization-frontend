@@ -5,7 +5,8 @@ const initialUiState = {
   loading: true,
   authError: false,
   sheetMetaLoad: false,
-  sheetUpload:false
+  sheetUpload: false,
+  errorMessage: "",
 };
 
 const uiSlice = createSlice({
@@ -25,6 +26,7 @@ const uiSlice = createSlice({
     },
     loginError(state, action) {
       state.authError = true;
+      state.errorMessage = action.payload;
     },
     SheetMetaLoadingChange(state, action) {
       state.sheetMetaLoad = action.payload;

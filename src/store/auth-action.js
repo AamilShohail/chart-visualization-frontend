@@ -12,13 +12,14 @@ export const userLogin = (username, password) => {
           role: loggedUser.data.user.authorities,
           user: loggedUser.data.user.username,
           token: loggedUser.data.jwt,
+          authCode: loggedUser.data.code,
         })
       );
       dispatch(uiActions.loadingEnd());
     } catch (e) {
-      dispatch(authActions.loginError());
+      dispatch(authActions.loginError(e.response.data.errors.error_message));
       dispatch(uiActions.loadingEnd());
-      dispatch(uiActions.loginError());
+      dispatch(uiActions.loginError(e.response.data.errors.error_message));
     }
   };
 };
@@ -53,8 +54,5 @@ const loadUserByToken = async () => {
 
 const login = async (username, password) => {
   const response = await Auth.login({ username, password });
-  if (!response) {
-    throw new Error("Could not login right now");
-  }
   return response;
 };

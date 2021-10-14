@@ -8,6 +8,7 @@ const authSlice = createSlice({
     role: "gust",
     loading: true,
     user: null,
+    errorMessage: "",
   },
   reducers: {
     login(state, action) {
@@ -39,12 +40,13 @@ const authSlice = createSlice({
     registerSuccess(state, action) {},
     //no register
     registerFail(state, action) {},
-    loginError(state) {
+    loginError(state, action) {
       localStorage.removeItem("token");
       state.token = null;
       state.isAuthenticated = false;
       state.loading = false;
       state.role = "gust";
+      state.errorMessage = action.payload;
       // state.error = true
     },
   },

@@ -57,7 +57,8 @@ export default function SignIn() {
   const [Username, setUsername] = useState("");
   const [Password, setPassword] = useState("");
 
-  const isError = useSelector((state) => state.ui.authError);
+  const uiUtils = useSelector((state) => state.ui);
+  // const isError = useSelector((state) => state.ui.authError);
 
   const usernameChange = (e) => {
     setUsername(e.target.value);
@@ -69,6 +70,7 @@ export default function SignIn() {
   const handleSubmit = (e) => {
     // submit logic
     e.preventDefault();
+    userLogin(Username, Password);
     dispatch(userLogin(Username, Password));
   };
   return (
@@ -146,8 +148,8 @@ export default function SignIn() {
           <Copyright />
         </Box>
       </Container>
-      {isError && (
-        <Alert severity="error" message="check username and password" />
+      {uiUtils.authError && (
+        <Alert severity="error" message={uiUtils.errorMessage} />
       )}
     </div>
   );
