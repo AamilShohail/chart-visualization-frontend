@@ -5,6 +5,9 @@ import { FormControl } from "@mui/material";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import InputLabel from "@mui/material/InputLabel";
+import Button from "@mui/material/Button";
+import {DownloadOutlined} from "@mui/icons-material";
+import pptxgen from "pptxgenjs";
 
 const ApexChart = () => {
   const [chartOptions, setChartOptions] = useState({
@@ -266,6 +269,111 @@ const ApexChart = () => {
     // setChartThreeData({ ...thirdChart, type: "line" });
   };
 
+  const downloadPPT = () => {
+    let pptx = new pptxgen();
+    let slide = pptx.addSlide();
+
+    let opts = {
+      x: 0.6,
+      y: 0.6,
+      w: 6.0,
+      h: 3.0,
+      barDir: "col",
+      catAxisLabelColor: "666666",
+      catAxisLabelFontFace: "Arial",
+      catAxisLabelFontSize: 12,
+      catAxisOrientation: "minMax",
+      showLegend: false,
+      showTitle: false,
+      valAxisMaxVal: 100,
+      valAxisMajorUnit: 10,
+
+      valAxes: [
+        {
+          showValAxisTitle: true,
+          valAxisTitle: "Primary Value Axis",
+        },
+        {
+          showValAxisTitle: true,
+          valAxisTitle: "Secondary Value Axis",
+          valGridLine: { style: "none" },
+        },
+      ],
+
+      catAxes: [
+        {
+          catAxisTitle: "Primary Category Axis",
+        },
+        {
+          catAxisHidden: true,
+        },
+      ],
+    };
+
+    let labels = ["April", "May", "June", "July", "August"];
+    let chartTypes = [
+      {
+        type: pptx.charts.AREA,
+        data: [
+          {
+            name: "Current",
+            labels: labels,
+            values: [1, 4, 7, 2, 3],
+          },
+        ],
+        options: {
+          chartColors: ["00FFFF"],
+          barGrouping: "standard",
+          secondaryValAxis: !!opts.valAxes,
+          secondaryCatAxis: !!opts.catAxes,
+        },
+      },
+      {
+        type: pptx.charts.BAR,
+        data: [
+          {
+            name: "Bottom",
+            labels: labels,
+            values: [17, 26, 53, 10, 4],
+          },
+        ],
+        options: {
+          chartColors: ["0000FF"],
+          barGrouping: "stacked",
+        },
+      },
+      {
+        type: pptx.charts.LINE,
+        data: [
+          {
+            name: "Current",
+            labels: labels,
+            values: [5, 3, 2, 4, 7],
+          },
+        ],
+        options: {
+          barGrouping: "standard",
+          secondaryValAxis: !!opts.valAxes,
+          secondaryCatAxis: !!opts.catAxes,
+        },
+      },
+    ];
+    slide.addChart(chartTypes, opts);
+
+    slide.addText(`by optimum AI`, {
+      x: 0,
+      y: 5.3,
+      w: "100%",
+      h: 0.33,
+      fontSize: 10,
+      align: "center",
+      fill: "E1E1E1", //{ color: pptx.SchemeColor.background2 },
+      color: "A1A1A1", // pptx.SchemeColor.accent3,
+    });
+
+    pptx.writeFile({ fileName: `Telecoms Adspend Forecasts-All 11 markets.pptx` });
+  };
+
   return (
     <div id="chart">
       <div style={{ paddingLeft: 300, margin: 10 }}>
@@ -350,6 +458,16 @@ const ApexChart = () => {
         type="area"
         height={650}
       />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Button
+            variant="outlined"
+            style={{ marginLeft: 3 }}
+            startIcon={<DownloadOutlined />}
+            onClick={downloadPPT}
+        >
+          Download pptx
+        </Button>
+      </div>
     </div>
   );
 };

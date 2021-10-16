@@ -412,9 +412,6 @@ const ApexBarChart = () => {
         >
           Download pptx
         </Button>
-        {/* <button style={{ margin: "5px", padding: "5px" }} onClick={downloadPPT}>
-          Download pptx
-        </button> */}
       </div>
     </div>
   );
