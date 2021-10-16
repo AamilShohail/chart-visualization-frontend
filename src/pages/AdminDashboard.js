@@ -101,9 +101,10 @@ function AdminDashboards() {
     try {
       setLoading(true);
       const users = await AdminDashboard.fetchUsers();
-      console.log("Admin dashboard --> fetch users : end ", { users });
-      setRows(users.data);
-      setUsers(users.data);
+      const onlyUsers = users.data.filter((u) => u.roles !== `ROLE_ADMIN`);
+      console.log("Admin dashboard --> fetch users : end ", { onlyUsers });
+      setRows(onlyUsers);
+      setUsers(onlyUsers);
       setLoading(false);
     } catch (e) {
       console.log("Admin dashboard --> fetch users : error ", e);
@@ -131,8 +132,10 @@ function AdminDashboards() {
       const response = await AdminDashboard.createUser(userDetails);
       console.log(response);
       const users = await AdminDashboard.fetchUsers();
-      setRows(users.data);
-      setUsers(users.data);
+      const onlyUsers = users.data.filter((u) => u.roles !== `ROLE_ADMIN`);
+      console.log("Admin dashboard --> fetch users : end ", { onlyUsers });
+      setRows(onlyUsers);
+      setUsers(onlyUsers);
       setLoading(false);
     } catch (e) {
       setLoading(false);
@@ -206,27 +209,34 @@ function AdminDashboards() {
                     <TableRow>
                       <TableCell align="left">Username</TableCell>
                       <TableCell align="left">Email</TableCell>
-                      <TableCell align="left">Role</TableCell>
                       <TableCell align="left">Current Status</TableCell>
                       <TableCell align="left"> </TableCell>
                     </TableRow>
                   </TableHead>
                   {!Loading && (
                     <TableBody>
-                      {rows.map((row) =>
-                        row.roles === "ROLE_USER" ? (
-                          <TableRow key={row.userId}>
-                            <TableCell align="left"> {row.username}</TableCell>
-                            <TableCell align="left">{row.email}</TableCell>
-                            <TableCell align="left">{row.roles}</TableCell>
-                            <TableCell align="left">
-                              {row.active ? "Active" : "Blocked"}
-                            </TableCell>
-                            <TableCell align="left">
-                              {row.active ? BlockIcon(row) : ActivateIcon(row)}
-                            </TableCell>
-                          </TableRow>
-                        ) : null
+                      {rows.length > 0 ? (
+                        rows.map((row) => {
+                          return (
+                            <TableRow key={row.userId}>
+                              <TableCell align="left">
+                                {" "}
+                                {row.username}
+                              </TableCell>
+                              <TableCell align="left">{row.email}</TableCell>
+                              <TableCell align="left">
+                                {row.active ? "Active" : "Blocked"}
+                              </TableCell>
+                              <TableCell align="left">
+                                {row.active
+                                  ? BlockIcon(row)
+                                  : ActivateIcon(row)}
+                              </TableCell>
+                            </TableRow>
+                          );
+                        })
+                      ) : (
+                        <div style={{ textAlign: "center" }}>No Users Yet</div>
                       )}
                     </TableBody>
                   )}
