@@ -200,6 +200,10 @@ const ApexBarChart = () => {
   const tabData = useSelector((state) => state.sheet.rows);
   const selectedSheetName = useSelector((state) => state.sheet.sheetData);
   useEffect(() => {
+    setChartData([]);
+    setSelectedYear("");
+  }, [selectedTabName, selectedSheetName]);
+  useEffect(() => {
     console.log({ selectedTabName, selectedYear, selectedSheetName });
     const GraphTitle = selectedSheetName.name
       ? `${selectedSheetName.name}-${selectedTabName} in ${selectedYear}`

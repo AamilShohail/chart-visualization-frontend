@@ -165,6 +165,23 @@ const ApexChart = () => {
   }, [selectedTabName, selectedSheetName]);
   useEffect(() => {
     if (tabData.length === 0) return null;
+    setSeries([
+      {
+        name: "Income",
+        type: "column",
+        data: [],
+      },
+      {
+        name: "Cashflow",
+        type: "column",
+        data: [],
+      },
+      {
+        name: "Revenue",
+        type: "line",
+        data: [],
+      },
+    ]);
     // const yearsForTab = [];
     // tabData.forEach((el) => yearsForTab.push(parseInt(el.Year)));
     let labels = Object.keys(tabData[0]);
