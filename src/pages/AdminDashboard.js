@@ -217,19 +217,21 @@ function AdminDashboards() {
                   </TableHead>
                   {!Loading && (
                     <TableBody>
-                      {rows.map((row) => (
-                        <TableRow key={row.userId}>
-                          <TableCell align="left"> {row.username}</TableCell>
-                          <TableCell align="left">{row.email}</TableCell>
-                          <TableCell align="left">{row.roles}</TableCell>
-                          <TableCell align="left">
-                            {row.active ? "Active" : "Blocked"}
-                          </TableCell>
-                          <TableCell align="left">
-                            {row.active ? BlockIcon(row) : ActivateIcon(row)}
-                          </TableCell>
-                        </TableRow>
-                      ))}
+                      {rows.map((row) =>
+                        row.roles === "ROLE_USER" ? (
+                          <TableRow key={row.userId}>
+                            <TableCell align="left"> {row.username}</TableCell>
+                            <TableCell align="left">{row.email}</TableCell>
+                            <TableCell align="left">{row.roles}</TableCell>
+                            <TableCell align="left">
+                              {row.active ? "Active" : "Blocked"}
+                            </TableCell>
+                            <TableCell align="left">
+                              {row.active ? BlockIcon(row) : ActivateIcon(row)}
+                            </TableCell>
+                          </TableRow>
+                        ) : null
+                      )}
                     </TableBody>
                   )}
                 </Table>
