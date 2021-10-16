@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-
 import Paper from "@material-ui/core/Paper";
 import SearchBar from "material-ui-search-bar";
 import {
@@ -14,7 +12,6 @@ import {
   TableBody,
   Table,
 } from "@material-ui/core";
-import CircularProgress from "@material-ui/core/CircularProgress";
 import {
   createTheme,
   ThemeProvider,
@@ -83,15 +80,17 @@ function AdminDashboards() {
     setSearched("");
     requestSearch(searched);
   };
-  const editItem = (user) => toggleUserStatus(user);
+  const editItem = async (user) => {
+    setLoading(true);
+    await toggleUserStatus(user);
+    fetchUser();
+  };
   const BlockIcon = (user) => (
     <button onClick={() => editItem(user)}>Block</button>
   );
   const ActivateIcon = (user) => (
     <button onClick={() => editItem(user)}>Activate</button>
   );
-  let webApiUrl = "http://localhost:8080/user/all";
-  let allSheetsMeta = "http://localhost:8080/meta/sheet";
   useEffect(() => {
     dispatch(getSheetMeta());
     fetchUser();
@@ -102,9 +101,6 @@ function AdminDashboards() {
     try {
       setLoading(true);
       const users = await AdminDashboard.fetchUsers();
-      // const users = await axios.get(webApiUrl, {
-      //   headers: { Authorization: `Bearer ${localStorage.token}` },
-      // });
       console.log("Admin dashboard --> fetch users : end ", { users });
       setRows(users.data);
       setUsers(users.data);
@@ -236,19 +232,6 @@ function AdminDashboards() {
                   )}
                 </Table>
               </TableContainer>{" "}
-              {Loading && (
-                <div
-                  style={{
-                    display: "flex",
-                    height: "400px",
-                    width: "100vw",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <CircularProgress />
-                </div>
-              )}
             </Paper>
           </Box>
         </div>
