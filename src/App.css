@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+.content{
+  margin-left: 5rem;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #182b4d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5e72e4;
+}
+
