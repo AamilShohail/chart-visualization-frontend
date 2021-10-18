@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-
 import Paper from "@material-ui/core/Paper";
 import SearchBar from "material-ui-search-bar";
 import {
@@ -14,7 +12,6 @@ import {
   TableBody,
   Table,
 } from "@material-ui/core";
-import CircularProgress from "@material-ui/core/CircularProgress";
 import {
   createTheme,
   ThemeProvider,
@@ -83,15 +80,17 @@ function AdminDashboards() {
     setSearched("");
     requestSearch(searched);
   };
-  const editItem = (user) => toggleUserStatus(user);
+  const editItem = async (user) => {
+    setLoading(true);
+    await toggleUserStatus(user);
+    fetchUser();
+  };
   const BlockIcon = (user) => (
     <button onClick={() => editItem(user)}>Block</button>
   );
   const ActivateIcon = (user) => (
     <button onClick={() => editItem(user)}>Activate</button>
   );
-  let webApiUrl = "http://localhost:8080/user/all";
-  let allSheetsMeta = "http://localhost:8080/meta/sheet";
   useEffect(() => {
     dispatch(getSheetMeta());
     fetchUser();
@@ -102,12 +101,10 @@ function AdminDashboards() {
     try {
       setLoading(true);
       const users = await AdminDashboard.fetchUsers();
-      // const users = await axios.get(webApiUrl, {
-      //   headers: { Authorization: `Bearer ${localStorage.token}` },
-      // });
-      console.log("Admin dashboard --> fetch users : end ", { users });
-      setRows(users.data);
-      setUsers(users.data);
+      const onlyUsers = users.data.filter((u) => u.roles !== `ROLE_ADMIN`);
+      console.log("Admin dashboard --> fetch users : end ", { onlyUsers });
+      setRows(onlyUsers);
+      setUsers(onlyUsers);
       setLoading(false);
     } catch (e) {
       console.log("Admin dashboard --> fetch users : error ", e);
@@ -135,8 +132,10 @@ function AdminDashboards() {
       const response = await AdminDashboard.createUser(userDetails);
       console.log(response);
       const users = await AdminDashboard.fetchUsers();
-      setRows(users.data);
-      setUsers(users.data);
+      const onlyUsers = users.data.filter((u) => u.roles !== `ROLE_ADMIN`);
+      console.log("Admin dashboard --> fetch users : end ", { onlyUsers });
+      setRows(onlyUsers);
+      setUsers(onlyUsers);
       setLoading(false);
     } catch (e) {
       setLoading(false);
@@ -210,43 +209,39 @@ function AdminDashboards() {
                     <TableRow>
                       <TableCell align="left">Username</TableCell>
                       <TableCell align="left">Email</TableCell>
-                      <TableCell align="left">Role</TableCell>
                       <TableCell align="left">Current Status</TableCell>
                       <TableCell align="left"> </TableCell>
                     </TableRow>
                   </TableHead>
                   {!Loading && (
                     <TableBody>
-                      {rows.map((row) => (
-                        <TableRow key={row.userId}>
-                          <TableCell align="left"> {row.username}</TableCell>
-                          <TableCell align="left">{row.email}</TableCell>
-                          <TableCell align="left">{row.roles}</TableCell>
-                          <TableCell align="left">
-                            {row.active ? "Active" : "Blocked"}
-                          </TableCell>
-                          <TableCell align="left">
-                            {row.active ? BlockIcon(row) : ActivateIcon(row)}
-                          </TableCell>
-                        </TableRow>
-                      ))}
+                      {rows.length > 0 ? (
+                        rows.map((row) => {
+                          return (
+                            <TableRow key={row.userId}>
+                              <TableCell align="left">
+                                {" "}
+                                {row.username}
+                              </TableCell>
+                              <TableCell align="left">{row.email}</TableCell>
+                              <TableCell align="left">
+                                {row.active ? "Active" : "Blocked"}
+                              </TableCell>
+                              <TableCell align="left">
+                                {row.active
+                                  ? BlockIcon(row)
+                                  : ActivateIcon(row)}
+                              </TableCell>
+                            </TableRow>
+                          );
+                        })
+                      ) : (
+                        <div style={{ textAlign: "center" }}>No Users Yet</div>
+                      )}
                     </TableBody>
                   )}
                 </Table>
               </TableContainer>{" "}
-              {Loading && (
-                <div
-                  style={{
-                    display: "flex",
-                    height: "400px",
-                    width: "100vw",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <CircularProgress />
-                </div>
-              )}
             </Paper>
           </Box>
         </div>
