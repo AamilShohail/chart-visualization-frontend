@@ -17,6 +17,7 @@ import { uiActions } from "../../store/ui";
 import { userLogin } from "../../store/auth-action";
 import Alert from "../../components/alert/Alert";
 import { useSelector } from "react-redux";
+import ForgetPassword from "../forget password/ForgetPassword";
 
 function Copyright() {
   return (
@@ -56,6 +57,7 @@ export default function SignIn() {
   const classes = useStyles();
   const [Username, setUsername] = useState("");
   const [Password, setPassword] = useState("");
+  const [openPopup, setOpenPopup] = useState(false);
 
   const uiUtils = useSelector((state) => state.ui);
   // const isError = useSelector((state) => state.ui.authError);
@@ -134,13 +136,14 @@ export default function SignIn() {
             </Button>
             <Grid container>
               <Grid item xs>
-                <MLink href="#" variant="body2">
+                <Button onClick={() => setOpenPopup(true)} size="small">
                   Forgot password?
-                </MLink>
+                </Button>
               </Grid>
               <Grid item>
                 <Link to="/register">{"Don't have an account? Sign Up"}</Link>
               </Grid>
+              {openPopup && <ForgetPassword openPopup={openPopup} />}
             </Grid>
           </form>
         </div>
