@@ -1,17 +1,16 @@
-import React, { useEffect } from "react";
-import { Bar, Mix, Stack } from "../parts/charts/ChartFactory";
+import React, { createContext, createRef, useEffect } from "react";
+import { Bar, Stack } from "../parts/charts/ChartFactory";
 import Table from "../parts/table/Table";
 import ChartFactory from "../parts/charts/ChartFactory";
 import DataControl from "../parts/data-control/DataControl";
 import { useSelector, useDispatch } from "react-redux";
-
 import styles from "../style/Dashboard.module.css";
-
-import { getSheetMeta, setSheet } from "../store/sheet-action";
+import { getSheetMeta } from "../store/sheet-action";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import { Box, Grid, Typography, Button } from "@material-ui/core";
-
 import YearBar from "../parts/charts/year-based-charts/yearBar";
+
+export const ExcelContext = createContext();
+
 export default function Dashboard() {
   const isLight = useSelector((state) => state.ui.themeIsLight);
   const Loading = useSelector((state) => state.ui.sheetMetaLoad);
@@ -23,6 +22,8 @@ export default function Dashboard() {
     //console.log("charts mounted ");
     dispatch(getSheetMeta());
   }, [dispatch]);
+
+
   return (
     <>
       {!Loading ? (
@@ -51,18 +52,27 @@ export default function Dashboard() {
             style={{
               boxShadow: isLight
                 ? "15px 15px 15px  #aaaaaa"
-                : "25px 25px 25px  #000",
+                : "250px 250px 250px  #000",
             }}
           >
-            <Table />
+            <ExcelContext.Provider
+              value={{
+                tab: { selectedTabName },
+                sheetName: { selectedSheetName },
+              }}
+            >
+              <Table />
+            </ExcelContext.Provider>
           </div>
-          <p
-            style={{
-              color: !isLight ? "#e8e8e4" : "#12181B",
-            }}
-          >
-            Here all amounts are in million US$
-          </p>
+          <>
+            <p
+              style={{
+                color: !isLight ? "#e8e8e4" : "#12181B",
+              }}
+            >
+              Here all amounts are in million US$
+            </p>
+          </>
           <div className={styles.charts_wrapper}>
             <div
               className={styles.chart_container_wrapper}
